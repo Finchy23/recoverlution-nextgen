@@ -1,0 +1,7 @@
+# Default owner for all files
+* @Finchy23
+
+# Control plane files
+.github/workflows/* @Finchy23
+scripts/validate_figma_import.sh @Finchy23
+docs/FIGMA_PUSH_FAILSAFE.md @Finchy23

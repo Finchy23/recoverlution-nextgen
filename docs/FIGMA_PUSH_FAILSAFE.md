@@ -17,6 +17,8 @@ This repository is configured so Figma-originated code can be pushed quickly but
 - `scripts/validate_figma_import.sh`
   - Blocks secrets, `.env`, key material, conflict markers, oversized files, and `node_modules`.
   - Blocks edits to control-plane files from `figma-drop/*` branches.
+- `.github/CODEOWNERS`
+  - Routes all changes (and especially control-plane files) to `@Finchy23`.
 
 ## One-time GitHub settings (required)
 
@@ -27,6 +29,7 @@ Configure these in GitHub UI for `main` branch protection/ruleset:
 3. Add required check: `Figma Guardrails / validate`.
 4. Restrict direct pushes to admins only (or nobody, if possible in your plan).
 5. Require conversation resolution before merge.
+6. Require review from Code Owners.
 
 This is what makes the flow fail-safe. Workflows alone cannot fully prevent direct pushes unless branch protection is enabled.
 
@@ -40,6 +43,5 @@ This is what makes the flow fail-safe. Workflows alone cannot fully prevent dire
 
 ## Optional hardening
 
-- Add CODEOWNERS to force review by platform maintainers.
 - Add preview deployment checks (Vercel/Netlify) as required status checks.
 - Add lint/typecheck/test jobs to `figma-guardrails.yml` once codebase scaffolding is ready.
