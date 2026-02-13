@@ -1,0 +1,30 @@
+name: Figma Guardrails
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - "figma-drop/**"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate Figma import
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+          MAX_FILE_BYTES: "1500000"
+          MAX_IMAGE_BYTES: "4000000"
+        run: bash scripts/validate_figma_import.sh
