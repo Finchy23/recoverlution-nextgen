@@ -165,13 +165,13 @@ export function LabViewer({ previewMode }: LabViewerProps) {
 
   const previewDimensions = previewMode === 'mobile'
     ? { width: '390px', height: '844px' }
-    : { width: '1440px', height: '900px' };
+    : { width: '1280px', height: '800px' };
 
   const currentNavicue = navicues[currentIndex];
   if (!currentNavicue) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: colors.neutral.gray[400] }}>
-        Loading specimens\u2026
+        Loading specimens…
       </div>
     );
   }
@@ -221,7 +221,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           maxWidth: '100%',
         }}
       >
-        {/* \u2500\u2500 Enhanced Info Strip \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
+        {/* ── Enhanced Info Strip ────────────────────────────── */}
         <motion.div
           key={`info-${currentIndex}`}
           initial={{ opacity: 0, y: -8 }}
@@ -247,7 +247,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                 textTransform: 'uppercase',
               }}
             >
-              {currentAct.label} \u00b7 {currentAct.subtitle}
+              {currentAct.label} · {currentAct.subtitle}
             </div>
           )}
 
@@ -321,7 +321,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           </div>
         </motion.div>
 
-        {/* \u2500\u2500 Phone / Desktop Frame (HERO) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
+        {/* ── Phone / Desktop Frame (HERO) ───────────────────── */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -329,8 +329,8 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           style={{
             width: previewDimensions.width,
             height: previewDimensions.height,
-            maxWidth: 'calc(100vw - 120px)',
-            maxHeight: 'calc(100vh - 300px)',
+            maxWidth: previewMode === 'mobile' ? 'calc(100vw - 32px)' : 'calc(100vw - 72px)',
+            maxHeight: previewMode === 'mobile' ? 'calc(100vh - 210px)' : 'calc(100vh - 220px)',
             position: 'relative',
             borderRadius: previewMode === 'mobile' ? '48px' : '20px',
             overflow: 'hidden',
@@ -388,7 +388,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
             </NaviCueLabProvider>
           </motion.div>
 
-          {/* Counter \u2014 top right */}
+          {/* Counter — top right */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -430,7 +430,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           </motion.div>
         </motion.div>
 
-        {/* \u2500\u2500 Act Scrubber + Controls \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
+        {/* ── Act Scrubber + Controls ────────────────────────── */}
         <div
           style={{
             width: previewMode === 'mobile' ? '420px' : '100%',
@@ -513,7 +513,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                   color: colors.neutral.gray[400],
                   fontFamily: fonts.mono,
                 }}
-              >\u2190</kbd>
+              >←</kbd>
               <kbd
                 style={{
                   background: 'rgba(255,255,255,0.05)',
@@ -524,7 +524,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                   color: colors.neutral.gray[400],
                   fontFamily: fonts.mono,
                 }}
-              >\u2192</kbd>
+              >→</kbd>
             </div>
           </div>
         </div>
@@ -533,7 +533,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
   );
 }
 
-// \u2500\u2500 Act Scrubber \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+// ── Act Scrubber ──────────────────────────────────────────────────────
 function ActScrubber({
   currentIndex,
   completedSet,
@@ -577,7 +577,7 @@ function ActScrubber({
               onClick={() => onNavigate(act.start)}
               onMouseEnter={() => setHoveredAct(act)}
               onMouseLeave={() => setHoveredAct(null)}
-              title={`${act.label} \u00b7 ${act.subtitle}`}
+              title={`${act.label} · ${act.subtitle}`}
               style={{
                 width: `${Math.max(width, 0.4)}%`,
                 height: '100%',
@@ -622,7 +622,7 @@ function ActScrubber({
               zIndex: 5,
             }}
           >
-            {hoveredAct.label} \u00b7 {hoveredAct.subtitle}
+            {hoveredAct.label} · {hoveredAct.subtitle}
           </motion.div>
         )}
       </AnimatePresence>
@@ -630,7 +630,7 @@ function ActScrubber({
   );
 }
 
-// \u2500\u2500 Collection Drawer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+// ── Collection Drawer ─────────────────────────────────────────────────
 function CollectionDrawer({
   navicues,
   signatureColors,
@@ -858,7 +858,7 @@ function CollectionDrawer({
             <input
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              placeholder="Search specimens\u2026"
+              placeholder="Search specimens…"
               autoFocus
               style={{
                 width: '100%',
@@ -883,7 +883,7 @@ function CollectionDrawer({
               letterSpacing: '0.03em',
             }}
           >
-            {completedSet.size} explored \u00b7 {navicues.length} total
+            {completedSet.size} explored · {navicues.length} total
           </div>
         </div>
 
@@ -1024,7 +1024,7 @@ function CollectionDrawer({
   );
 }
 
-// \u2500\u2500 Navigation arrow \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+// ── Navigation arrow ──────────────────────────────────────────────────
 function NavHint({
   direction,
   onClick,
