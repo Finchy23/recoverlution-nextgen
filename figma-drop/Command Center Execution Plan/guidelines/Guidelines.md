@@ -5,6 +5,13 @@
 - Keep token authority in shared systems (`navicueType`, `navicueLayout`, `navicueInteraction`).
 - Hero interaction remains the primary attention anchor.
 
+## Preserve Magic + Creative Freedom
+- Do not lose emotional mystique, intimacy, and poetic resonance in pursuit of technical novelty.
+- Do not freeze creativity into rigid templates; allow domain-level experimentation.
+- Every advanced mechanic must map cleanly to psychological intent and embodied feeling.
+- Prefer bold differentiation over repetitive safety, while staying legible and elegant.
+- The north-star test: does this feel like an Apple-grade living companion, not just UI?
+
 ## Genesis Composition Formula
 Use this matrix for every Genesis-tier NaviCue:
 

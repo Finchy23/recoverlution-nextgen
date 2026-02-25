@@ -118,6 +118,13 @@ export interface GenesisGuardrails {
   fallbackRules: string[];
 }
 
+export interface GenesisCreativeCharter {
+  nonNegotiables: string[];
+  freedomZones: string[];
+  antiPatterns: string[];
+  northStarQuestion: string;
+}
+
 export const GENESIS_DOMAINS: readonly GenesisDomain[] = [
   {
     id: 'sensor_metaphors',
@@ -405,6 +412,32 @@ export const GENESIS_GUARDRAILS: GenesisGuardrails = {
     'If WebGL unavailable: swap to CSS/canvas fallback with same interaction verb.',
     'If haptics unavailable: mirror state via visual + audio confirmation.',
   ],
+};
+
+export const GENESIS_CREATIVE_CHARTER: GenesisCreativeCharter = {
+  nonNegotiables: [
+    'Preserve the emotional arc: atmosphere -> arrival -> hero interaction -> resonant landing -> afterglow.',
+    'Preserve the living-glass visual language and typographic soul (mono precision + serif emotion).',
+    'Preserve psychological integrity: interaction must embody the cue philosophy, not decorate it.',
+    'Preserve nervous-system safety: pacing, clarity, and completion states must stay regulating.',
+    'Preserve cue individuality: no flattening into one template interaction style.',
+  ],
+  freedomZones: [
+    'Use any rendering strategy (CSS, SVG, Canvas, WebGL, shaders) when intent-to-interaction mapping is clear.',
+    'Invent new interaction mechanics beyond the current libraries when they improve emotional truth.',
+    'Use bold motion and material metaphors if they remain readable and performance-safe.',
+    'Explore sensor/audio/depth layers with graceful fallback paths.',
+    'Allow aesthetic surprise and signature moments per cue while honoring the shared grammar.',
+  ],
+  antiPatterns: [
+    'Sterile enterprise UI that removes mystery and emotional depth.',
+    'Tech demos that prioritize novelty over therapeutic coherence.',
+    'Overly literal copy/mechanics that feel instructional instead of experiential.',
+    'Uniform entrances and repeated hero interactions that collapse differentiation.',
+    'Hardcoded visual drift that bypasses the design-system tokens and shared contracts.',
+  ],
+  northStarQuestion:
+    'Does this feel like a living, elegant companion that deepens regulation and agency, or just a screen with animations?',
 };
 
 export function getGenesisDomain(id: GenesisDomainId): GenesisDomain {

@@ -4,6 +4,7 @@ import {
   ATMOSPHERE_LIBRARY,
   BACKGROUND_ENGINES,
   ENTRANCE_PATTERNS,
+  GENESIS_CREATIVE_CHARTER,
   GENESIS_DOMAINS,
   GENESIS_GUARDRAILS,
   HERO_PLAYS,
@@ -58,6 +59,42 @@ export function GenesisStudio({ mounted }: GenesisStudioProps) {
           <Chip label={`Baseline: ${total} implementations`} />
         </div>
       </motion.section>
+
+      <section
+        style={{
+          borderRadius: radius.lg,
+          border: `1px solid ${colors.neutral.gray[100]}`,
+          background: surfaces.glass.medium,
+          padding: '18px',
+        }}
+      >
+        <h3 style={{ margin: 0, color: colors.neutral.white, fontSize: '16px', fontWeight: 500 }}>
+          Creative Charter: Preserve Magic, Expand Freedom
+        </h3>
+        <p style={{ marginTop: '8px', color: colors.neutral.gray[500], fontSize: '12px', lineHeight: 1.5 }}>
+          This is the operating contract for Genesis-tier cues: keep the emotional soul and elegance intact, while widening innovation scope.
+        </p>
+        <div style={{ marginTop: '10px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '10px' }}>
+          <GuardrailGroup title="Non-Negotiables" items={GENESIS_CREATIVE_CHARTER.nonNegotiables} />
+          <GuardrailGroup title="Creative Freedom Zones" items={GENESIS_CREATIVE_CHARTER.freedomZones} />
+          <GuardrailGroup title="Anti-Patterns To Avoid" items={GENESIS_CREATIVE_CHARTER.antiPatterns} />
+        </div>
+        <div
+          style={{
+            marginTop: '10px',
+            borderRadius: radius.sm,
+            border: `1px solid ${colors.neutral.gray[100]}`,
+            background: 'rgba(0,0,0,0.2)',
+            padding: '10px 12px',
+            color: colors.neutral.gray[500],
+            fontSize: '12px',
+            fontStyle: 'italic',
+            lineHeight: 1.45,
+          }}
+        >
+          {GENESIS_CREATIVE_CHARTER.northStarQuestion}
+        </div>
+      </section>
 
       <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '12px' }}>
         {GENESIS_AUDIT_BASELINE.metrics.map(metric => (
