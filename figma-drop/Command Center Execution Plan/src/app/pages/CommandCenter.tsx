@@ -12,6 +12,7 @@ import {
   fetchNaviCueTypeMatrix,
   fetchDiagnosticTables 
 } from '@/app/utils/fetchSupabaseData';
+import { LAB_SPECIMEN_TOTAL } from '@/app/data/lab/labMetadata';
 
 // ── Lazy-load each tab as a separate Vite chunk ────────────────────
 // This prevents the entire ~1,000 implementation file tree from
@@ -292,7 +293,7 @@ export default function CommandCenter() {
               active={currentTab === 'lab'}
               onClick={() => setCurrentTab('lab')}
               label="Lab"
-              count={1000}
+              count={LAB_SPECIMEN_TOTAL}
             />
             <TabButton
               active={currentTab === 'atlas'}
@@ -366,7 +367,7 @@ export default function CommandCenter() {
           ) : currentTab === 'lab' ? (
             <TabErrorBoundary key="lab" name="Lab">
               <Suspense fallback={<TabLoadingFallback />}>
-                <LazyLabViewer mounted={mounted} previewMode={previewMode} />
+                <LazyLabViewer previewMode={previewMode} />
               </Suspense>
             </TabErrorBoundary>
           ) : currentTab === 'atlas' ? (
