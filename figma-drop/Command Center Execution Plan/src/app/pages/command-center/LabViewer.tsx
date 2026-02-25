@@ -1,15 +1,43 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { colors, surfaces, fonts, radius } from '@/design-tokens';
 import { ChevronLeft, ChevronRight, Search, X, LayoutList } from 'lucide-react';
-import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
-import { NaviCueMasterRenderer } from '@/app/components/navicue/NaviCueMasterRenderer';
+import { useState, useCallback, useRef, useEffect, useMemo, Suspense, lazy } from 'react';
 import { ACT_GROUPS, getActForIndex, type ActGroup } from '@/app/data/lab-act-groups';
 import { NaviCueLabProvider } from '@/app/components/navicue/NaviCueLabContext';
-import { LAB_NAVICUES, type LabNavicue } from '@/app/data/lab/labNavicues';
-import { SIGNATURE_COLORS } from '@/app/data/lab/labSignatureColors';
+import type { LabNavicue } from '@/app/data/lab/labNavicues';
+
 interface LabViewerProps {
   previewMode: 'mobile' | 'desktop';
 }
+
+const LazyNaviCueMasterRenderer = lazy(() =>
+  import('@/app/components/navicue/NaviCueMasterRenderer').then(m => ({
+    default: m.NaviCueMasterRenderer,
+  })),
+);
+
+const DRAWER_HEADER_HEIGHT = 30;
+const DRAWER_ITEM_HEIGHT = 34;
+const DRAWER_OVERSCAN_PX = 300;
+
+type FilteredAct = ActGroup & { indices: number[] };
+type DrawerHeaderRow = {
+  type: 'header';
+  key: string;
+  act: FilteredAct;
+  isCurrentAct: boolean;
+  completedInAct: number;
+};
+type DrawerItemRow = {
+  type: 'item';
+  key: string;
+  idx: number;
+  nc: LabNavicue;
+  isCurrent: boolean;
+  isCompleted: boolean;
+  sigColor: string;
+};
+type DrawerRow = DrawerHeaderRow | DrawerItemRow;
 
 /**
  * LAB VIEWER
@@ -55,6 +83,8 @@ interface LabViewerProps {
 // Minimal mock data objects with the fields MasterRenderer needs
 // to route to the correct bespoke component.
 export function LabViewer({ previewMode }: LabViewerProps) {
+  const [navicues, setNavicues] = useState<LabNavicue[]>([]);
+  const [signatureColors, setSignatureColors] = useState<Record<string, string>>({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [resetKey, setResetKey] = useState(0);
   const [completedSet, setCompletedSet] = useState<Set<number>>(new Set());
@@ -62,16 +92,42 @@ export function LabViewer({ previewMode }: LabViewerProps) {
   const justCompletedTimerRef = useRef<number | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const totalNavicues = navicues.length;
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadLabData = async () => {
+      const [{ LAB_NAVICUES }, { SIGNATURE_COLORS }] = await Promise.all([
+        import('@/app/data/lab/labNavicues'),
+        import('@/app/data/lab/labSignatureColors'),
+      ]);
+
+      if (!cancelled) {
+        setNavicues(LAB_NAVICUES);
+        setSignatureColors(SIGNATURE_COLORS);
+      }
+    };
+
+    loadLabData().catch((error) => {
+      console.error('Failed to load Lab data modules', error);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const navigateTo = useCallback((index: number) => {
+    if (index < 0 || index >= totalNavicues) return;
     setCurrentIndex(index);
     setResetKey(prev => prev + 1);
     setJustCompleted(false);
-  }, []);
+  }, [totalNavicues]);
 
   const goNext = useCallback(() => {
-    if (currentIndex < LAB_NAVICUES.length - 1) navigateTo(currentIndex + 1);
-  }, [currentIndex, navigateTo]);
+    if (currentIndex < totalNavicues - 1) navigateTo(currentIndex + 1);
+  }, [currentIndex, navigateTo, totalNavicues]);
 
   const goPrev = useCallback(() => {
     if (currentIndex > 0) navigateTo(currentIndex - 1);
@@ -111,7 +167,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
     ? { width: '390px', height: '844px' }
     : { width: '1440px', height: '900px' };
 
-  const currentNavicue = LAB_NAVICUES[currentIndex];
+  const currentNavicue = navicues[currentIndex];
   if (!currentNavicue) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: colors.neutral.gray[400] }}>
@@ -120,7 +176,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
     );
   }
 
-  const accentColor = SIGNATURE_COLORS[currentNavicue._lab_signature] || colors.accent.cyan.primary;
+  const accentColor = signatureColors[currentNavicue._lab_signature] || colors.accent.cyan.primary;
   const currentAct = getActForIndex(currentIndex);
   const specimenInAct = currentAct ? currentIndex - currentAct.start + 1 : 0;
 
@@ -139,7 +195,8 @@ export function LabViewer({ previewMode }: LabViewerProps) {
       <AnimatePresence>
         {drawerOpen && (
           <CollectionDrawer
-            navicues={LAB_NAVICUES}
+            navicues={navicues}
+            signatureColors={signatureColors}
             currentIndex={currentIndex}
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
@@ -152,7 +209,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
 
       {/* Navigation arrows */}
       <NavHint direction="left" onClick={goPrev} disabled={currentIndex === 0} />
-      <NavHint direction="right" onClick={goNext} disabled={currentIndex === LAB_NAVICUES.length - 1} />
+      <NavHint direction="right" onClick={goNext} disabled={currentIndex === totalNavicues - 1} />
 
       {/* Main column: info strip + phone frame + scrubber */}
       <div
@@ -303,11 +360,30 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           >
             <NaviCueLabProvider>
               <div style={{ width: '100%', minHeight: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
-                <NaviCueMasterRenderer
-                  navicueTypeData={currentNavicue}
-                  onResponse={handleResponse}
-                  previewMode={previewMode}
-                />
+                <Suspense
+                  fallback={
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        minHeight: '100%',
+                        color: colors.neutral.gray[500],
+                        fontFamily: fonts.mono,
+                        fontSize: '11px',
+                        letterSpacing: '0.06em',
+                      }}
+                    >
+                      Loading specimen renderer...
+                    </div>
+                  }
+                >
+                  <LazyNaviCueMasterRenderer
+                    navicueTypeData={currentNavicue}
+                    onResponse={handleResponse}
+                    previewMode={previewMode}
+                  />
+                </Suspense>
               </div>
             </NaviCueLabProvider>
           </motion.div>
@@ -350,7 +426,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                 </motion.span>
               )}
             </AnimatePresence>
-            {currentIndex + 1}/{LAB_NAVICUES.length}
+            {currentIndex + 1}/{totalNavicues}
           </motion.div>
         </motion.div>
 
@@ -368,6 +444,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
             currentIndex={currentIndex}
             completedSet={completedSet}
             accentColor={accentColor}
+            total={totalNavicues}
             onNavigate={navigateTo}
           />
 
@@ -412,7 +489,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                 letterSpacing: '0.05em',
               }}
             >
-              {currentIndex + 1} of {LAB_NAVICUES.length}
+              {currentIndex + 1} of {totalNavicues}
             </div>
 
             {/* Keyboard hint */}
@@ -461,15 +538,16 @@ function ActScrubber({
   currentIndex,
   completedSet,
   accentColor,
+  total,
   onNavigate,
 }: {
   currentIndex: number;
   completedSet: Set<number>;
   accentColor: string;
+  total: number;
   onNavigate: (index: number) => void;
 }) {
   const [hoveredAct, setHoveredAct] = useState<ActGroup | null>(null);
-  const total = LAB_NAVICUES.length;
 
   return (
     <div style={{ position: 'relative' }}>
@@ -485,7 +563,7 @@ function ActScrubber({
         }}
       >
         {ACT_GROUPS.map(act => {
-          const width = (act.count / total) * 100;
+          const width = total > 0 ? (act.count / total) * 100 : 0;
           const isCurrent = currentIndex >= act.start && currentIndex < act.start + act.count;
           let completedInAct = 0;
           for (let j = act.start; j < act.start + act.count; j++) {
@@ -555,6 +633,7 @@ function ActScrubber({
 // \u2500\u2500 Collection Drawer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function CollectionDrawer({
   navicues,
+  signatureColors,
   currentIndex,
   searchQuery,
   onSearchChange,
@@ -563,6 +642,7 @@ function CollectionDrawer({
   completedSet,
 }: {
   navicues: LabNavicue[];
+  signatureColors: Record<string, string>;
   currentIndex: number;
   searchQuery: string;
   onSearchChange: (q: string) => void;
@@ -570,21 +650,13 @@ function CollectionDrawer({
   onClose: () => void;
   completedSet: Set<number>;
 }) {
-  const currentItemRef = useRef<HTMLButtonElement>(null);
-
-  // Auto-scroll to current on open
-  useEffect(() => {
-    const t = setTimeout(() => {
-      if (currentItemRef.current) {
-        currentItemRef.current.scrollIntoView({ block: 'center', behavior: 'smooth' });
-      }
-    }, 300);
-    return () => clearTimeout(t);
-  }, [currentIndex]);
+  const listRef = useRef<HTMLDivElement>(null);
+  const [scrollTop, setScrollTop] = useState(0);
+  const [viewportHeight, setViewportHeight] = useState(0);
 
   const query = searchQuery.toLowerCase().trim();
 
-  const filteredActs = useMemo(() => {
+  const filteredActs: FilteredAct[] = useMemo(() => {
     return ACT_GROUPS.map(act => {
       const indices: number[] = [];
       for (let i = act.start; i < act.start + act.count; i++) {
@@ -597,6 +669,102 @@ function CollectionDrawer({
       return { ...act, indices };
     }).filter(a => a.indices.length > 0);
   }, [query, navicues]);
+
+  const { rows, itemTopByIndex, totalHeight } = useMemo(() => {
+    const rowMeta: Array<{ row: DrawerRow; top: number; height: number }> = [];
+    const topByIndex = new Map<number, number>();
+    let top = 0;
+
+    filteredActs.forEach(act => {
+      const isCurrentAct = currentIndex >= act.start && currentIndex < act.start + act.count;
+      let completedInAct = 0;
+      for (let j = act.start; j < act.start + act.count; j++) {
+        if (completedSet.has(j)) completedInAct++;
+      }
+
+      rowMeta.push({
+        row: {
+          type: 'header',
+          key: `header-${act.id}`,
+          act,
+          isCurrentAct,
+          completedInAct,
+        },
+        top,
+        height: DRAWER_HEADER_HEIGHT,
+      });
+      top += DRAWER_HEADER_HEIGHT;
+
+      act.indices.forEach((idx) => {
+        const nc = navicues[idx];
+        if (!nc) return;
+        const isCurrent = idx === currentIndex;
+        const isCompleted = completedSet.has(idx);
+        const sigColor = signatureColors[nc._lab_signature] || colors.accent.cyan.primary;
+
+        rowMeta.push({
+          row: {
+            type: 'item',
+            key: nc.navicue_type_id,
+            idx,
+            nc,
+            isCurrent,
+            isCompleted,
+            sigColor,
+          },
+          top,
+          height: DRAWER_ITEM_HEIGHT,
+        });
+
+        topByIndex.set(idx, top);
+        top += DRAWER_ITEM_HEIGHT;
+      });
+    });
+
+    return { rows: rowMeta, itemTopByIndex: topByIndex, totalHeight: top };
+  }, [filteredActs, currentIndex, completedSet, navicues, signatureColors]);
+
+  const visibleRows = useMemo(() => {
+    if (rows.length === 0) return [];
+    const startOffset = Math.max(0, scrollTop - DRAWER_OVERSCAN_PX);
+    const endOffset = scrollTop + viewportHeight + DRAWER_OVERSCAN_PX;
+
+    let start = 0;
+    while (start < rows.length && rows[start].top + rows[start].height < startOffset) {
+      start++;
+    }
+
+    let end = start;
+    while (end < rows.length && rows[end].top < endOffset) {
+      end++;
+    }
+
+    return rows.slice(start, end);
+  }, [rows, scrollTop, viewportHeight]);
+
+  useEffect(() => {
+    const el = listRef.current;
+    if (!el) return;
+
+    const measure = () => {
+      setViewportHeight(el.clientHeight);
+    };
+
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, []);
+
+  useEffect(() => {
+    const el = listRef.current;
+    if (!el) return;
+
+    const top = itemTopByIndex.get(currentIndex);
+    if (typeof top !== 'number') return;
+
+    const targetTop = Math.max(0, top - el.clientHeight / 2 + DRAWER_ITEM_HEIGHT / 2);
+    el.scrollTo({ top: targetTop, behavior: 'smooth' });
+  }, [currentIndex, itemTopByIndex]);
 
   return (
     <>
@@ -721,117 +889,135 @@ function CollectionDrawer({
 
         {/* Scrollable list */}
         <div
+          ref={listRef}
+          onScroll={(e) => setScrollTop(e.currentTarget.scrollTop)}
           style={{
             flex: 1,
             overflowY: 'auto',
             padding: '4px 0',
           }}
         >
-          {filteredActs.map(act => {
-            const isCurrentAct = currentIndex >= act.start && currentIndex < act.start + act.count;
-            let completedInAct = 0;
-            for (let j = act.start; j < act.start + act.count; j++) {
-              if (completedSet.has(j)) completedInAct++;
-            }
-
-            return (
-              <div key={act.id}>
-                {/* Act header */}
-                <div
-                  style={{
-                    padding: '10px 16px 4px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: '10px',
-                      fontWeight: 600,
-                      color: isCurrentAct ? colors.neutral.gray[700] : colors.neutral.gray[400],
-                      fontFamily: fonts.mono,
-                      letterSpacing: '0.06em',
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    {act.label}
-                    <span style={{ fontWeight: 400, opacity: 0.6, marginLeft: '6px' }}>
-                      {act.subtitle}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: '9px',
-                      color: colors.neutral.gray[300],
-                      fontFamily: fonts.mono,
-                    }}
-                  >
-                    {completedInAct}/{act.count}
-                  </div>
-                </div>
-
-                {/* Specimens */}
-                {act.indices.map(idx => {
-                  const nc = navicues[idx];
-                  if (!nc) return null;
-                  const isCurrent = idx === currentIndex;
-                  const isCompleted = completedSet.has(idx);
-                  const sigColor = SIGNATURE_COLORS[nc._lab_signature] || colors.accent.cyan.primary;
-
+          {rows.length === 0 ? (
+            <div
+              style={{
+                padding: '20px 16px',
+                fontSize: '11px',
+                color: colors.neutral.gray[400],
+                fontFamily: fonts.mono,
+                letterSpacing: '0.04em',
+              }}
+            >
+              No specimens match that search.
+            </div>
+          ) : (
+            <div style={{ position: 'relative', height: `${totalHeight}px` }}>
+              {visibleRows.map(({ row, top }) => {
+                if (row.type === 'header') {
                   return (
-                    <button
-                      key={nc.navicue_type_id}
-                      ref={isCurrent ? currentItemRef : undefined}
-                      onClick={() => onSelect(idx)}
+                    <div
+                      key={row.key}
                       style={{
-                        width: '100%',
+                        position: 'absolute',
+                        top,
+                        left: 0,
+                        right: 0,
+                        padding: '8px 16px 4px',
                         display: 'flex',
+                        justifyContent: 'space-between',
                         alignItems: 'center',
-                        gap: '8px',
-                        padding: '5px 16px 5px 24px',
-                        background: isCurrent ? 'rgba(255,255,255,0.05)' : 'transparent',
-                        border: 'none',
-                        cursor: 'pointer',
-                        textAlign: 'left' as const,
-                        transition: 'background 0.15s ease',
                       }}
-                      onMouseEnter={(e) => { if (!isCurrent) (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)'; }}
-                      onMouseLeave={(e) => { if (!isCurrent) (e.currentTarget as HTMLElement).style.background = 'transparent'; }}
                     >
                       <div
                         style={{
-                          width: '5px',
-                          height: '5px',
-                          borderRadius: '50%',
-                          background: isCurrent
-                            ? sigColor
-                            : isCompleted
-                              ? sigColor.replace(/[\d.]+\)$/, '0.4)')
-                              : 'rgba(255,255,255,0.15)',
-                          flexShrink: 0,
-                          boxShadow: isCurrent ? `0 0 6px ${sigColor}` : 'none',
-                        }}
-                      />
-                      <div
-                        style={{
-                          fontSize: '12px',
-                          color: isCurrent ? colors.neutral.white : colors.neutral.gray[500],
-                          fontFamily: fonts.primary,
-                          fontWeight: isCurrent ? 500 : 400,
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap',
+                          fontSize: '10px',
+                          fontWeight: 600,
+                          color: row.isCurrentAct ? colors.neutral.gray[700] : colors.neutral.gray[400],
+                          fontFamily: fonts.mono,
+                          letterSpacing: '0.06em',
+                          textTransform: 'uppercase',
                         }}
                       >
-                        {nc._lab_title}
+                        {row.act.label}
+                        <span style={{ fontWeight: 400, opacity: 0.6, marginLeft: '6px' }}>
+                          {row.act.subtitle}
+                        </span>
                       </div>
-                    </button>
+                      <div
+                        style={{
+                          fontSize: '9px',
+                          color: colors.neutral.gray[300],
+                          fontFamily: fonts.mono,
+                        }}
+                      >
+                        {row.completedInAct}/{row.act.count}
+                      </div>
+                    </div>
                   );
-                })}
-              </div>
-            );
-          })}
+                }
+
+                return (
+                  <button
+                    key={row.key}
+                    onClick={() => onSelect(row.idx)}
+                    style={{
+                      position: 'absolute',
+                      top,
+                      left: 0,
+                      right: 0,
+                      height: `${DRAWER_ITEM_HEIGHT}px`,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '5px 16px 5px 24px',
+                      background: row.isCurrent ? 'rgba(255,255,255,0.05)' : 'transparent',
+                      border: 'none',
+                      cursor: 'pointer',
+                      textAlign: 'left' as const,
+                      transition: 'background 0.15s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                      if (!row.isCurrent) {
+                        (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!row.isCurrent) {
+                        (e.currentTarget as HTMLElement).style.background = 'transparent';
+                      }
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '5px',
+                        height: '5px',
+                        borderRadius: '50%',
+                        background: row.isCurrent
+                          ? row.sigColor
+                          : row.isCompleted
+                            ? row.sigColor.replace(/[\d.]+\)$/, '0.4)')
+                            : 'rgba(255,255,255,0.15)',
+                        flexShrink: 0,
+                        boxShadow: row.isCurrent ? `0 0 6px ${row.sigColor}` : 'none',
+                      }}
+                    />
+                    <div
+                      style={{
+                        fontSize: '12px',
+                        color: row.isCurrent ? colors.neutral.white : colors.neutral.gray[500],
+                        fontFamily: fonts.primary,
+                        fontWeight: row.isCurrent ? 500 : 400,
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {row.nc._lab_title}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
       </motion.div>
     </>
