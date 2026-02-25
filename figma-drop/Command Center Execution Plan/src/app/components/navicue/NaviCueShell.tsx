@@ -206,11 +206,13 @@ export function NaviCueShell({
         ...(isLabMode ? navicueLayout.contentLab : navicueLayout.content),
         justifyContent: 'center',
         minHeight: '100%',
+        height: '100%',
       }
     : {
         ...navicueLayout.centered,
         justifyContent: 'center',
         minHeight: '100%',
+        height: '100%',
       };
 
   return (
@@ -236,6 +238,8 @@ export function NaviCueShell({
           cursor: 'default',
         }),
         ...(isImmersive ? { flex: 1 } : {}),
+        minHeight: '100%',
+        height: '100%',
         background: atmosphere.backgroundGradient,
         fontFamily: fonts.primary,
       }}

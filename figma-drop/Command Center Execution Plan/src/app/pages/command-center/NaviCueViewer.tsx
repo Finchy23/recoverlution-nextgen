@@ -181,6 +181,7 @@ export function NaviCueViewer({ mounted, previewMode }: NaviCueViewerProps) {
             zIndex: 10,
             display: 'flex',
             flexDirection: 'column',
+            justifyContent: 'center',
             padding: previewMode === 'mobile' ? '20px 16px' : '28px 36px',
             overflowY: 'auto',
           }}
@@ -188,9 +189,11 @@ export function NaviCueViewer({ mounted, previewMode }: NaviCueViewerProps) {
           <NaviCueLabProvider>
             <div style={{ 
               width: '100%',
+              minHeight: '100%',
               height: '100%',
               display: 'flex',
               flexDirection: 'column',
+              justifyContent: 'center',
             }}>
               <NaviCueMasterRenderer
                 navicueTypeData={currentNavicue}

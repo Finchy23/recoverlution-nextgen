@@ -2085,8 +2085,11 @@ export const navicueLayout = {
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
+    justifyContent: 'center',
     position: 'relative' as const,
     zIndex: 1,
+    minHeight: '100%',
+    height: '100%',
   },
   /** Content constraint within immersive */
   content: {
@@ -2096,10 +2099,12 @@ export const navicueLayout = {
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
+    justifyContent: 'center',
     position: 'relative' as const,
     zIndex: 1,
     flex: 1,
-    minHeight: 0,
+    minHeight: '100%',
+    height: '100%',
   },
 
   // ── Lab-mode overrides ──────────────────────────────────────────
@@ -2114,10 +2119,12 @@ export const navicueLayout = {
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
+    justifyContent: 'center',
     position: 'relative' as const,
     zIndex: 1,
     flex: 1,
-    minHeight: 0,
+    minHeight: '100%',
+    height: '100%',
   },
 
   // ── Stage content (inside NaviCueVerse) ─────────────────────────
@@ -2136,7 +2143,8 @@ export const navicueLayout = {
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    minHeight: 0,
+    minHeight: '100%',
+    height: '100%',
   },
   /** Stage content -- lab mode (no vh, flex-fills container) */
   stageContentLab: {
@@ -2149,7 +2157,8 @@ export const navicueLayout = {
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    minHeight: 0,
+    minHeight: '100%',
+    height: '100%',
   },
 } as const;
 

@@ -353,13 +353,14 @@ export function LabViewer({ previewMode }: LabViewerProps) {
               zIndex: 10,
               display: 'flex',
               flexDirection: 'column',
+              justifyContent: 'center',
               overflowY: 'auto',
               overscrollBehavior: 'contain' as any,
               WebkitOverflowScrolling: 'touch' as any,
             }}
           >
             <NaviCueLabProvider>
-              <div style={{ width: '100%', minHeight: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
+              <div style={{ width: '100%', minHeight: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
                 <Suspense
                   fallback={
                     <div
