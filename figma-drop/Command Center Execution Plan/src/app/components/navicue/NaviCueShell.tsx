@@ -201,6 +201,17 @@ export function NaviCueShell({
   );
 
   const isImmersive = mode === 'immersive';
+  const contentStyle = isImmersive
+    ? {
+        ...(isLabMode ? navicueLayout.contentLab : navicueLayout.content),
+        justifyContent: 'center',
+        minHeight: '100%',
+      }
+    : {
+        ...navicueLayout.centered,
+        justifyContent: 'center',
+        minHeight: '100%',
+      };
 
   return (
     <motion.div
@@ -243,11 +254,7 @@ export function NaviCueShell({
       />
 
       {/* Content area */}
-      <div style={
-        isImmersive
-          ? (isLabMode ? navicueLayout.contentLab : navicueLayout.content)
-          : navicueLayout.centered
-      }>
+      <div style={contentStyle}>
         {sanitizeCopy(children)}
       </div>
     </motion.div>
