@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd \"figma-drop/Command Center Execution Plan\" && npm install",
+  "buildCommand": "cd \"figma-drop/Command Center Execution Plan\" && npm run build",
+  "outputDirectory": "figma-drop/Command Center Execution Plan/dist",
+  "framework": "vite"
+}
