@@ -86,7 +86,7 @@ export function NaviCueViewer({ mounted, previewMode }: NaviCueViewerProps) {
   // Preview dimensions - fill the frame
   const previewDimensions = previewMode === 'mobile' 
     ? { width: '390px', height: '844px' }
-    : { width: '1440px', height: '900px' };
+    : { width: '1280px', height: '800px' };
 
   // Generate aesthetic for this NaviCue
   const aesthetic = currentAesthetic || {
@@ -153,7 +153,7 @@ export function NaviCueViewer({ mounted, previewMode }: NaviCueViewerProps) {
           width: previewDimensions.width,
           height: previewDimensions.height,
           maxWidth: 'calc(100vw - 40px)',
-          maxHeight: 'calc(100vh - 180px)',
+          maxHeight: 'calc(100vh - 150px)',
           position: 'relative',
           borderRadius: previewMode === 'mobile' ? '48px' : '20px',
           overflow: 'hidden',
@@ -181,7 +181,7 @@ export function NaviCueViewer({ mounted, previewMode }: NaviCueViewerProps) {
             zIndex: 10,
             display: 'flex',
             flexDirection: 'column',
-            padding: previewMode === 'mobile' ? '40px 24px' : '60px 80px',
+            padding: previewMode === 'mobile' ? '20px 16px' : '28px 36px',
             overflowY: 'auto',
           }}
         >
