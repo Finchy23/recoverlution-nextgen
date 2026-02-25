@@ -1,0 +1,384 @@
+{
+  "version": "1.0.0",
+  "title": "NaviCue Magic Signatures Schema",
+  "description": "Parametric definition of 8 magic signatures for NaviCue adaptive experience system",
+  "magic_signatures": [
+    {
+      "id": "sacred_ordinary",
+      "name": "Sacred Ordinary",
+      "emotion_job": "meaning in ordinary moments",
+      "visual": {
+        "contrast": "low_to_mid",
+        "texture": "matte_soft_gradient",
+        "accent_intensity": 0.35,
+        "composition": "centered_generous_whitespace"
+      },
+      "motion": {
+        "entry": "slow_fade_in",
+        "entry_duration_ms": 800,
+        "dwell": "near_still",
+        "exit": "soft_dissolve",
+        "exit_duration_ms": 600
+      },
+      "interaction_bias": ["tap_reveal", "short_reflective_choice", "sit_with_this"],
+      "copy_mode": "warm_plain_language",
+      "schema_mapping": {
+        "intents": ["integrate"],
+        "mechanisms": ["attention_shift", "self_compassion"],
+        "kbe": ["knowing", "believing"],
+        "voices": ["meaning_maker", "warm_witness"]
+      },
+      "anti_patterns": [
+        "over_mystify",
+        "spiritual_cliches",
+        "unnecessary_decoration"
+      ]
+    },
+    {
+      "id": "witness_ritual",
+      "name": "Witness / Ritual",
+      "emotion_job": "safety and continuity",
+      "visual": {
+        "contrast": "mid",
+        "texture": "subtle_framing_arcs",
+        "accent_intensity": 0.4,
+        "composition": "centered_symmetric"
+      },
+      "motion": {
+        "entry": "ceremonial_begin",
+        "entry_duration_ms": 1000,
+        "dwell": "stable_hold",
+        "exit": "clean_seal",
+        "exit_duration_ms": 700
+      },
+      "interaction_bias": ["hold_to_continue", "sit_with_this", "commitment_confirm"],
+      "copy_mode": "grounded_commitment",
+      "schema_mapping": {
+        "intents": ["integrate", "repair"],
+        "mechanisms": ["values_clarification", "self_compassion", "relational"],
+        "kbe": ["believing", "embodying"],
+        "voices": ["recovery_elder", "warm_witness"]
+      },
+      "anti_patterns": [
+        "religious_feel",
+        "performative_ceremony",
+        "rigid_formality"
+      ]
+    },
+    {
+      "id": "poetic_precision",
+      "name": "Poetic Precision",
+      "emotion_job": "insight with minimal words",
+      "visual": {
+        "contrast": "mid_to_high",
+        "texture": "clean_typographic_plane",
+        "accent_intensity": 0.3,
+        "composition": "high_hierarchy_negative_space"
+      },
+      "motion": {
+        "entry": "exact_short_fade",
+        "entry_duration_ms": 400,
+        "dwell": "still",
+        "exit": "snap_soft",
+        "exit_duration_ms": 300
+      },
+      "interaction_bias": ["binary_fork", "micro_completion", "short_text_fragment"],
+      "copy_mode": "concise_sharp",
+      "schema_mapping": {
+        "intents": ["reframe", "interrupt"],
+        "mechanisms": ["metacognition", "attention_shift"],
+        "kbe": ["knowing"],
+        "voices": ["stoic_clarity", "surgical_scientist"]
+      },
+      "anti_patterns": [
+        "abstract_vagueness",
+        "poetry_for_poetry_sake",
+        "sacrifice_clarity_for_beauty"
+      ]
+    },
+    {
+      "id": "science_x_soul",
+      "name": "Science × Soul",
+      "emotion_job": "authority with humanity",
+      "visual": {
+        "contrast": "mid",
+        "texture": "geometric_base_warm_overlay",
+        "accent_intensity": 0.45,
+        "composition": "structured_grid_organic_motion"
+      },
+      "motion": {
+        "entry": "deterministic_soft",
+        "entry_duration_ms": 600,
+        "dwell": "steady",
+        "exit": "measured_close",
+        "exit_duration_ms": 500
+      },
+      "interaction_bias": ["guided_sequence", "light_checkin", "progressive_disclosure"],
+      "copy_mode": "clear_confident_nonclinical",
+      "schema_mapping": {
+        "intents": ["regulate", "integrate"],
+        "mechanisms": ["interoception", "exposure"],
+        "kbe": ["knowing", "believing"],
+        "voices": ["surgical_scientist", "recovery_elder"]
+      },
+      "anti_patterns": [
+        "expose_evidence_jargon",
+        "clinical_sterility",
+        "over_explain_mechanisms"
+      ]
+    },
+    {
+      "id": "koan_paradox",
+      "name": "Koan / Paradox",
+      "emotion_job": "unlock reframing tension",
+      "visual": {
+        "contrast": "mid",
+        "texture": "asymmetric_negative_space",
+        "accent_intensity": 0.5,
+        "composition": "unexpected_asymmetry"
+      },
+      "motion": {
+        "entry": "delayed_reveal",
+        "entry_duration_ms": 900,
+        "dwell": "phase_shift",
+        "exit": "reorientation_settle",
+        "exit_duration_ms": 700
+      },
+      "interaction_bias": ["paradox_choice", "contemplate_continue", "hold_to_reveal"],
+      "copy_mode": "short_paradox_grounded_followthrough",
+      "schema_mapping": {
+        "intents": ["reframe", "interrupt"],
+        "mechanisms": ["metacognition", "cognitive_defusion"],
+        "kbe": ["believing"],
+        "voices": ["playful_paradox", "tender_challenger"]
+      },
+      "anti_patterns": [
+        "cryptic_wording",
+        "mystery_for_mystery_sake",
+        "unresolved_paradox"
+      ]
+    },
+    {
+      "id": "pattern_glitch",
+      "name": "Pattern Glitch",
+      "emotion_job": "break autopilot",
+      "visual": {
+        "contrast": "mid",
+        "texture": "micro_discontinuity",
+        "accent_intensity": 0.55,
+        "composition": "controlled_visual_interrupt"
+      },
+      "motion": {
+        "entry": "brief_interrupt",
+        "entry_duration_ms": 300,
+        "dwell": "normalize_fast",
+        "exit": "calm_lock",
+        "exit_duration_ms": 400
+      },
+      "interaction_bias": ["interrupt_card", "route_switch", "quick_binary_choice"],
+      "copy_mode": "direct_clear_action_ready",
+      "schema_mapping": {
+        "intents": ["interrupt"],
+        "mechanisms": ["attention_shift", "behavioral_activation"],
+        "kbe": ["knowing", "embodying"],
+        "voices": ["tender_challenger", "playful_paradox"]
+      },
+      "anti_patterns": [
+        "looks_like_bug",
+        "chaotic_disruption",
+        "lose_trust_through_disruption"
+      ]
+    },
+    {
+      "id": "sensory_cinema",
+      "name": "Sensory Cinema",
+      "emotion_job": "embodied presence",
+      "visual": {
+        "contrast": "low_to_mid",
+        "texture": "atmospheric_depth",
+        "accent_intensity": 0.42,
+        "composition": "immersive_body_centric"
+      },
+      "motion": {
+        "entry": "breath_paced",
+        "entry_duration_ms": 1200,
+        "dwell": "somatic_wave",
+        "exit": "quiet_release",
+        "exit_duration_ms": 800
+      },
+      "interaction_bias": ["breath_timer", "body_aware_tap", "somatic_checkin"],
+      "copy_mode": "sensory_verb_grounded",
+      "schema_mapping": {
+        "intents": ["regulate"],
+        "mechanisms": ["interoception", "grounding"],
+        "kbe": ["embodying"],
+        "voices": ["somatic_translator", "warm_witness"]
+      },
+      "anti_patterns": [
+        "flashy_game_like",
+        "unnecessary_visual_effects",
+        "distract_from_embodiment"
+      ]
+    },
+    {
+      "id": "relational_ghost",
+      "name": "Relational Ghost",
+      "emotion_job": "felt support without dependency",
+      "visual": {
+        "contrast": "low_to_mid",
+        "texture": "soft_proximity_layers",
+        "accent_intensity": 0.38,
+        "composition": "companion_presence_gentle_boundary"
+      },
+      "motion": {
+        "entry": "companion_pace",
+        "entry_duration_ms": 700,
+        "dwell": "steady_presence",
+        "exit": "gentle_departure",
+        "exit_duration_ms": 600
+      },
+      "interaction_bias": ["witness_prompt", "repair_branch", "gentle_invitation"],
+      "copy_mode": "dignifying_compassionate",
+      "schema_mapping": {
+        "intents": ["repair", "integrate"],
+        "mechanisms": ["relational", "self_compassion"],
+        "kbe": ["believing", "embodying"],
+        "voices": ["attachment_repairer", "warm_witness", "recovery_elder"]
+      },
+      "anti_patterns": [
+        "needy_tone",
+        "moralizing_language",
+        "parental_voice",
+        "create_dependency"
+      ]
+    }
+  ],
+  "guardrails": {
+    "never_show": [
+      "kbe_labels",
+      "mindblock_labels",
+      "internal_ids",
+      "system_counters",
+      "phase_keys",
+      "navicue_type_id",
+      "schema_node_id"
+    ],
+    "never_feel_like": [
+      "quiz",
+      "clinical_form",
+      "debug_panel",
+      "assessment_tool",
+      "interrogation"
+    ],
+    "always_maintain": [
+      "dark_navy_base",
+      "light_text",
+      "subtle_accents",
+      "generous_spacing",
+      "premium_craft"
+    ]
+  },
+  "global_tokens": {
+    "color": {
+      "base": {
+        "navy_dark": "#0A1628",
+        "navy_mid": "#1A2D47",
+        "white_light": "#F8FAFB"
+      },
+      "accent_palette": {
+        "warm": "#E8D4B8",
+        "cool": "#B8D4E8",
+        "neutral": "#C8C8D4",
+        "trust": "#88B8D8",
+        "presence": "#D8B888"
+      }
+    },
+    "typography": {
+      "primary_family": "Inter",
+      "secondary_family": "Crimson Pro",
+      "scale": {
+        "xs": 12,
+        "sm": 14,
+        "base": 16,
+        "lg": 20,
+        "xl": 24,
+        "2xl": 32,
+        "3xl": 40
+      }
+    },
+    "spacing": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48,
+      "3xl": 64
+    },
+    "motion": {
+      "ease_in_out": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+      "ease_out": "cubic-bezier(0.0, 0.0, 0.2, 1)",
+      "ease_in": "cubic-bezier(0.4, 0.0, 1, 1)",
+      "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    }
+  },
+  "interaction_patterns": {
+    "swatch_constellation": {
+      "gesture": "tap",
+      "multi_select": true,
+      "position_mode": "scattered",
+      "size_variance": true
+    },
+    "breath_gate": {
+      "default_inhale_sec": 4,
+      "default_exhale_sec": 6,
+      "default_cycles": 3,
+      "early_exit_allowed": false
+    },
+    "paradox_flip": {
+      "trigger_gesture": "swipe_up",
+      "animation": "card_flip",
+      "duration_ms": 600
+    },
+    "witness_mirror": {
+      "reflection_delay_sec": 3,
+      "reflection_style": "essence",
+      "input_type": "text"
+    },
+    "silent_cue": {
+      "default_duration_sec": 3,
+      "guided_element": "pulse",
+      "reveal_trigger": "time"
+    },
+    "hold_to_reveal": {
+      "hold_duration_ms": 1500,
+      "progress_indicator": true
+    },
+    "drag_to_release": {
+      "threshold_px": 120,
+      "snap_back": true
+    },
+    "branch_fork": {
+      "orientation": "vertical",
+      "selection_style": "card",
+      "max_options": 2
+    }
+  },
+  "cta_language": {
+    "approved": [
+      "Continue",
+      "Stay with this",
+      "I'll come back to this",
+      "Let's try something else",
+      "Share if you're ready",
+      "Notice what shifts"
+    ],
+    "forbidden": [
+      "Submit",
+      "Next question",
+      "Skip",
+      "Finish",
+      "Complete survey"
+    ]
+  }
+}

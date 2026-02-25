@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch NaviCue Records 2-10</title>
+</head>
+<body>
+  <h1>Fetching NaviCue Records 2-10...</h1>
+  <pre id="output">Loading...</pre>
+  
+  <script type="module">
+    // Import the info
+    const projectId = 'nvljdmvapxslfyxuhjdo';
+    const publicAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im52bGpkbXZhcHhzbGZ5eHVoamRvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4MjcxODgsImV4cCI6MjA1MzQwMzE4OH0.kfjGYPVIf3YaWbK4xaIRXh2oxkBcjp_pXz_gjrNKe2M';
+    
+    const API_BASE = `https://${projectId}.supabase.co/functions/v1/make-server-83873f76`;
+    
+    async function fetchData() {
+      try {
+        const response = await fetch(`${API_BASE}/navicues/batch-first-10`, {
+          headers: { 'Authorization': `Bearer ${publicAnonKey}` }
+        });
+        
+        const data = await response.json();
+        
+        // Show records 2-10 (index 1-9)
+        const records2to10 = data.slice(1, 10);
+        
+        const output = document.getElementById('output');
+        output.textContent = JSON.stringify(records2to10, null, 2);
+        
+        console.log('RECORDS 2-10:');
+        console.log(records2to10);
+      } catch (error) {
+        document.getElementById('output').textContent = 'ERROR: ' + error.message;
+      }
+    }
+    
+    fetchData();
+  </script>
+</body>
+</html>
