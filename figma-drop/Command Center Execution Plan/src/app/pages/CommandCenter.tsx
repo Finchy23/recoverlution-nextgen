@@ -38,6 +38,9 @@ const LazyRegistryDashboard = React.lazy(() =>
 const LazySpecimenAudit = React.lazy(() =>
   import('@/app/pages/command-center/SpecimenAudit').then(m => ({ default: m.SpecimenAudit }))
 );
+const LazyGenesisStudio = React.lazy(() =>
+  import('@/app/pages/command-center/GenesisStudio').then(m => ({ default: m.GenesisStudio }))
+);
 
 // ── Per-tab loading fallback ───────────────────────────────────────
 function TabLoadingFallback() {
@@ -313,6 +316,12 @@ export default function CommandCenter() {
               label="Audit"
               count={9}
             />
+            <TabButton
+              active={currentTab === 'genesis'}
+              onClick={() => setCurrentTab('genesis')}
+              label="Genesis"
+              count={10}
+            />
           </div>
 
           {/* Preview Mode Toggle */}
@@ -386,6 +395,12 @@ export default function CommandCenter() {
             <TabErrorBoundary key="audit" name="Audit">
               <Suspense fallback={<TabLoadingFallback />}>
                 <LazySpecimenAudit mounted={mounted} />
+              </Suspense>
+            </TabErrorBoundary>
+          ) : currentTab === 'genesis' ? (
+            <TabErrorBoundary key="genesis" name="Genesis">
+              <Suspense fallback={<TabLoadingFallback />}>
+                <LazyGenesisStudio mounted={mounted} />
               </Suspense>
             </TabErrorBoundary>
           ) : (

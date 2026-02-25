@@ -153,7 +153,7 @@ interface CommandCenterStore {
   error: string | null;
   
   // Current selection
-  currentTab: 'journeys' | 'navicues' | 'matrix' | 'lab' | 'atlas' | 'registry' | 'audit';
+  currentTab: 'journeys' | 'navicues' | 'matrix' | 'lab' | 'atlas' | 'registry' | 'audit' | 'genesis';
   currentJourneyIndex: number;
   currentNavicueIndex: number;
   
@@ -166,7 +166,7 @@ interface CommandCenterStore {
   // Actions
   setJourneyScenes: (scenes: JourneyScene[]) => void;
   setNavicueTypes: (types: NaviCueType[]) => void;
-  setCurrentTab: (tab: 'journeys' | 'navicues' | 'matrix' | 'lab' | 'atlas' | 'registry' | 'audit') => void;
+  setCurrentTab: (tab: 'journeys' | 'navicues' | 'matrix' | 'lab' | 'atlas' | 'registry' | 'audit' | 'genesis') => void;
   setCurrentJourneyIndex: (index: number) => void;
   setCurrentNavicueIndex: (index: number) => void;
   setPreviewMode: (mode: 'mobile' | 'desktop') => void;
