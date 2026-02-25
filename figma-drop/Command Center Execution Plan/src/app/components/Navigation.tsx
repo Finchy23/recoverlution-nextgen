@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { colors, surfaces, spacing, radius, typography, mobile, glassNav } from '@/design-tokens';
 import { navigation } from '@/content-tokens';
 
@@ -88,8 +89,8 @@ export function Navigation({
         }}
       >
         {/* Logo */}
-        <a
-          href="/"
+        <Link
+          to="/"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -119,7 +120,7 @@ export function Navigation({
               {logoText}
             </div>
           )}
-        </a>
+        </Link>
 
         {/* Desktop: Start Dropdown */}
         {!isMobile && (
@@ -190,9 +191,9 @@ export function Navigation({
                   onClick={(e) => e.stopPropagation()}
                 >
                   {links.map((link) => (
-                    <a
+                    <Link
                       key={link.href}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsDropdownOpen(false)}
                       style={{
                         padding: `${spacing.sm} ${spacing.md}`,
@@ -213,7 +214,7 @@ export function Navigation({
                       }}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </motion.div>
               )}
@@ -290,9 +291,9 @@ export function Navigation({
                   onClick={(e) => e.stopPropagation()}
                 >
                   {links.map((link) => (
-                    <a
+                    <Link
                       key={link.href}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsDropdownOpen(false)}
                       style={{
                         padding: `${spacing.sm} ${spacing.md}`,
@@ -313,7 +314,7 @@ export function Navigation({
                       }}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </motion.div>
               )}
