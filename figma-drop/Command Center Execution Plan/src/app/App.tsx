@@ -1,6 +1,6 @@
 import './utils/errorSuppression';
 import React, { Suspense } from 'react';
-import { RouterProvider, createBrowserRouter } from 'react-router';
+import { RouterProvider, createHashRouter } from 'react-router';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { colors, surfaces, fonts } from '@/design-tokens';
 
@@ -58,7 +58,7 @@ function LazyRoute({ children, name }: { children: React.ReactNode; name: string
   );
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: (
