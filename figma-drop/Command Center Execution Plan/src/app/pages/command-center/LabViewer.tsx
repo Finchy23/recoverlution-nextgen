@@ -42,8 +42,8 @@ type DrawerRow = DrawerHeaderRow | DrawerItemRow;
 /**
  * LAB VIEWER
  *
- * Isolated playground for the 1380 NaviCues (1000 First Millennium + 200 Second Millennium + 180 Third Millennium).
- * 1380 specimens across narrative acts + Foundation + series collections:
+ * Isolated playground for the Lab NaviCue library (legacy + atomic extensions).
+ * 2500 specimens across narrative acts + Foundation + series collections:
  * Foundation(5) | I(4) | II(4) | III(2) | IV(3) | V(2) | VI(3) | VII(3) | VIII(2) | IX(2) | X(5) | XI(5) | XII(5) | XIII(5)
  * | Act0-Novice(10) | Act1-Alchemist(10) | Act2-Architect(10) | Act3-Navigator(10) | Act4-Sage(10) | Act5-Mender(10) | Act6-Diplomat(10) | Act7-Weaver(10) | Act8-Visionary(10) | Act9-Luminary(10) | Act10-Hacker(10) | Act11-Chrononaut(10) | Act12-Mycelium(10) | Act13-Aesthete(10) | Act14-Elemental(10) | Act15-Phenomenologist(10) | Act16-AlchemistII(10) | Act17-ServantLeader(10) | Act18-OmegaPoint(10) | Act19-Source(10) | Act20-Stoic(10) | Act21-Lover(10) | Act22-Athlete(10) | Act23-Strategist(10) | Act24-Wilding(10) | Act25-Guardian(10) | Act26-Futurist(10)
  * | Act27-Mystic(10) | Act28-InfinitePlayer(10) | Act29-RealityBender(10) | Act30-Magnet(10) | Act31-Oracle(10) | Act32-Maestro(10) | Act33-Shaman(10) | Act34-Stargazer(10)
@@ -79,7 +79,7 @@ type DrawerRow = DrawerHeaderRow | DrawerItemRow;
  * | Act97-Materialist(10)
  */
 
-// ── The 1380 Lab Specimens ──────────────────────────────────────
+// ── The Lab Specimens (legacy + atomic extensions) ──────────────
 // Minimal mock data objects with the fields MasterRenderer needs
 // to route to the correct bespoke component.
 export function LabViewer({ previewMode }: LabViewerProps) {
@@ -98,13 +98,14 @@ export function LabViewer({ previewMode }: LabViewerProps) {
     let cancelled = false;
 
     const loadLabData = async () => {
-      const [{ LAB_NAVICUES }, { SIGNATURE_COLORS }] = await Promise.all([
+      const [{ LAB_NAVICUES }, { SIGNATURE_COLORS }, { ATOMIC_LAB_NAVICUES }] = await Promise.all([
         import('@/app/data/lab/labNavicues'),
         import('@/app/data/lab/labSignatureColors'),
+        import('@/app/data/lab/atomicLibrary'),
       ]);
 
       if (!cancelled) {
-        setNavicues(LAB_NAVICUES);
+        setNavicues([...LAB_NAVICUES, ...ATOMIC_LAB_NAVICUES]);
         setSignatureColors(SIGNATURE_COLORS);
       }
     };
@@ -171,7 +172,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
   if (!currentNavicue) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: colors.neutral.gray[400] }}>
-        Loading specimens…
+        Loading specimens\u2026
       </div>
     );
   }
@@ -221,7 +222,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           maxWidth: '100%',
         }}
       >
-        {/* ── Enhanced Info Strip ────────────────────────────── */}
+        {/* \u2500\u2500 Enhanced Info Strip \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
         <motion.div
           key={`info-${currentIndex}`}
           initial={{ opacity: 0, y: -8 }}
@@ -247,7 +248,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                 textTransform: 'uppercase',
               }}
             >
-              {currentAct.label} · {currentAct.subtitle}
+              {currentAct.label} \u00b7 {currentAct.subtitle}
             </div>
           )}
 
@@ -321,7 +322,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           </div>
         </motion.div>
 
-        {/* ── Phone / Desktop Frame (HERO) ───────────────────── */}
+        {/* \u2500\u2500 Phone / Desktop Frame (HERO) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -389,7 +390,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
             </NaviCueLabProvider>
           </motion.div>
 
-          {/* Counter — top right */}
+          {/* Counter \u2014 top right */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -431,7 +432,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
           </motion.div>
         </motion.div>
 
-        {/* ── Act Scrubber + Controls ────────────────────────── */}
+        {/* \u2500\u2500 Act Scrubber + Controls \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */}
         <div
           style={{
             width: previewMode === 'mobile' ? '420px' : '100%',
@@ -514,7 +515,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                   color: colors.neutral.gray[400],
                   fontFamily: fonts.mono,
                 }}
-              >←</kbd>
+              >\u2190</kbd>
               <kbd
                 style={{
                   background: 'rgba(255,255,255,0.05)',
@@ -525,7 +526,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
                   color: colors.neutral.gray[400],
                   fontFamily: fonts.mono,
                 }}
-              >→</kbd>
+              >\u2192</kbd>
             </div>
           </div>
         </div>
@@ -534,7 +535,7 @@ export function LabViewer({ previewMode }: LabViewerProps) {
   );
 }
 
-// ── Act Scrubber ──────────────────────────────────────────────────────
+// \u2500\u2500 Act Scrubber \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function ActScrubber({
   currentIndex,
   completedSet,
@@ -578,7 +579,7 @@ function ActScrubber({
               onClick={() => onNavigate(act.start)}
               onMouseEnter={() => setHoveredAct(act)}
               onMouseLeave={() => setHoveredAct(null)}
-              title={`${act.label} · ${act.subtitle}`}
+              title={`${act.label} \u00b7 ${act.subtitle}`}
               style={{
                 width: `${Math.max(width, 0.4)}%`,
                 height: '100%',
@@ -623,7 +624,7 @@ function ActScrubber({
               zIndex: 5,
             }}
           >
-            {hoveredAct.label} · {hoveredAct.subtitle}
+            {hoveredAct.label} \u00b7 {hoveredAct.subtitle}
           </motion.div>
         )}
       </AnimatePresence>
@@ -631,7 +632,7 @@ function ActScrubber({
   );
 }
 
-// ── Collection Drawer ─────────────────────────────────────────────────
+// \u2500\u2500 Collection Drawer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function CollectionDrawer({
   navicues,
   signatureColors,
@@ -859,7 +860,7 @@ function CollectionDrawer({
             <input
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              placeholder="Search specimens…"
+              placeholder="Search specimens\u2026"
               autoFocus
               style={{
                 width: '100%',
@@ -884,7 +885,7 @@ function CollectionDrawer({
               letterSpacing: '0.03em',
             }}
           >
-            {completedSet.size} explored · {navicues.length} total
+            {completedSet.size} explored \u00b7 {navicues.length} total
           </div>
         </div>
 
@@ -1025,7 +1026,7 @@ function CollectionDrawer({
   );
 }
 
-// ── Navigation arrow ──────────────────────────────────────────────────
+// \u2500\u2500 Navigation arrow \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function NavHint({
   direction,
   onClick,

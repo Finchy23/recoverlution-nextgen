@@ -1,7 +1,9 @@
 /**
  * Act grouping metadata for Lab specimens.
- * Maps the 1380 specimens across Foundation + 13 Roman numeral acts + 133 numbered acts.
+ * Maps the current Lab specimen set across Foundation, legacy numbered acts,
+ * and the atomic library extensions.
  */
+import { ATOMIC_ACT_NAMES } from './lab/atomicLibrary';
 
 export interface ActGroup {
   id: string;
@@ -48,13 +50,15 @@ const NUMBERED_ACT_NAMES = [
   'Receiver',
   'Vector',
   'Tuning',
-  // 12th Century (Third Millennium: S121-S140, minus S124/S127 overwrites)
+  // 12th Century (Third Millennium: S121-S140 full sequence)
   'Fulcrum', 'Conductor', 'Catalyst III',
-  'Simulator', 'Editor (Narrative)',
+  'Quantum Architect II',
+  'Simulator', 'Editor (Narrative)', 'Diplomat II',
   'Scout', 'Weaver Pattern', 'Anchor',
   'Game Strategist', 'Network', 'Systems Architect',
   'Evolutionist', 'Economist', 'Politician',
   'Warrior II', 'Sovereign', 'Historian', 'Game Designer',
+  ...ATOMIC_ACT_NAMES,
 ];
 
 const FOUNDATION_ACTS: ActGroup[] = [
