@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "cd \"figma-drop/Command Center Execution Plan\" && npm install",
-  "buildCommand": "cd \"figma-drop/Command Center Execution Plan\" && npm run build",
-  "outputDirectory": "figma-drop/Command Center Execution Plan/dist",
+  "installCommand": "if [ -f package.json ]; then npm install; else cd \"figma-drop/Command Center Execution Plan\" && npm install; fi",
+  "buildCommand": "if [ -f package.json ] && [ -d src ]; then npm run build; else cd \"figma-drop/Command Center Execution Plan\" && npm run build && cd ../.. && rm -rf dist && mkdir -p dist && cp -R \"figma-drop/Command Center Execution Plan/dist/.\" dist/; fi",
+  "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
     {
