@@ -1,18 +1,96 @@
-# recoverlution-nextgen
+# Command Center Execution Plan
 
-Clean repository for the new Recoverlution frontend build.
+NaviCue build surface and runtime wiring.
 
-## Purpose
-- Primary GitHub target for the new frontend codebase.
-- Intended for Vercel preview and production deployments.
+## Frontend Handoff
 
-## Workflow
-1. Build features on short-lived branches from `main`.
-2. Open pull requests to `main`.
-3. Merge only after review and passing checks.
+Start here after pulling latest:
 
-## Local development
+1. `guidelines/frontend/FRONTEND_DESIGN_SYSTEM_DIRECTIVE.md`
+2. `guidelines/frontend/README.md`
+3. `NAVICUE_TOKEN_SYSTEM_CONTRACT.md`
+4. `guidelines/Guidelines.md`
+5. `guidelines/README.md`
+
+## Workspace Topology
+
+- Canonical workspace: this root folder.
+- Mirror workspace: `figma-drop/` (derived output for tooling access, never the authority).
+- Do not edit design tokens/design-system files directly inside `figma-drop/`.
+- Before design handoff, run:
+
 ```bash
-npm install
-npm run dev
+./utils/sync-design-system-to-figma-drop.sh
 ```
+
+## Runtime Shape (Source of Truth)
+
+- Renderer wiring source:
+  - `src/app/components/navicue/NaviCueMasterRenderer.tsx`
+- Core lab metadata:
+  - `src/app/data/lab/labMetadata.ts` (`LAB_SPECIMEN_TOTAL`)
+- Atomic libraries:
+  - `src/app/data/lab/atomicLibrary.ts`
+  - `src/app/data/lab/atomicLibrary2601_2700.ts`
+  - `src/app/data/lab/atomicLibrary2701_2800.ts`
+  - `src/app/data/lab/atomicLibrary2801_2900.ts`
+  - `src/app/data/lab/atomicLibrary2901_3000.ts`
+  - `src/app/data/lab/atomicLibrary3001_3100.ts`
+  - `src/app/data/lab/atomicLibrarySeries31_*.ts` (split files)
+  - `src/app/data/lab/atomicLibrarySeries32_*.ts` (split files)
+- Parked/unwired files:
+  - `src/app/components/navicue/implementations/_orphaned/`
+
+## Non-Negotiable Build Flow
+
+1. Create from scaffold (never from scratch):
+
+```bash
+./utils/create-navicue.sh --series "Novice" --name "AnchorPoint" --signature "sacred_ordinary" --form "Key" --mechanism "Self-Compassion" --kbe "believing" --hook "tap"
+```
+
+2. Gate file before wiring:
+
+```bash
+./utils/navicue-file-gate.sh src/app/components/navicue/implementations/Novice_AnchorPoint.tsx
+```
+
+3. Wire renderer + clear queue:
+- `src/app/components/navicue/NaviCueMasterRenderer.tsx`
+- `guidelines/NAVICUE_WIRING_QUEUE.md`
+
+4. Run audits:
+
+```bash
+./utils/navicue-token-health.sh
+./utils/navicue-token-guard.sh
+./utils/navicue-drift-audit.sh
+```
+
+5. Ship gate (runs drift audit, token regression guard, mirror sync, and production build):
+
+```bash
+npm run ship:check
+```
+
+## Zeroheight Token Export
+
+Generate the canonical JSON artifact for Zeroheight imports:
+
+```bash
+npm run tokens:export
+```
+
+Output files:
+- `tokens/zeroheight.tokens.json` (canonical export artifact)
+- `figma-drop/tokens/zeroheight.tokens.json` (mirrored for tooling workspace)
+
+## Design-System Authority
+
+1. `src/app/design-system/navicue-blueprint.ts`
+2. `src/design-tokens.ts`
+3. `src/app/components/navicue/NaviCueShell.tsx` and `src/app/components/navicue/NaviCueVerse.tsx`
+4. `src/styles/theme.css` and `src/styles/design-tokens.css`
+5. `src/utils/assets.ts` and `src/utils/storageUrls.ts`
+
+Do not introduce parallel style/token authorities in specimen files.
