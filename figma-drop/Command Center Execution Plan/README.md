@@ -1,52 +1,70 @@
 # Command Center Execution Plan
 
-This folder contains the NaviCue build surface imported from Figma Make.
+NaviCue build surface and runtime wiring.
 
-## Current Runtime Shape
+## Frontend Handoff
 
-- Active specimen implementations: `2500`
-- Renderer wiring source: `src/app/components/navicue/NaviCueMasterRenderer.tsx`
-- Atomic library source: `src/app/data/lab/atomicLibrary.ts`
-- Parked/unwired files: `src/app/components/navicue/implementations/_orphaned/`
+Start here after pulling latest:
 
-## Design-System Alignment
+1. `guidelines/frontend/FRONTEND_DESIGN_SYSTEM_DIRECTIVE.md`
+2. `guidelines/frontend/README.md`
+3. `NAVICUE_TOKEN_SYSTEM_CONTRACT.md`
+4. `guidelines/Guidelines.md`
+5. `guidelines/README.md`
 
-Run the audit:
+## Workspace Topology
 
-```bash
-./utils/navicue-drift-audit.sh
-./utils/navicue-token-health.sh
-```
+- Primary workspace: this root folder.
+- Mirror workspace: `figma-drop/` (keep docs synchronized if both are actively used by the team).
+- Do not introduce separate design-system rules between the two roots.
 
-Read the rollout plan:
+## Runtime Shape (Source of Truth)
 
-- `APPLE_ELEGANCE_ALIGNMENT_PLAN.md`
-- `NAVICUE_TOKEN_SYSTEM_CONTRACT.md`
-- `NAVICUE_1001_2000_COVERAGE_AUDIT.md`
-- `NAVICUE_2001_2500_REMAP_AUDIT.md`
-- `guidelines/Guidelines.md`
+- Renderer wiring source:
+  - `src/app/components/navicue/NaviCueMasterRenderer.tsx`
+- Core lab metadata:
+  - `src/app/data/lab/labMetadata.ts` (`LAB_SPECIMEN_TOTAL`)
+- Atomic libraries:
+  - `src/app/data/lab/atomicLibrary.ts`
+  - `src/app/data/lab/atomicLibrary2601_2700.ts`
+  - `src/app/data/lab/atomicLibrary2701_2800.ts`
+  - `src/app/data/lab/atomicLibrary2801_2900.ts`
+  - `src/app/data/lab/atomicLibrary2901_3000.ts`
+  - `src/app/data/lab/atomicLibrary3001_3100.ts`
+  - `src/app/data/lab/atomicLibrarySeries31_*.ts` (split files)
+  - `src/app/data/lab/atomicLibrarySeries32_*.ts` (split files)
+- Parked/unwired files:
+  - `src/app/components/navicue/implementations/_orphaned/`
 
-## Set-In-Stone Build System
+## Non-Negotiable Build Flow
 
-Create new NaviCues from the canonical scaffold (never from scratch):
+1. Create from scaffold (never from scratch):
 
 ```bash
 ./utils/create-navicue.sh --series "Novice" --name "AnchorPoint" --signature "sacred_ordinary" --form "Key" --mechanism "Self-Compassion" --kbe "believing" --hook "tap"
 ```
 
-Gate each new file before renderer wiring:
+2. Gate file before wiring:
 
 ```bash
 ./utils/navicue-file-gate.sh src/app/components/navicue/implementations/Novice_AnchorPoint.tsx
 ```
 
-Track unwired new components in:
-
+3. Wire renderer + clear queue:
+- `src/app/components/navicue/NaviCueMasterRenderer.tsx`
 - `guidelines/NAVICUE_WIRING_QUEUE.md`
 
-## Push Strategy
+4. Run audits:
 
-Figma drops can continue landing in this repository. After each drop:
-1. Run drift audit.
-2. Review orphaned/wiring diffs.
-3. Apply tokenization migrations by batch.
+```bash
+./utils/navicue-token-health.sh
+./utils/navicue-drift-audit.sh
+```
+
+## Design-System Authority
+
+1. `src/app/design-system/navicue-blueprint.ts`
+2. `src/design-tokens.ts`
+3. `src/app/components/navicue/NaviCueShell.tsx` and `src/app/components/navicue/NaviCueVerse.tsx`
+
+Do not introduce parallel style/token authorities in specimen files.
