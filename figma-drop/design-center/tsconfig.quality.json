@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "types": ["node"]
+  },
+  "files": [
+    "src/design-tokens.ts",
+    "src/design-system/experience-genome.ts",
+    "src/app/pages/design-center/dc-tokens.ts",
+    "src/app/pages/design-center/MotionBreath.tsx",
+    "scripts/export-design-tokens.ts"
+  ],
+  "include": []
+}
