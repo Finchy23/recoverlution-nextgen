@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-03-06T11:13:13.651Z",
+  "project": {
+    "name": "Recoverlution Design Center",
+    "packageName": "@recoverlution/design-center",
+    "liveUrl": "https://recoverlution-design-center.vercel.app/design-center"
+  },
+  "canonical": {
+    "tokenSource": "src/design-tokens.ts",
+    "generatedCss": "src/styles/design-tokens.css",
+    "generatedJson": "tokens/design-tokens.flat.json",
+    "appEntry": "src/app/App.tsx",
+    "designCenterEntry": "src/app/pages/DesignCenter.tsx",
+    "atomsRegistry": "src/app/components/atoms/atom-registry.ts"
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "qa": "npm run qa",
+    "build": "npm run build",
+    "figmaHandoff": "npm run figma:handoff"
+  },
+  "routes": [
+    "/design-center",
+    "/design-center/palette",
+    "/design-center/type",
+    "/design-center/glass",
+    "/design-center/motion",
+    "/design-center/gates",
+    "/atoms",
+    "/surfaces",
+    "/motion",
+    "/voice",
+    "/delivery",
+    "/player",
+    "/showcase",
+    "/home"
+  ],
+  "notes": [
+    "Treat this workspace as the clean frontend handoff surface for Figma AI.",
+    "Do not edit generated token artifacts directly; edit src/design-tokens.ts and regenerate.",
+    "Do not treat the old figma-drop Vercel project as canonical.",
+    "The live review surface is recoverlution-design-center.vercel.app."
+  ]
+}

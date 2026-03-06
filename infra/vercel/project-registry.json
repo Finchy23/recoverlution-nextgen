@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "branchRouting": {
+    "production": "main",
+    "previewPrefix": "codex/"
+  },
+  "projects": [
+    {
+      "key": "command",
+      "name": "recoverlution-command",
+      "root": "Command Center Execution Plan",
+      "domains": [
+        "command.recoverlution.com"
+      ],
+      "activeRuntime": true,
+      "envSync": true,
+      "notes": "Current canonical runtime and lab surface."
+    },
+    {
+      "key": "design-center",
+      "name": "recoverlution-design-center",
+      "root": "Design System Draft",
+      "domains": [
+        "design.recoverlution.com"
+      ],
+      "activeRuntime": true,
+      "envSync": false,
+      "notes": "Live design-system and token review surface while the package extraction is still in progress."
+    },
+    {
+      "key": "marketing",
+      "name": "recoverlution-marketing",
+      "root": "apps/marketing",
+      "domains": [
+        "recoverlution.com",
+        "www.recoverlution.com"
+      ],
+      "activeRuntime": false,
+      "envSync": false,
+      "notes": "Reserved for marketing rebuild on shared design system."
+    },
+    {
+      "key": "app",
+      "name": "recoverlution-app",
+      "root": "apps/web",
+      "domains": [
+        "app.recoverlution.com"
+      ],
+      "activeRuntime": false,
+      "envSync": false,
+      "notes": "Reserved for authenticated platform shell."
+    },
+    {
+      "key": "analytics",
+      "name": "recoverlution-analytics",
+      "root": "apps/analytics",
+      "domains": [
+        "analytics.recoverlution.com"
+      ],
+      "activeRuntime": false,
+      "envSync": false,
+      "notes": "Reserved for internal analytics/reporting surface."
+    }
+  ]
+}
