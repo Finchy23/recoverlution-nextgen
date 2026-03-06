@@ -1,0 +1,40 @@
+{
+  "background": {
+    "base": {
+      "$value": "{primitives.colors.neutral.0}",
+      "$type": "color"
+    },
+    "elevated": {
+      "$value": "{primitives.colors.neutral.50}",
+      "$type": "color"
+    },
+    "inverse": {
+      "$value": "{primitives.colors.neutral.1000}",
+      "$type": "color"
+    }
+  },
+  "border": {
+    "soft": {
+      "$value": "{primitives.colors.neutral.100}",
+      "$type": "color"
+    },
+    "default": {
+      "$value": "{primitives.colors.neutral.200}",
+      "$type": "color"
+    },
+    "strong": {
+      "$value": "{primitives.colors.neutral.700}",
+      "$type": "color"
+    }
+  },
+  "spacing": {
+    "stack": {
+      "$value": "{primitives.spacing.5}",
+      "$type": "dimension"
+    },
+    "section": {
+      "$value": "{primitives.spacing.10}",
+      "$type": "dimension"
+    }
+  }
+}

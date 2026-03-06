@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-03-06T10:26:15.043Z",
+  "strict_mode": false,
+  "score": 100,
+  "totals": {
+    "checks": 11,
+    "passed": 11,
+    "failed": 0,
+    "by_severity": {
+      "critical": 0,
+      "major": 0,
+      "minor": 0
+    }
+  },
+  "checks": [
+    {
+      "id": "account_readiness_strict",
+      "area": "Account Integrations",
+      "title": "Strict account readiness passes",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Fix invalid/missing required account keys before production deployment.",
+      "evidence": "accounts:check:strict passed"
+    },
+    {
+      "id": "node_runtime",
+      "area": "Local Toolchain",
+      "title": "Node runtime >= 20",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Install Node 20+ and retry readiness checks.",
+      "evidence": "node=v24.14.0"
+    },
+    {
+      "id": "npm_available",
+      "area": "Local Toolchain",
+      "title": "npm command available",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Install npm and ensure it is available in PATH.",
+      "evidence": "npm=11.9.0"
+    },
+    {
+      "id": "workstream_script",
+      "area": "Branch Workflow",
+      "title": "Workstream branch bootstrap script exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add branch/workstream automation for consistent parallel delivery.",
+      "evidence": "scripts/create-workstream-branch.mjs"
+    },
+    {
+      "id": "quality_gap_report",
+      "area": "Quality Governance",
+      "title": "System gap analysis passes",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Resolve architectural/process gaps reported by quality baseline.",
+      "evidence": "quality:gaps passed"
+    },
+    {
+      "id": "account_sync_script",
+      "area": "Release Infrastructure",
+      "title": "Vercel account sync script exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add deterministic env sync script for deployment keys.",
+      "evidence": "scripts/vercel-account-sync.mjs"
+    },
+    {
+      "id": "vercel_registry",
+      "area": "Release Infrastructure",
+      "title": "Vercel project registry + topology script exist",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add a project registry and topology checker for multi-project Vercel operations.",
+      "evidence": "infra/vercel/project-registry.json"
+    },
+    {
+      "id": "release_workflows",
+      "area": "Release Infrastructure",
+      "title": "GitHub quality/release workflows exist",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add PR + nightly + release workflows for production safety.",
+      "evidence": ".github/workflows/*"
+    },
+    {
+      "id": "vercel_topology",
+      "area": "Release Infrastructure",
+      "title": "Vercel topology strict gate passes",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Link active runtime project and resolve Vercel topology blockers.",
+      "evidence": "vercel:topology:strict passed"
+    },
+    {
+      "id": "git_remote",
+      "area": "Repo Topology",
+      "title": "Git remote configured",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Configure origin remote to enable push/PR workflow.",
+      "evidence": "origin\thttps://github.com/Finchy23/recoverlution-nextgen.git (fetch)\norigin\thttps://github.com/Finchy23/recoverlution-nextgen.git (push)"
+    },
+    {
+      "id": "runbook_branch_infra",
+      "area": "Operational Clarity",
+      "title": "Branch + infra runbook exists",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Add a single operational runbook for branch model and infra promotion.",
+      "evidence": "docs/runbooks/BRANCH_AND_INFRA_SYSTEM.md"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "navicue": {
+    "atmosphere": {
+      "temperatureOffset": {
+        "$value": "-0.25rem",
+        "$type": "dimension"
+      },
+      "highlight": {
+        "$value": "{primitives.colors.indigo.300}",
+        "$type": "color"
+      }
+    },
+    "motion": {
+      "entryDuration": {
+        "$value": "620ms",
+        "$type": "duration"
+      }
+    }
+  }
+}

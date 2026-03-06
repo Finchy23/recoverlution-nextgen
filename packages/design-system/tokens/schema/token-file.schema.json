@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recoverlution.com/schemas/design-token-file.schema.json",
+  "title": "Recoverlution Token File",
+  "description": "Accepts DTCG-style token objects and plain scalar leaf tokens.",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/$defs/tokenOrGroup"
+  },
+  "$defs": {
+    "scalar": {
+      "type": [
+        "string",
+        "number",
+        "boolean"
+      ]
+    },
+    "tokenNode": {
+      "type": "object",
+      "required": [
+        "$value"
+      ],
+      "properties": {
+        "$value": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/scalar"
+            },
+            {
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "$type": {
+          "type": "string"
+        },
+        "$description": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tokenOrGroup": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/scalar"
+        },
+        {
+          "$ref": "#/$defs/tokenNode"
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/tokenOrGroup"
+          }
+        }
+      ]
+    }
+  }
+}

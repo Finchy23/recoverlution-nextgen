@@ -1,0 +1,1990 @@
+{
+  "generatedAt": "2026-03-06T20:30:22.459Z",
+  "repetitionKey": "canvas|full|draggable|none|resolved|continuous|haptics",
+  "count": 87,
+  "operatingRule": "This pack exists to break sameness in the largest drag-based cluster by assigning each atom a primary differentiation axis.",
+  "rows": [
+    {
+      "atomNumber": 87,
+      "atomId": "shame-compass",
+      "atomName": "The Compass of Shame Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "therapeuticJobs": [
+        "identity",
+        "agency",
+        "boundary"
+      ],
+      "physicsTags": [
+        "subtractive",
+        "thermal",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 98,
+      "atomId": "narrative-override",
+      "atomName": "The Narrative Override Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 10,
+      "seriesName": "The Reality Bender",
+      "therapeuticJobs": [
+        "agency",
+        "boundary",
+        "focus"
+      ],
+      "physicsTags": [
+        "subtractive",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change counterforce law so the same drag gesture solves a different equation",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 105,
+      "atomId": "blind-spot",
+      "atomName": "The Blind Spot Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 11,
+      "seriesName": "The Epistemic Constructs",
+      "therapeuticJobs": [
+        "agency",
+        "identity",
+        "connection"
+      ],
+      "physicsTags": [
+        "optical",
+        "structural",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 121,
+      "atomId": "subtext-scanner",
+      "atomName": "The Subtext Scanner Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 13,
+      "seriesName": "The Semantic Translators",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "transmutation"
+      ],
+      "physicsTags": [
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 145,
+      "atomId": "regret-minimization",
+      "atomName": "The Regret Minimization Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "therapeuticJobs": [
+        "temporal",
+        "boundary",
+        "agency"
+      ],
+      "physicsTags": [
+        "temporal",
+        "thermal",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change drag law: eddy, stream, pressure gradient, viscosity shift",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 146,
+      "atomId": "pre-hindsight",
+      "atomName": "The Pre-Hindsight Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "therapeuticJobs": [
+        "boundary",
+        "temporal",
+        "focus"
+      ],
+      "physicsTags": [
+        "fluid",
+        "temporal",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change drag law: eddy, stream, pressure gradient, viscosity shift",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 148,
+      "atomId": "worst-case-simulator",
+      "atomName": "The Worst-Case Simulator Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "therapeuticJobs": [
+        "boundary",
+        "temporal",
+        "focus"
+      ],
+      "physicsTags": [
+        "fluid",
+        "optical",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 178,
+      "atomId": "abundance-scan",
+      "atomName": "The Abundance Scan Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 18,
+      "seriesName": "The Visionary & Strategist",
+      "therapeuticJobs": [
+        "perspective",
+        "temporal",
+        "agency"
+      ],
+      "physicsTags": [
+        "optical",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 224,
+      "atomId": "harmonic-synthesis",
+      "atomName": "The Harmonic Synthesis Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "therapeuticJobs": [
+        "transmutation",
+        "release",
+        "agency"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 246,
+      "atomId": "magnetic-suspension",
+      "atomName": "The Magnetic Suspension Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 25,
+      "seriesName": "The Dialectical Engine",
+      "therapeuticJobs": [
+        "focus",
+        "perspective"
+      ],
+      "physicsTags": [
+        "topological",
+        "gravitational",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 247,
+      "atomId": "acceptance-change",
+      "atomName": "The Acceptance/Change Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 25,
+      "seriesName": "The Dialectical Engine",
+      "therapeuticJobs": [
+        "perspective"
+      ],
+      "physicsTags": [
+        "topological",
+        "acoustic",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 265,
+      "atomId": "improvisation",
+      "atomName": "The Improvisation Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "therapeuticJobs": [
+        "agency",
+        "connection",
+        "focus"
+      ],
+      "physicsTags": [
+        "fluid",
+        "optical",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 318,
+      "atomId": "noise-filter",
+      "atomName": "The Noise Filter Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 32,
+      "seriesName": "The Cymatic Engine",
+      "therapeuticJobs": [
+        "focus",
+        "connection",
+        "release"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "optical",
+        "topological"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 324,
+      "atomId": "tangled-thread",
+      "atomName": "The Tangled Thread Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 33,
+      "seriesName": "The Catalyst Web",
+      "therapeuticJobs": [
+        "boundary",
+        "focus",
+        "identity"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 332,
+      "atomId": "spindle-focus",
+      "atomName": "The Spindle Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 34,
+      "seriesName": "The Chaos Loom",
+      "therapeuticJobs": [
+        "connection",
+        "boundary",
+        "focus"
+      ],
+      "physicsTags": [
+        "fluid",
+        "network",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 338,
+      "atomId": "web-spinner",
+      "atomName": "The Web Spinner Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 34,
+      "seriesName": "The Chaos Loom",
+      "therapeuticJobs": [
+        "boundary",
+        "connection",
+        "perspective"
+      ],
+      "physicsTags": [
+        "network",
+        "gravitational",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 343,
+      "atomId": "hydraulic-press",
+      "atomName": "The Hydraulic Press Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 35,
+      "seriesName": "The Pressure Vessel",
+      "therapeuticJobs": [
+        "regulation",
+        "agency",
+        "focus"
+      ],
+      "physicsTags": [
+        "thermal",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change drag law: eddy, stream, pressure gradient, viscosity shift",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 356,
+      "atomId": "dynamo-spin",
+      "atomName": "The Dynamo Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 36,
+      "seriesName": "The Friction Spark",
+      "therapeuticJobs": [
+        "agency",
+        "focus",
+        "regulation"
+      ],
+      "physicsTags": [
+        "thermal",
+        "fluid",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 363,
+      "atomId": "prism-spectrum",
+      "atomName": "The Prism Spectrum Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 37,
+      "seriesName": "The Conduit",
+      "therapeuticJobs": [
+        "agency",
+        "focus",
+        "regulation"
+      ],
+      "physicsTags": [
+        "fluid",
+        "structural",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 364,
+      "atomId": "transformer-coil",
+      "atomName": "The Transformer Coil Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 37,
+      "seriesName": "The Conduit",
+      "therapeuticJobs": [
+        "agency",
+        "focus",
+        "regulation"
+      ],
+      "physicsTags": [
+        "fluid",
+        "structural",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change drag law: eddy, stream, pressure gradient, viscosity shift",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 373,
+      "atomId": "centrifuge-spin",
+      "atomName": "The Centrifuge Spin Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 38,
+      "seriesName": "The Magnetic Sieve",
+      "therapeuticJobs": [
+        "regulation",
+        "agency",
+        "focus"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 375,
+      "atomId": "noise-threshold",
+      "atomName": "The Noise Threshold Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 38,
+      "seriesName": "The Magnetic Sieve",
+      "therapeuticJobs": [
+        "temporal",
+        "agency",
+        "boundary"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 383,
+      "atomId": "gear-mesh",
+      "atomName": "The Gear Mesh Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 39,
+      "seriesName": "The Momentum Wheel",
+      "therapeuticJobs": [
+        "agency",
+        "boundary"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "fluid",
+        "subtractive"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 387,
+      "atomId": "siphon-transfer",
+      "atomName": "The Siphon Transfer Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 39,
+      "seriesName": "The Momentum Wheel",
+      "therapeuticJobs": [
+        "agency",
+        "boundary",
+        "connection"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "subtractive"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 388,
+      "atomId": "escapement-tick",
+      "atomName": "The Escapement Tick Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 39,
+      "seriesName": "The Momentum Wheel",
+      "therapeuticJobs": [
+        "release",
+        "agency",
+        "boundary"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "fluid",
+        "subtractive"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 392,
+      "atomId": "alloy-fusion",
+      "atomName": "The Alloy Fusion Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 40,
+      "seriesName": "The Synthesis Forge",
+      "therapeuticJobs": [
+        "release",
+        "boundary",
+        "connection"
+      ],
+      "physicsTags": [
+        "fluid",
+        "network",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 399,
+      "atomId": "polish-refine",
+      "atomName": "The Polish Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 40,
+      "seriesName": "The Synthesis Forge",
+      "therapeuticJobs": [
+        "release",
+        "perspective",
+        "transmutation"
+      ],
+      "physicsTags": [
+        "fluid",
+        "optical",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Protect hero occupancy; do not let the drag zone shrink into local UI behavior",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 401,
+      "atomId": "magnification-shadow",
+      "atomName": "The Magnification Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 41,
+      "seriesName": "The Shadow Caster",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "temporal"
+      ],
+      "physicsTags": [
+        "optical",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 403,
+      "atomId": "long-cast-shadow",
+      "atomName": "The Long Cast Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 41,
+      "seriesName": "The Shadow Caster",
+      "therapeuticJobs": [
+        "identity",
+        "temporal",
+        "perspective"
+      ],
+      "physicsTags": [
+        "optical",
+        "temporal",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 406,
+      "atomId": "eclipse-cover",
+      "atomName": "The Eclipse Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 41,
+      "seriesName": "The Shadow Caster",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "network",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 412,
+      "atomId": "mobius-slice",
+      "atomName": "The Möbius Slice Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 42,
+      "seriesName": "The Escher Loop",
+      "therapeuticJobs": [
+        "perspective",
+        "identity"
+      ],
+      "physicsTags": [
+        "topological",
+        "network",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 414,
+      "atomId": "impossible-tribar",
+      "atomName": "The Impossible Triangle Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 42,
+      "seriesName": "The Escher Loop",
+      "therapeuticJobs": [
+        "perspective",
+        "agency",
+        "focus"
+      ],
+      "physicsTags": [
+        "topological",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 425,
+      "atomId": "centrifugal-floor",
+      "atomName": "The Centrifugal Floor Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 43,
+      "seriesName": "The Gravity Inverter",
+      "therapeuticJobs": [
+        "regulation",
+        "boundary",
+        "agency"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 433,
+      "atomId": "blind-navigation",
+      "atomName": "The Blind Navigation Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 44,
+      "seriesName": "The Depth Sounder",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "connection"
+      ],
+      "physicsTags": [
+        "optical",
+        "structural",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 435,
+      "atomId": "thermocline-descent",
+      "atomName": "The Thermocline Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 44,
+      "seriesName": "The Depth Sounder",
+      "therapeuticJobs": [
+        "regulation",
+        "temporal",
+        "boundary"
+      ],
+      "physicsTags": [
+        "thermal",
+        "acoustic",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 437,
+      "atomId": "bathysphere-dive",
+      "atomName": "The Bathysphere Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 44,
+      "seriesName": "The Depth Sounder",
+      "therapeuticJobs": [
+        "regulation",
+        "connection",
+        "perspective"
+      ],
+      "physicsTags": [
+        "thermal",
+        "acoustic",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 447,
+      "atomId": "vertex-snap-plane",
+      "atomName": "The Vertex Snap Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 45,
+      "seriesName": "The Tesseract",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "release"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 451,
+      "atomId": "polarized-lens",
+      "atomName": "The Polarized Lens Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 46,
+      "seriesName": "The Blind Spot",
+      "therapeuticJobs": [
+        "focus",
+        "perspective",
+        "agency"
+      ],
+      "physicsTags": [
+        "optical",
+        "subtractive",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 456,
+      "atomId": "chromatic-filter",
+      "atomName": "The Chromatic Filter Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 46,
+      "seriesName": "The Blind Spot",
+      "therapeuticJobs": [
+        "focus",
+        "perspective",
+        "agency"
+      ],
+      "physicsTags": [
+        "optical",
+        "subtractive",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 458,
+      "atomId": "uv-revelation",
+      "atomName": "The UV Revelation Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 46,
+      "seriesName": "The Blind Spot",
+      "therapeuticJobs": [
+        "perspective",
+        "agency",
+        "focus"
+      ],
+      "physicsTags": [
+        "optical",
+        "subtractive",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 461,
+      "atomId": "perfect-symmetry",
+      "atomName": "The Perfect Symmetry Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 47,
+      "seriesName": "The Mirror World",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "acoustic",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 462,
+      "atomId": "tethered-avatar",
+      "atomName": "The Tethered Avatar Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 47,
+      "seriesName": "The Mirror World",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "agency"
+      ],
+      "physicsTags": [
+        "optical",
+        "network",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 468,
+      "atomId": "superiority-shadow",
+      "atomName": "The Superiority Shadow Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 47,
+      "seriesName": "The Mirror World",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "network",
+        "subtractive"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 470,
+      "atomId": "projection-unification",
+      "atomName": "The Projection Unification Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 47,
+      "seriesName": "The Mirror World",
+      "therapeuticJobs": [
+        "identity",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "acoustic",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 474,
+      "atomId": "boundary-illusion",
+      "atomName": "The Boundary Illusion Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 48,
+      "seriesName": "The Klein Bottle",
+      "therapeuticJobs": [
+        "boundary",
+        "identity",
+        "perspective"
+      ],
+      "physicsTags": [
+        "network",
+        "optical",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 484,
+      "atomId": "heavy-anchor-ground",
+      "atomName": "The Heavy Anchor Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 49,
+      "seriesName": "The Abyssal Anchor",
+      "therapeuticJobs": [
+        "regulation",
+        "boundary",
+        "identity"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "structural",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 489,
+      "atomId": "benthic-light",
+      "atomName": "The Benthic Light Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 49,
+      "seriesName": "The Abyssal Anchor",
+      "therapeuticJobs": [
+        "identity",
+        "regulation",
+        "release"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "thermal",
+        "subtractive"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 495,
+      "atomId": "eclipse-merge",
+      "atomName": "The Eclipse Merge Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 50,
+      "seriesName": "The Shadow Integration",
+      "therapeuticJobs": [
+        "identity",
+        "connection",
+        "temporal"
+      ],
+      "physicsTags": [
+        "optical",
+        "subtractive",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 501,
+      "atomId": "non-newtonian-shield",
+      "atomName": "The Non-Newtonian Shield Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "thermal",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 502,
+      "atomId": "kinetic-multiplier",
+      "atomName": "The Kinetic Multiplier Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "thermal",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 503,
+      "atomId": "friction-burn",
+      "atomName": "The Friction Burn Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "network",
+        "thermal",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 507,
+      "atomId": "over-steer",
+      "atomName": "The Over-Steer Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "temporal",
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 509,
+      "atomId": "viscous-climb",
+      "atomName": "The Viscous Climb Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 510,
+      "atomId": "glacier-force",
+      "atomName": "The Glacier Force Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "thermal",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 516,
+      "atomId": "tangled-thread-weave",
+      "atomName": "The Tangled Thread Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 52,
+      "seriesName": "The Fractal Zoom",
+      "therapeuticJobs": [
+        "boundary",
+        "connection",
+        "focus"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 521,
+      "atomId": "fault-line-snap",
+      "atomName": "The Fault Line Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "therapeuticJobs": [
+        "agency",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "thermal",
+        "gravitational",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 522,
+      "atomId": "subduction-zone",
+      "atomName": "The Subduction Zone Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "therapeuticJobs": [
+        "temporal",
+        "regulation",
+        "release"
+      ],
+      "physicsTags": [
+        "thermal",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 530,
+      "atomId": "orogeny-peak",
+      "atomName": "The Orogeny Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "therapeuticJobs": [
+        "temporal",
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "thermal",
+        "gravitational",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 538,
+      "atomId": "glacial-polish",
+      "atomName": "The Glacial Polish Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 54,
+      "seriesName": "The Geological Carver",
+      "therapeuticJobs": [
+        "boundary",
+        "perspective",
+        "agency"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 554,
+      "atomId": "forward-cast-nodes",
+      "atomName": "The Forward Cast Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 56,
+      "seriesName": "The Ancestral Tether",
+      "therapeuticJobs": [
+        "temporal",
+        "boundary",
+        "perspective"
+      ],
+      "physicsTags": [
+        "network",
+        "temporal",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 557,
+      "atomId": "orphan-node-lattice",
+      "atomName": "The Orphan Node Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 56,
+      "seriesName": "The Ancestral Tether",
+      "therapeuticJobs": [
+        "temporal",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "network",
+        "thermal",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 559,
+      "atomId": "tension-release-slack",
+      "atomName": "The Tension Release Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 56,
+      "seriesName": "The Ancestral Tether",
+      "therapeuticJobs": [
+        "temporal",
+        "boundary",
+        "agency"
+      ],
+      "physicsTags": [
+        "network",
+        "temporal",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 561,
+      "atomId": "claustrophobia-expand",
+      "atomName": "The Claustrophobia Expand Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 57,
+      "seriesName": "The Horizon Line",
+      "therapeuticJobs": [
+        "perspective",
+        "temporal",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "temporal",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change reveal law: refocus, strip distortion, expose hidden layer",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 563,
+      "atomId": "fog-of-war-beacon",
+      "atomName": "The Fog of War Beacon Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 57,
+      "seriesName": "The Horizon Line",
+      "therapeuticJobs": [
+        "perspective",
+        "temporal",
+        "boundary"
+      ],
+      "physicsTags": [
+        "optical",
+        "temporal",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 566,
+      "atomId": "delayed-yield-harvest",
+      "atomName": "The Delayed Yield Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 57,
+      "seriesName": "The Horizon Line",
+      "therapeuticJobs": [
+        "temporal",
+        "perspective",
+        "boundary"
+      ],
+      "physicsTags": [
+        "temporal",
+        "gravitational",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 568,
+      "atomId": "doppler-shift-approach",
+      "atomName": "The Doppler Shift Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 57,
+      "seriesName": "The Horizon Line",
+      "therapeuticJobs": [
+        "temporal",
+        "perspective",
+        "agency"
+      ],
+      "physicsTags": [
+        "temporal",
+        "gravitational",
+        "acoustic"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 582,
+      "atomId": "shade-tree-canopy",
+      "atomName": "The Shade Tree Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 59,
+      "seriesName": "The Legacy Seed",
+      "therapeuticJobs": [
+        "boundary",
+        "identity",
+        "connection"
+      ],
+      "physicsTags": [
+        "network",
+        "structural",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 585,
+      "atomId": "cornerstone-align",
+      "atomName": "The Cornerstone Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 59,
+      "seriesName": "The Legacy Seed",
+      "therapeuticJobs": [
+        "boundary",
+        "agency",
+        "identity"
+      ],
+      "physicsTags": [
+        "structural",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 589,
+      "atomId": "orbit-launch-escape",
+      "atomName": "The Orbit Launch Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 59,
+      "seriesName": "The Legacy Seed",
+      "therapeuticJobs": [
+        "release",
+        "boundary",
+        "agency"
+      ],
+      "physicsTags": [
+        "structural",
+        "network",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 595,
+      "atomId": "confluence-merge",
+      "atomName": "The Confluence Merge Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 60,
+      "seriesName": "The Eternal River",
+      "therapeuticJobs": [
+        "identity",
+        "release",
+        "connection"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 604,
+      "atomId": "escalation-cool",
+      "atomName": "The Escalation Cool Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 61,
+      "seriesName": "The Aikido Redirect",
+      "therapeuticJobs": [
+        "regulation",
+        "release"
+      ],
+      "physicsTags": [
+        "thermal",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 632,
+      "atomId": "gravity-assist-slingshot",
+      "atomName": "The Gravity Assist Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 64,
+      "seriesName": "The Momentum Theft",
+      "therapeuticJobs": [
+        "agency",
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "temporal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 634,
+      "atomId": "gear-reversal-flip",
+      "atomName": "The Gear Reversal Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 64,
+      "seriesName": "The Momentum Theft",
+      "therapeuticJobs": [
+        "boundary",
+        "agency",
+        "regulation"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "thermal"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 639,
+      "atomId": "slipstream-draft",
+      "atomName": "The Slipstream Draft Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 64,
+      "seriesName": "The Momentum Theft",
+      "therapeuticJobs": [
+        "agency",
+        "regulation",
+        "release"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "fluid",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Protect state morph but vary the aftermath so endings do not all feel like the same morph",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 641,
+      "atomId": "aerodynamic-draft",
+      "atomName": "The Aerodynamic Draft Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 65,
+      "seriesName": "The Slipstream",
+      "therapeuticJobs": [
+        "identity",
+        "boundary",
+        "release"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 643,
+      "atomId": "thermal-updraft-lift",
+      "atomName": "The Thermal Updraft Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 65,
+      "seriesName": "The Slipstream",
+      "therapeuticJobs": [
+        "boundary",
+        "identity",
+        "agency"
+      ],
+      "physicsTags": [
+        "structural",
+        "fluid",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change propagation law: local pull, cascade, routing, field recruitment",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 645,
+      "atomId": "bow-wave-surf",
+      "atomName": "The Bow Wave Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 65,
+      "seriesName": "The Slipstream",
+      "therapeuticJobs": [
+        "boundary",
+        "identity",
+        "agency"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "structural",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 646,
+      "atomId": "wake-ride-pioneer",
+      "atomName": "The Wake Ride Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 65,
+      "seriesName": "The Slipstream",
+      "therapeuticJobs": [
+        "boundary",
+        "identity",
+        "agency"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 647,
+      "atomId": "capillary-action-rise",
+      "atomName": "The Capillary Action Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 65,
+      "seriesName": "The Slipstream",
+      "therapeuticJobs": [
+        "boundary",
+        "agency",
+        "identity"
+      ],
+      "physicsTags": [
+        "structural",
+        "gravitational",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Push the field recompose harder so the whole environment visibly reorganizes",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 651,
+      "atomId": "rotational-boundary",
+      "atomName": "The Rotational Boundary Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 66,
+      "seriesName": "The Centrifuge",
+      "therapeuticJobs": [
+        "regulation",
+        "boundary"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 656,
+      "atomId": "orbital-deflection",
+      "atomName": "The Orbital Deflection Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 66,
+      "seriesName": "The Centrifuge",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network",
+        "structural"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 658,
+      "atomId": "expanding-radius",
+      "atomName": "The Expanding Radius Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 66,
+      "seriesName": "The Centrifuge",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "network",
+        "gravitational"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 659,
+      "atomId": "tether-snap-release",
+      "atomName": "The Tether Snap Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 66,
+      "seriesName": "The Centrifuge",
+      "therapeuticJobs": [
+        "boundary",
+        "connection",
+        "regulation"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "acoustic",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 660,
+      "atomId": "apex-centrifuge",
+      "atomName": "The Apex Centrifuge Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 66,
+      "seriesName": "The Centrifuge",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation"
+      ],
+      "physicsTags": [
+        "network",
+        "gravitational",
+        "optical"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 665,
+      "atomId": "meshed-gears-lock",
+      "atomName": "The Meshed Gears Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 67,
+      "seriesName": "The Harmonious Friction",
+      "therapeuticJobs": [
+        "boundary",
+        "connection",
+        "release"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 675,
+      "atomId": "slackline-balance",
+      "atomName": "The Slackline Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 68,
+      "seriesName": "The Counter-Balance",
+      "therapeuticJobs": [
+        "agency",
+        "regulation",
+        "temporal"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "acoustic",
+        "fluid"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    },
+    {
+      "atomNumber": 680,
+      "atomId": "apex-equilibrium",
+      "atomName": "The Apex Equilibrium Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 68,
+      "seriesName": "The Counter-Balance",
+      "therapeuticJobs": [
+        "boundary",
+        "regulation",
+        "agency"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "network"
+      ],
+      "primaryDifferentiationAxis": "Change destination law: orbit, drop, levitate, anchor, escape",
+      "sensorEscalation": "Candidate for secondary sensor channel: breath, microphone, or gyroscope if it deepens the law",
+      "closureUpgrade": "Upgrade closure into a stronger threshold morph or field aftermath",
+      "occupancyUpgrade": "Use depth, pressure, or materiality so the atom commands the whole phone",
+      "clusterRule": "Differentiate drag atoms by counterforce and destination law, not by visual object theme."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-03-06T21:35:27.028Z",
+  "ok": true,
+  "checks": [
+    {
+      "name": "exists:apps/design-center/package.json",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:apps/design-center/src/design-tokens.ts",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:apps/design-center/vite.config.ts",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/design-system/package.json",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/design-system/src/runtime/design-tokens.ts",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/package.json",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/button.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/card.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/badge.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/input.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/textarea.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/label.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/separator.tsx",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:packages/ui/src/primitives/utils.ts",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:scripts/sync-design-system-runtime-authority.mjs",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "exists:scripts/sync-ui-primitives-authority.mjs",
+      "status": "pass",
+      "details": "Required path present."
+    },
+    {
+      "name": "root-design-center-routing",
+      "status": "pass",
+      "details": "Root scripts route through apps/design-center."
+    },
+    {
+      "name": "app-design-center-runtime",
+      "status": "pass",
+      "details": "apps/design-center owns its runtime scripts."
+    },
+    {
+      "name": "design-token-runtime-sync",
+      "status": "pass",
+      "details": "Design Center token mirror matches the package authority."
+    },
+    {
+      "name": "ui-primitive-sync:utils.ts",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for utils.ts."
+    },
+    {
+      "name": "ui-primitive-sync:button.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for button.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:card.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for card.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:badge.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for badge.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:input.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for input.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:textarea.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for textarea.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:label.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for label.tsx."
+    },
+    {
+      "name": "ui-primitive-sync:separator.tsx",
+      "status": "pass",
+      "details": "Design Center mirror matches packages/ui authority for separator.tsx."
+    }
+  ],
+  "failures": []
+}

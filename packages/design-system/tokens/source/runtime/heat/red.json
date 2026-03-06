@@ -1,0 +1,10 @@
+{
+  "navicue": {
+    "copyDensity": {
+      "maxLines": 1
+    },
+    "interaction": {
+      "cognitiveLoad": "minimal"
+    }
+  }
+}

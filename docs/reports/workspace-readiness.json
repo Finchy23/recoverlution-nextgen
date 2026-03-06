@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-03-06T13:31:38.584Z",
+  "strict_mode": false,
+  "score": 100,
+  "totals": {
+    "checks": 11,
+    "passed": 11,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "id": "design_center_app",
+      "area": "Apps",
+      "title": "Design Center canonical app exists",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Create apps/design-center as the canonical review and design-system delivery app.",
+      "evidence": "apps/design-center/package.json"
+    },
+    {
+      "id": "design_system_package",
+      "area": "Packages",
+      "title": "Design system package is present",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Create packages/design-system as the canonical token and variable package.",
+      "evidence": "packages/design-system/package.json"
+    },
+    {
+      "id": "marketing_app",
+      "area": "Apps",
+      "title": "Marketing app package exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Create apps/marketing as the canonical growth surface.",
+      "evidence": "apps/marketing/package.json"
+    },
+    {
+      "id": "mobile_app",
+      "area": "Apps",
+      "title": "Mobile app package exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Create apps/mobile as the canonical mobile shell target.",
+      "evidence": "apps/mobile/package.json"
+    },
+    {
+      "id": "source_of_truth_manifest",
+      "area": "Governance",
+      "title": "Source-of-truth manifest exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Maintain a canonical manifest so source and derived assets are explicit.",
+      "evidence": "system/source-of-truth.manifest.json"
+    },
+    {
+      "id": "navicue_engine_package",
+      "area": "Packages",
+      "title": "NaviCue engine package is present",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Create packages/navicue-engine for shared runtime contracts and engine logic.",
+      "evidence": "packages/navicue-engine/package.json"
+    },
+    {
+      "id": "ui_package",
+      "area": "Packages",
+      "title": "UI package is present",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Create packages/ui for shared component primitives.",
+      "evidence": "packages/ui/package.json"
+    },
+    {
+      "id": "types_package",
+      "area": "Packages",
+      "title": "Types package is present",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Create packages/types for shared platform and runtime types.",
+      "evidence": "packages/types/package.json"
+    },
+    {
+      "id": "root_tsconfig",
+      "area": "Workspace",
+      "title": "Root TypeScript base config exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add a root tsconfig.base.json for shared workspace compiler defaults.",
+      "evidence": "tsconfig.base.json"
+    },
+    {
+      "id": "config_package",
+      "area": "Packages",
+      "title": "Config package is present",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Create packages/config for shared workspace config assets.",
+      "evidence": "packages/config/package.json"
+    },
+    {
+      "id": "transitional_design_system",
+      "area": "Transitional Sources",
+      "title": "Legacy Design System Draft source exists",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Retain the legacy draft only as source material while the active app lives in apps/design-center.",
+      "evidence": "Design System Draft/package.json"
+    }
+  ]
+}

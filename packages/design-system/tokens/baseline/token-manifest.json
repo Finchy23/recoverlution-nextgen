@@ -1,0 +1,22 @@
+{
+  "checksums": {
+    "canonical": "bc365b6e64372ba1905f27b3622d6f90f71d43d85e53c9d125d4f6429d1cfee0",
+    "css": "738e6066de6b5f043079e0799e7dc3a6166b7a3cfb6a9f75770922f74ae33b14",
+    "dtcg": "661b7c0b8211e3776f8c6854526247fc1f2f14e739ba897745e5ea016dfb08eb",
+    "zeroheight": "8fd6667359583eeb7febaaa79887675766d58339689b79e248187ef2a27bb3bb"
+  },
+  "generated_at": "2026-03-01T12:52:01.508Z",
+  "leaf_tokens": 86,
+  "source_files": 12,
+  "source_root": "/Users/daniel/Documents/New project/packages/design-system/tokens/source",
+  "type_counts": {
+    "color": 39,
+    "cubicBezier": 3,
+    "dimension": 21,
+    "duration": 10,
+    "fontFamily": 2,
+    "fontWeight": 4,
+    "number": 5,
+    "string": 2
+  }
+}
