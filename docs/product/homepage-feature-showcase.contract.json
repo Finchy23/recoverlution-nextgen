@@ -1,0 +1,118 @@
+{
+  "componentId": "homepage-feature-showcase",
+  "componentName": "Platform Reveal",
+  "coreTruth": "Ten features. Ten worlds. One system.",
+  "mode": "pinned-scrollytelling-stage",
+  "persistentSystemDevice": {
+    "required": true,
+    "role": "Proves all feature worlds belong to one orchestration engine",
+    "allowedForms": [
+      "conductor-rail",
+      "operating-spine",
+      "orbit-index",
+      "morphing-system-map"
+    ]
+  },
+  "features": [
+    {
+      "id": "journeys",
+      "featureName": "Journeys",
+      "hook": "Eight scenes. One week.",
+      "systemLine": "A quiet rhythm of digital seeds and real-world space.",
+      "worldMetaphor": "Experiential path",
+      "interactionModel": "Scene-based progression",
+      "proofGoal": "Recovery is experiential, not curricular",
+      "antiPattern": "Checklist or course grid"
+    },
+    {
+      "id": "navicues",
+      "featureName": "NaviCues",
+      "hook": "Touch the weight.",
+      "systemLine": "A live somatic intervention compiled for the moment.",
+      "worldMetaphor": "Dynamic ritual engine",
+      "interactionModel": "Live cue assembly and resolution loop",
+      "proofGoal": "Emotion can be translated into manipulable matter",
+      "antiPattern": "Static mockup or fake demo"
+    },
+    {
+      "id": "studio",
+      "featureName": "Studio",
+      "hook": "It finds you.",
+      "systemLine": "State-matched film, not a browsable library.",
+      "worldMetaphor": "Cinematic sanctuary",
+      "interactionModel": "Contextual arrival",
+      "proofGoal": "Video is orchestrated around biology and timing",
+      "antiPattern": "YouTube-style shelf"
+    },
+    {
+      "id": "play",
+      "featureName": "Play",
+      "hook": "Change the track.",
+      "systemLine": "Your friction remixed into movement.",
+      "worldMetaphor": "Identity soundtrack",
+      "interactionModel": "Frequency bands and transport",
+      "proofGoal": "Audio is used as identity installation",
+      "antiPattern": "Podcast list"
+    },
+    {
+      "id": "talk",
+      "featureName": "Talk",
+      "hook": "The next right step.",
+      "systemLine": "A corridor that listens, maps, and routes.",
+      "worldMetaphor": "Guided corridor",
+      "interactionModel": "Progressive conversational routing",
+      "proofGoal": "This is not a chatbot",
+      "antiPattern": "Chat bubble UI"
+    },
+    {
+      "id": "insights",
+      "featureName": "Insights",
+      "hook": "See the architecture.",
+      "systemLine": "The overwhelming becomes observable.",
+      "worldMetaphor": "Interactive documentary",
+      "interactionModel": "Depth scroll with somatic anchors",
+      "proofGoal": "Abstract pain becomes understandable structure",
+      "antiPattern": "Article cards"
+    },
+    {
+      "id": "read",
+      "featureName": "Read",
+      "hook": "One page at a time.",
+      "systemLine": "The infinite book, quietly delivered.",
+      "worldMetaphor": "Calm page",
+      "interactionModel": "Bimodal read/listen",
+      "proofGoal": "Knowledge can be delivered without digital noise",
+      "antiPattern": "Content feed wall"
+    },
+    {
+      "id": "practices",
+      "featureName": "Practices",
+      "hook": "Transmute the weight.",
+      "systemLine": "Portable instruments for embodied change.",
+      "worldMetaphor": "Somatic forge",
+      "interactionModel": "Instrument cabinet",
+      "proofGoal": "Insight must become physical action",
+      "antiPattern": "Tip list"
+    },
+    {
+      "id": "navigate",
+      "featureName": "Navigate",
+      "hook": "Always on.",
+      "systemLine": "One system across many rooms.",
+      "worldMetaphor": "Real-world ecosystem map",
+      "interactionModel": "Context and support orchestration",
+      "proofGoal": "Recovery lives in the day itself",
+      "antiPattern": "Integrations dashboard"
+    },
+    {
+      "id": "signal",
+      "featureName": "Signal",
+      "hook": "Proof.",
+      "systemLine": "Receipts stack until identity updates.",
+      "worldMetaphor": "Telemetry and receipts field",
+      "interactionModel": "Evidence accumulation",
+      "proofGoal": "Progress is proven, not gamified",
+      "antiPattern": "Streaks and badges"
+    }
+  ]
+}
