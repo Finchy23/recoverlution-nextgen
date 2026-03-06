@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-03-06T12:23:20.665Z",
+  "strict_mode": false,
+  "score": 57,
+  "totals": {
+    "integrations": 7,
+    "connected": 4,
+    "required_failures": 3,
+    "optional_failures": 0
+  },
+  "integrations": [
+    {
+      "id": "supabase",
+      "area": "Core Data + Auth",
+      "required": true,
+      "keys": [
+        "VITE_SUPABASE_PROJECT_ID",
+        "VITE_SUPABASE_ANON_KEY"
+      ],
+      "connected": true,
+      "missing": [],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_SUPABASE_PROJECT_ID",
+          "present": true,
+          "valid": true,
+          "valuePreview": "wzeq…dagf"
+        },
+        {
+          "key": "VITE_SUPABASE_ANON_KEY",
+          "present": true,
+          "valid": true,
+          "valuePreview": "eyJh…SNQI"
+        }
+      ]
+    },
+    {
+      "id": "posthog",
+      "area": "Analytics",
+      "required": true,
+      "keys": [
+        "VITE_POSTHOG_KEY",
+        "VITE_POSTHOG_HOST"
+      ],
+      "connected": true,
+      "missing": [],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_POSTHOG_KEY",
+          "present": true,
+          "valid": true,
+          "valuePreview": "phc_…hr5e"
+        },
+        {
+          "key": "VITE_POSTHOG_HOST",
+          "present": true,
+          "valid": true,
+          "valuePreview": "http….com"
+        }
+      ]
+    },
+    {
+      "id": "sentry",
+      "area": "Error Monitoring",
+      "required": true,
+      "keys": [
+        "VITE_SENTRY_DSN"
+      ],
+      "connected": false,
+      "missing": [
+        "VITE_SENTRY_DSN"
+      ],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_SENTRY_DSN",
+          "present": false,
+          "valid": false,
+          "valuePreview": ""
+        }
+      ]
+    },
+    {
+      "id": "onesignal",
+      "area": "Push Notifications",
+      "required": true,
+      "keys": [
+        "VITE_ONESIGNAL_APP_ID"
+      ],
+      "connected": true,
+      "missing": [],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_ONESIGNAL_APP_ID",
+          "present": true,
+          "valid": true,
+          "valuePreview": "c880…b11b"
+        }
+      ]
+    },
+    {
+      "id": "stripe",
+      "area": "Billing",
+      "required": true,
+      "keys": [
+        "VITE_STRIPE_PUBLISHABLE_KEY"
+      ],
+      "connected": false,
+      "missing": [
+        "VITE_STRIPE_PUBLISHABLE_KEY"
+      ],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_STRIPE_PUBLISHABLE_KEY",
+          "present": false,
+          "valid": false,
+          "valuePreview": ""
+        }
+      ]
+    },
+    {
+      "id": "jwplayer",
+      "area": "Wellbeing Video",
+      "required": true,
+      "keys": [
+        "VITE_JWPLAYER_LIBRARY_ID"
+      ],
+      "connected": false,
+      "missing": [
+        "VITE_JWPLAYER_LIBRARY_ID"
+      ],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "VITE_JWPLAYER_LIBRARY_ID",
+          "present": false,
+          "valid": false,
+          "valuePreview": ""
+        }
+      ]
+    },
+    {
+      "id": "revenuecat_mobile",
+      "area": "Mobile Subscriptions",
+      "required": false,
+      "keys": [
+        "REVENUECAT_PUBLIC_API_KEY_IOS",
+        "REVENUECAT_PUBLIC_API_KEY_ANDROID"
+      ],
+      "connected": true,
+      "missing": [],
+      "invalid": [],
+      "keyStatus": [
+        {
+          "key": "REVENUECAT_PUBLIC_API_KEY_IOS",
+          "present": true,
+          "valid": true,
+          "valuePreview": "test…bdqc"
+        },
+        {
+          "key": "REVENUECAT_PUBLIC_API_KEY_ANDROID",
+          "present": true,
+          "valid": true,
+          "valuePreview": "test…bdqc"
+        }
+      ]
+    }
+  ]
+}

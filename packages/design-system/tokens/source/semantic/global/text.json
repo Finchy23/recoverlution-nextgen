@@ -1,0 +1,30 @@
+{
+  "body": {
+    "primary": {
+      "$value": "{primitives.colors.neutral.900}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{primitives.colors.neutral.700}",
+      "$type": "color"
+    },
+    "inverse": {
+      "$value": "{primitives.colors.neutral.0}",
+      "$type": "color"
+    }
+  },
+  "state": {
+    "positive": {
+      "$value": "{primitives.colors.teal.600}",
+      "$type": "color"
+    },
+    "warning": {
+      "$value": "{primitives.colors.amber.600}",
+      "$type": "color"
+    },
+    "critical": {
+      "$value": "{primitives.colors.red.700}",
+      "$type": "color"
+    }
+  }
+}

@@ -1,88 +1,71 @@
 # Environment Topology
 
-## Target model
-GitHub is source-of-truth for code. Vercel is delivery plane for web surfaces.
+## Target Model
+
+GitHub is the source of truth for code.
+Vercel is the delivery plane for web surfaces.
 
 ## Projects (Vercel)
 
-1. `recoverlution-marketing`
-- Public marketing site and conversion pages.
-- Domain: `recoverlution.com` / `www`.
+1. `recoverlution-design-center`
+- live design-system, token, composition, and frontend review surface
+- domain target: `design.recoverlution.com`
+- current active frontend review runtime
 
-2. `recoverlution-app`
-- Main authenticated product surface.
-- Domain: `app.recoverlution.com`.
+2. `recoverlution-marketing`
+- public marketing site and conversion pages
+- domain target: `recoverlution.com` / `www.recoverlution.com`
+- inactive until marketing rebuild is ready
 
-3. `recoverlution-design-center`
-- Live design-system, token, and composition review surface.
-- Domain: `design.recoverlution.com`.
+3. `recoverlution-app`
+- authenticated platform shell
+- domain target: `app.recoverlution.com`
+- inactive until product shell is promoted
 
-4. `recoverlution-command`
-- Command/design hub and lab operations.
-- Domain: `command.recoverlution.com`.
+4. `recoverlution-analytics`
+- internal analytics and reporting surface
+- domain target: `analytics.recoverlution.com`
+- inactive
 
-5. `recoverlution-data`
-- Internal analytics/reporting/insight UI.
-- Domain: `data.recoverlution.com`.
+5. `recoverlution-command`
+- legacy project record only
+- domain target: `command.recoverlution.com`
+- not an active runtime surface
 
-6. `recoverlution-growth`
-- Internal campaign and lifecycle orchestration surface.
-- Domain: `growth.recoverlution.com`.
+## Source of Truth
 
-7. `recoverlution-sales`
-- Internal CRM, partner, and deal operations surface.
-- Domain: `sales.recoverlution.com`.
+- registry file: `infra/vercel/project-registry.json`
+- topology report command: `npm run vercel:topology`
+- strict topology gate: `npm run vercel:topology:strict`
 
-## Source Of Truth
+Current active review surface in the registry:
+- `recoverlution-design-center` rooted at `apps/design-center`
 
-- Registry file: `infra/vercel/project-registry.json`
-- Topology report command: `npm run vercel:topology`
-- Strict topology gate: `npm run vercel:topology:strict`
+Legacy/inactive:
+- `recoverlution-command` rooted at `Command Center Execution Plan`
 
-Current active runtime in registry:
-- `recoverlution-command` rooted at `Command Center Execution Plan/`
-- `recoverlution-design-center` rooted at `Design System Draft/`
+## Environments per Project
 
-Reserved projects (`marketing`, `app`, `data`, `growth`, `sales`) remain non-active until linked and promoted.
-
-## Environments per project
-
-- `development`: local and internal dev validation.
-- `preview`: branch/PR deploys (`codex/*` streams).
-- `production`: stable customer-facing release.
-- `staging`: pre-production integration environment for internal acceptance and partner-safe validation.
+- `development`
+- `preview`
+- `production`
+- `staging`
 
 Optional later:
-- `demo`: enterprise-safe demonstration surface
-- `partner-sandbox`: controlled sandbox for partner workflows
+- `demo`
+- `partner-sandbox`
 
-## Branch strategy
+## Promotion Flow
 
-- `main` -> production deploy candidate.
-- `codex/<stream>-<scope>` -> preview deploy, stream-specific work.
-- Use `scripts/create-workstream-branch.mjs` for consistent naming and docs.
+1. `codex/*` branch pushes to GitHub
+2. Vercel preview validates stream changes
+3. quality gates pass
+4. merge to `main`
+5. production deploy from `main`
 
-## Data/control planes
+## Non-Negotiables
 
-- Supabase: application data/auth/runtime contracts.
-- PostHog: analytics, flags, experiments, session replay.
-- Sentry: error + trace observability.
-- OneSignal: notifications.
-- Stripe / RevenueCat: monetization and entitlements.
-- Temporal: durable workflow orchestration.
-
-## Promotion flow
-
-1. Stream branch (`codex/*`) pushes to GitHub.
-2. Vercel preview deploy validates stream changes.
-3. Quality gates pass (`accounts`, `quality:gaps`, `infra`, `vercel:topology`).
-4. Merge to `main`.
-5. Production deploy from `main`.
-
-## Non-negotiables
-
-- No secrets in `VITE_*` variables.
-- Keep per-project env vars explicit (do not rely on cross-project drift).
-- Keep command hub isolated from marketing runtime dependencies.
-- Keep internal control surfaces separate from customer-facing product surfaces.
-- Do not create isolated backend truths per surface; all surfaces operate on the same governed platform spine.
+- no active production assumptions based on legacy folders
+- no per-surface backend truths
+- no app-level token ownership
+- keep internal control surfaces separate from customer-facing surfaces

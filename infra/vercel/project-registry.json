@@ -12,20 +12,20 @@
       "domains": [
         "command.recoverlution.com"
       ],
-      "activeRuntime": true,
-      "envSync": true,
-      "notes": "Current canonical runtime and lab surface."
+      "activeRuntime": false,
+      "envSync": false,
+      "notes": "Legacy runtime source only. Do not treat as an active deploy surface."
     },
     {
       "key": "design-center",
       "name": "recoverlution-design-center",
-      "root": "Design System Draft",
+      "root": "apps/design-center",
       "domains": [
         "design.recoverlution.com"
       ],
       "activeRuntime": true,
       "envSync": false,
-      "notes": "Live design-system and token review surface while the package extraction is still in progress."
+      "notes": "Canonical live design-system and frontend review surface."
     },
     {
       "key": "marketing",

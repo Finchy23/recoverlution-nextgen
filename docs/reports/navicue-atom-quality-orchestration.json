@@ -1,0 +1,2830 @@
+{
+  "generatedAt": "2026-03-06T21:43:19.795Z",
+  "totals": {
+    "signatureCohort": 30,
+    "heroCohort": 80,
+    "clusterPressureGroups": 12,
+    "rebuildBriefs": 2
+  },
+  "signatureCohort": [
+    {
+      "reviewOrder": 1,
+      "atomNumber": 46,
+      "atomId": "brown-noise",
+      "atomName": "The Brown Noise Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 11,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "weight",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics",
+        "audio"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "fluid",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 2,
+      "atomNumber": 10,
+      "atomId": "thermodynamic",
+      "atomName": "The Thermodynamic Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "pressure",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "thermal",
+        "fluid",
+        "temporal"
+      ]
+    },
+    {
+      "reviewOrder": 3,
+      "atomNumber": 45,
+      "atomId": "audio-zoom",
+      "atomName": "The Audio Zoom Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "audio"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "network",
+        "optical"
+      ]
+    },
+    {
+      "reviewOrder": 4,
+      "atomNumber": 49,
+      "atomId": "standing-wave",
+      "atomName": "The Standing Wave Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics",
+        "audio"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "network",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 5,
+      "atomNumber": 2,
+      "atomId": "phase-shift",
+      "atomName": "The Phase-Shift Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "fluid",
+        "thermal",
+        "network"
+      ]
+    },
+    {
+      "reviewOrder": 6,
+      "atomNumber": 11,
+      "atomId": "wave-collapse",
+      "atomName": "The Wave Collapse Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "optical",
+        "network"
+      ]
+    },
+    {
+      "reviewOrder": 7,
+      "atomNumber": 44,
+      "atomId": "cymatic-coherence",
+      "atomName": "The Cymatic Coherence Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "paradox",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "network",
+        "topological"
+      ]
+    },
+    {
+      "reviewOrder": 8,
+      "atomNumber": 282,
+      "atomId": "respiration-pendulum",
+      "atomName": "The Respiration Pendulum Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 29,
+      "seriesName": "The Interoceptive Anchor",
+      "structuralScore": 10,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "speak",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics",
+        "microphone"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "optical",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 9,
+      "atomNumber": 262,
+      "atomId": "sand-mandala",
+      "atomName": "The Sand Mandala Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "speak",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "microphone"
+      ],
+      "physicsTags": [
+        "optical",
+        "acoustic",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 10,
+      "atomNumber": 7,
+      "atomId": "symbiotic",
+      "atomName": "The Symbiotic Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "network",
+        "fluid",
+        "temporal"
+      ]
+    },
+    {
+      "reviewOrder": 11,
+      "atomNumber": 28,
+      "atomId": "ecosystem-balancer",
+      "atomName": "The Ecosystem Balancer",
+      "collectionNumber": 1,
+      "seriesNumber": 3,
+      "seriesName": "The Biomimetic Algorithms",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "fluid",
+        "network",
+        "optical"
+      ]
+    },
+    {
+      "reviewOrder": 12,
+      "atomNumber": 40,
+      "atomId": "singularity",
+      "atomName": "The Singularity Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 4,
+      "seriesName": "The Via Negativa",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "reshape",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "subtractive",
+        "gravitational",
+        "optical"
+      ]
+    },
+    {
+      "reviewOrder": 13,
+      "atomNumber": 55,
+      "atomId": "algorithm-jammer",
+      "atomName": "The Algorithm Jammer Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "constraint",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "structural"
+      ]
+    },
+    {
+      "reviewOrder": 14,
+      "atomNumber": 58,
+      "atomId": "pixelation",
+      "atomName": "The Pixelation Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "constraint",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "fluid",
+        "structural"
+      ]
+    },
+    {
+      "reviewOrder": 15,
+      "atomNumber": 168,
+      "atomId": "de-escalation",
+      "atomName": "The De-Escalation Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 17,
+      "seriesName": "The Diplomat & Social Physics II",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "guide",
+      "counterforceTypeSeed": "constraint",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "thermal",
+        "gravitational",
+        "structural"
+      ]
+    },
+    {
+      "reviewOrder": 16,
+      "atomNumber": 48,
+      "atomId": "crescendo",
+      "atomName": "The Crescendo Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "audio"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "network",
+        "subtractive"
+      ]
+    },
+    {
+      "reviewOrder": 17,
+      "atomNumber": 59,
+      "atomId": "attention-paywall",
+      "atomName": "The Attention Paywall Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 9,
+      "repetitionClusterSize": 2,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "trigger",
+      "counterforceTypeSeed": "constraint",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "structural"
+      ]
+    },
+    {
+      "reviewOrder": 18,
+      "atomNumber": 90,
+      "atomId": "phoenix-ash",
+      "atomName": "The Phoenix Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "speak",
+      "counterforceTypeSeed": "pressure",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "microphone"
+      ],
+      "physicsTags": [
+        "thermal",
+        "subtractive"
+      ]
+    },
+    {
+      "reviewOrder": 19,
+      "atomNumber": 215,
+      "atomId": "acoustic-unnaming",
+      "atomName": "The Acoustic Un-Naming Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "speak",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "microphone"
+      ],
+      "physicsTags": [
+        "optical",
+        "temporal",
+        "acoustic"
+      ]
+    },
+    {
+      "reviewOrder": 20,
+      "atomNumber": 222,
+      "atomId": "water-mode",
+      "atomName": "The Water Mode Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "tilt",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "tilt"
+      ],
+      "physicsTags": [
+        "fluid",
+        "gravitational",
+        "network"
+      ]
+    },
+    {
+      "reviewOrder": 21,
+      "atomNumber": 261,
+      "atomId": "destination-override",
+      "atomName": "The Destination Override Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "clear",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "audio"
+      ],
+      "physicsTags": [
+        "acoustic",
+        "optical",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 22,
+      "atomNumber": 506,
+      "atomId": "pendulum-weight",
+      "atomName": "The Pendulum Weight Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 51,
+      "seriesName": "The Glacial Pacer",
+      "structuralScore": 9,
+      "repetitionClusterSize": 2,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "trigger",
+      "counterforceTypeSeed": "pressure",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "thermal",
+        "temporal"
+      ]
+    },
+    {
+      "reviewOrder": 23,
+      "atomNumber": 81,
+      "atomId": "crucible-fire",
+      "atomName": "The Crucible Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "pressure",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "thermal",
+        "fluid",
+        "subtractive"
+      ]
+    },
+    {
+      "reviewOrder": 24,
+      "atomNumber": 156,
+      "atomId": "voice-box",
+      "atomName": "The Voice Box Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 16,
+      "seriesName": "The Soma & Perception",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "speak",
+      "counterforceTypeSeed": "weight",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "microphone"
+      ],
+      "physicsTags": [
+        "temporal",
+        "acoustic",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 25,
+      "atomNumber": 390,
+      "atomId": "perpetual-motion",
+      "atomName": "The Perpetual Motion Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 39,
+      "seriesName": "The Momentum Wheel",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "regulate",
+      "counterforceTypeSeed": "weight",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "fluid",
+        "subtractive"
+      ]
+    },
+    {
+      "reviewOrder": 26,
+      "atomNumber": 277,
+      "atomId": "exhale-cycle",
+      "atomName": "The Exhale Cycle Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 28,
+      "seriesName": "The Impermanence Engine",
+      "structuralScore": 9,
+      "repetitionClusterSize": 2,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "entanglement",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "thermal",
+        "network"
+      ]
+    },
+    {
+      "reviewOrder": 27,
+      "atomNumber": 297,
+      "atomId": "infinite-heart",
+      "atomName": "The Infinite Heart Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 30,
+      "seriesName": "The Loving Awareness",
+      "structuralScore": 9,
+      "repetitionClusterSize": 2,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "hold",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ],
+      "physicsTags": [
+        "fluid",
+        "network",
+        "optical"
+      ]
+    },
+    {
+      "reviewOrder": 28,
+      "atomNumber": 154,
+      "atomId": "proprioception",
+      "atomName": "The Proprioception Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 16,
+      "seriesName": "The Soma & Perception",
+      "structuralScore": 9,
+      "repetitionClusterSize": 3,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "tilt",
+      "counterforceTypeSeed": "weight",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "tilt"
+      ],
+      "physicsTags": [
+        "temporal",
+        "fluid",
+        "gravitational"
+      ]
+    },
+    {
+      "reviewOrder": 29,
+      "atomNumber": 287,
+      "atomId": "micro-tremor",
+      "atomName": "The Micro-Tremor Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 29,
+      "seriesName": "The Interoceptive Anchor",
+      "structuralScore": 9,
+      "repetitionClusterSize": 3,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "tilt",
+      "counterforceTypeSeed": "distortion",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "tilt"
+      ],
+      "physicsTags": [
+        "optical",
+        "acoustic",
+        "fluid"
+      ]
+    },
+    {
+      "reviewOrder": 30,
+      "atomNumber": 542,
+      "atomId": "center-of-mass",
+      "atomName": "The Center of Mass Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 55,
+      "seriesName": "The Hourglass Inversion",
+      "structuralScore": 9,
+      "repetitionClusterSize": 3,
+      "navicueFit": "signature",
+      "dominantVerbSeed": "tilt",
+      "counterforceTypeSeed": "weight",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "tilt"
+      ],
+      "physicsTags": [
+        "gravitational",
+        "fluid",
+        "temporal"
+      ]
+    }
+  ],
+  "heroCohort": [
+    {
+      "reviewOrder": 1,
+      "atomNumber": 4,
+      "atomId": "somatic-resonance",
+      "atomName": "The Somatic Resonance Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 9,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics",
+        "audio"
+      ]
+    },
+    {
+      "reviewOrder": 2,
+      "atomNumber": 5,
+      "atomId": "constructive-destructive",
+      "atomName": "The Constructive / Destructive Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "redirect",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 3,
+      "atomNumber": 6,
+      "atomId": "cryptographic",
+      "atomName": "The Cryptographic Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "redirect",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 4,
+      "atomNumber": 22,
+      "atomId": "boids-flocking",
+      "atomName": "The Boids Flocking Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 3,
+      "seriesName": "The Biomimetic Algorithms",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 5,
+      "atomNumber": 56,
+      "atomId": "reality-tear",
+      "atomName": "The Reality Tear Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 6,
+      "atomNumber": 579,
+      "atomId": "exhale-release",
+      "atomName": "The Exhale Release Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 58,
+      "seriesName": "The Ephemeral Bloom",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 7,
+      "atomNumber": 3,
+      "atomId": "z-axis-parallax",
+      "atomName": "The Z-Axis Parallax Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 1,
+      "seriesName": "The Physics Engines",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "tilt",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "tilt"
+      ]
+    },
+    {
+      "reviewOrder": 8,
+      "atomNumber": 21,
+      "atomId": "l-system-branching",
+      "atomName": "The L-System Branching Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 3,
+      "seriesName": "The Biomimetic Algorithms",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 9,
+      "atomNumber": 24,
+      "atomId": "mycelial-routing",
+      "atomName": "The Mycelial Routing Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 3,
+      "seriesName": "The Biomimetic Algorithms",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 10,
+      "atomNumber": 37,
+      "atomId": "apneic-pause",
+      "atomName": "The Apneic Pause Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 4,
+      "seriesName": "The Via Negativa",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 11,
+      "atomNumber": 19,
+      "atomId": "retrocausal",
+      "atomName": "The Retrocausal Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 12,
+      "atomNumber": 41,
+      "atomId": "phase-lock",
+      "atomName": "The Phase Lock Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "audio"
+      ]
+    },
+    {
+      "reviewOrder": 13,
+      "atomNumber": 47,
+      "atomId": "tempo-override",
+      "atomName": "The Tempo Override Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 5,
+      "seriesName": "The Chrono-Acoustic Drives",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 14,
+      "atomNumber": 52,
+      "atomId": "lag-spike",
+      "atomName": "The Lag Spike Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 15,
+      "atomNumber": 54,
+      "atomId": "kernel-panic",
+      "atomName": "The Kernel Panic Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 16,
+      "atomNumber": 75,
+      "atomId": "ego-zoom",
+      "atomName": "The Ego Zoom Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 8,
+      "seriesName": "The Kinematic Topology",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 17,
+      "atomNumber": 119,
+      "atomId": "friction-polish",
+      "atomName": "The Friction Polish Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 12,
+      "seriesName": "The Friction Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trace",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 18,
+      "atomNumber": 149,
+      "atomId": "ten-year-echo",
+      "atomName": "The 10-Year Echo Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "speak",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "microphone"
+      ]
+    },
+    {
+      "reviewOrder": 19,
+      "atomNumber": 221,
+      "atomId": "binary-breaker",
+      "atomName": "The Binary Breaker Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "redirect",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 20,
+      "atomNumber": 264,
+      "atomId": "sisyphus-smile",
+      "atomName": "The Sisyphus Smile Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "redirect",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 21,
+      "atomNumber": 269,
+      "atomId": "infinite-canvas",
+      "atomName": "The Infinite Canvas Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 22,
+      "atomNumber": 270,
+      "atomId": "lila-seal",
+      "atomName": "The Lila Seal",
+      "collectionNumber": 3,
+      "seriesNumber": 27,
+      "seriesName": "The Cosmic Play",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics",
+        "audio"
+      ]
+    },
+    {
+      "reviewOrder": 23,
+      "atomNumber": 314,
+      "atomId": "silence-gap",
+      "atomName": "The Silence Gap Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 32,
+      "seriesName": "The Cymatic Engine",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 24,
+      "atomNumber": 359,
+      "atomId": "kinetic-battery",
+      "atomName": "The Kinetic Battery Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 36,
+      "seriesName": "The Friction Spark",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 25,
+      "atomNumber": 477,
+      "atomId": "impossible-container",
+      "atomName": "The Impossible Container Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 48,
+      "seriesName": "The Klein Bottle",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "redirect",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 26,
+      "atomNumber": 480,
+      "atomId": "glass-ceiling-fall",
+      "atomName": "The Glass Ceiling Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 48,
+      "seriesName": "The Klein Bottle",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "tilt",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "tilt"
+      ]
+    },
+    {
+      "reviewOrder": 27,
+      "atomNumber": 663,
+      "atomId": "grindstone-edge",
+      "atomName": "The Grindstone Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 67,
+      "seriesName": "The Harmonious Friction",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 28,
+      "atomNumber": 18,
+      "atomId": "zero-point-field",
+      "atomName": "The Zero-Point Field Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "pressure"
+      ]
+    },
+    {
+      "reviewOrder": 29,
+      "atomNumber": 67,
+      "atomId": "forgiveness-filter",
+      "atomName": "The Forgiveness Filter Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 7,
+      "seriesName": "The Retro-Causal Engine",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 30,
+      "atomNumber": 205,
+      "atomId": "sky-and-clouds",
+      "atomName": "The Sky and Clouds Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 21,
+      "seriesName": "The Metacognitive Mirror",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 31,
+      "atomNumber": 228,
+      "atomId": "ocean-depth",
+      "atomName": "The Ocean Depth Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 32,
+      "atomNumber": 349,
+      "atomId": "steam-valve",
+      "atomName": "The Steam Valve Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 35,
+      "seriesName": "The Pressure Vessel",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 33,
+      "atomNumber": 355,
+      "atomId": "bowstring-draw",
+      "atomName": "The Bowstring Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 36,
+      "seriesName": "The Friction Spark",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 34,
+      "atomNumber": 438,
+      "atomId": "silent-running",
+      "atomName": "The Silent Running Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 44,
+      "seriesName": "The Depth Sounder",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 35,
+      "atomNumber": 600,
+      "atomId": "eternal-ocean",
+      "atomName": "The Eternal Ocean Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 60,
+      "seriesName": "The Eternal River",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "witness",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 36,
+      "atomNumber": 157,
+      "atomId": "blind-walk",
+      "atomName": "The Blind Walk Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 16,
+      "seriesName": "The Soma & Perception",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "tilt",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "tilt"
+      ]
+    },
+    {
+      "reviewOrder": 37,
+      "atomNumber": 218,
+      "atomId": "somatic-trust",
+      "atomName": "The Somatic Trust Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "tilt",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "tilt"
+      ]
+    },
+    {
+      "reviewOrder": 38,
+      "atomNumber": 226,
+      "atomId": "thawing",
+      "atomName": "The Thawing Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 39,
+      "atomNumber": 302,
+      "atomId": "magnetic-paradox",
+      "atomName": "The Magnetic Paradox Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 31,
+      "seriesName": "The Particle Collider",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 40,
+      "atomNumber": 169,
+      "atomId": "mirror-neuron",
+      "atomName": "The Mirror Neuron Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 17,
+      "seriesName": "The Diplomat & Social Physics II",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "witness",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "camera"
+      ]
+    },
+    {
+      "reviewOrder": 41,
+      "atomNumber": 212,
+      "atomId": "raw-data",
+      "atomName": "The Raw Data Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics",
+        "camera"
+      ]
+    },
+    {
+      "reviewOrder": 42,
+      "atomNumber": 533,
+      "atomId": "wind-shear-breath",
+      "atomName": "The Wind Shear Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 54,
+      "seriesName": "The Geological Carver",
+      "structuralScore": 8,
+      "repetitionClusterSize": 1,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "regulate",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 43,
+      "atomNumber": 138,
+      "atomId": "lighthouse",
+      "atomName": "The Lighthouse Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 14,
+      "seriesName": "The Social Physics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 44,
+      "atomNumber": 158,
+      "atomId": "temperature-scan",
+      "atomName": "The Temperature Scan Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 16,
+      "seriesName": "The Soma & Perception",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 45,
+      "atomNumber": 177,
+      "atomId": "courage-map",
+      "atomName": "The Courage Map Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 18,
+      "seriesName": "The Visionary & Strategist",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 46,
+      "atomNumber": 229,
+      "atomId": "complexity-breath",
+      "atomName": "The Complexity Breath Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 23,
+      "seriesName": "The Fluidity Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "speak",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics",
+        "microphone"
+      ]
+    },
+    {
+      "reviewOrder": 47,
+      "atomNumber": 232,
+      "atomId": "mutual-respiration",
+      "atomName": "The Mutual Respiration Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 24,
+      "seriesName": "The Net of Indra",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "medium",
+      "dominantVerbSeed": "speak",
+      "resolutionClassSeed": "loop",
+      "sensoryProfile": [
+        "visual",
+        "breath",
+        "haptics",
+        "microphone"
+      ]
+    },
+    {
+      "reviewOrder": 48,
+      "atomNumber": 467,
+      "atomId": "prison-wall-melt",
+      "atomName": "The Prison Wall Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 47,
+      "seriesName": "The Mirror World",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 49,
+      "atomNumber": 525,
+      "atomId": "stalactite-drip",
+      "atomName": "The Stalactite Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 50,
+      "atomNumber": 670,
+      "atomId": "apex-carve-slalom",
+      "atomName": "The Apex Carve Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 67,
+      "seriesName": "The Harmonious Friction",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "guide",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 51,
+      "atomNumber": 208,
+      "atomId": "echomaker",
+      "atomName": "The Echomaker Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 21,
+      "seriesName": "The Metacognitive Mirror",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "speak",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "microphone"
+      ]
+    },
+    {
+      "reviewOrder": 52,
+      "atomNumber": 284,
+      "atomId": "cymatic-resonance",
+      "atomName": "The Cymatic Resonance Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 29,
+      "seriesName": "The Interoceptive Anchor",
+      "structuralScore": 8,
+      "repetitionClusterSize": 2,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "speak",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "haptics",
+        "microphone"
+      ]
+    },
+    {
+      "reviewOrder": 53,
+      "atomNumber": 365,
+      "atomId": "capillary-action",
+      "atomName": "The Capillary Action Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 37,
+      "seriesName": "The Conduit",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 54,
+      "atomNumber": 395,
+      "atomId": "annealing-relief",
+      "atomName": "The Annealing Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 40,
+      "seriesName": "The Synthesis Forge",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 55,
+      "atomNumber": 671,
+      "atomId": "pendulum-dampener",
+      "atomName": "The Pendulum Dampener Engine",
+      "collectionNumber": 7,
+      "seriesNumber": 68,
+      "seriesName": "The Counter-Balance",
+      "structuralScore": 8,
+      "repetitionClusterSize": 3,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "breath",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 56,
+      "atomNumber": 60,
+      "atomId": "semantic-crash",
+      "atomName": "The Semantic Crash Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 6,
+      "seriesName": "The Meta-System & Glitch",
+      "structuralScore": 8,
+      "repetitionClusterSize": 5,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 57,
+      "atomNumber": 184,
+      "atomId": "space-between",
+      "atomName": "The Space Between Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 19,
+      "seriesName": "The Mystic & Infinite Player",
+      "structuralScore": 8,
+      "repetitionClusterSize": 5,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 58,
+      "atomNumber": 214,
+      "atomId": "taste-explode",
+      "atomName": "The Taste Explode Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "structuralScore": 8,
+      "repetitionClusterSize": 4,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 59,
+      "atomNumber": 274,
+      "atomId": "wave-decay",
+      "atomName": "The Wave Decay Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 28,
+      "seriesName": "The Impermanence Engine",
+      "structuralScore": 8,
+      "repetitionClusterSize": 5,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 60,
+      "atomNumber": 357,
+      "atomId": "heat-sink",
+      "atomName": "The Heat Sink Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 36,
+      "seriesName": "The Friction Spark",
+      "structuralScore": 8,
+      "repetitionClusterSize": 4,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 61,
+      "atomNumber": 434,
+      "atomId": "doppler-approach",
+      "atomName": "The Doppler Approach Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 44,
+      "seriesName": "The Depth Sounder",
+      "structuralScore": 8,
+      "repetitionClusterSize": 5,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 62,
+      "atomNumber": 442,
+      "atomId": "z-axis-flatten",
+      "atomName": "The Z-Axis Flatten Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 45,
+      "seriesName": "The Tesseract",
+      "structuralScore": 8,
+      "repetitionClusterSize": 4,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 63,
+      "atomNumber": 486,
+      "atomId": "compression-forge",
+      "atomName": "The Compression Forge Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 49,
+      "seriesName": "The Abyssal Anchor",
+      "structuralScore": 8,
+      "repetitionClusterSize": 4,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 64,
+      "atomNumber": 524,
+      "atomId": "continental-drift",
+      "atomName": "The Continental Drift Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "structuralScore": 8,
+      "repetitionClusterSize": 5,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "trigger",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 65,
+      "atomNumber": 39,
+      "atomId": "noise-gate",
+      "atomName": "The Noise Gate Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 4,
+      "seriesName": "The Via Negativa",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 66,
+      "atomNumber": 65,
+      "atomId": "prequel-context",
+      "atomName": "The Prequel Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 7,
+      "seriesName": "The Retro-Causal Engine",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 67,
+      "atomNumber": 71,
+      "atomId": "overview-effect",
+      "atomName": "The Overview Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 8,
+      "seriesName": "The Kinematic Topology",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 68,
+      "atomNumber": 73,
+      "atomId": "deep-time",
+      "atomName": "The Deep Time Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 8,
+      "seriesName": "The Kinematic Topology",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 69,
+      "atomNumber": 117,
+      "atomId": "burn-rate",
+      "atomName": "The Burn Rate Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 12,
+      "seriesName": "The Friction Mechanics",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 70,
+      "atomNumber": 125,
+      "atomId": "headline-rewrite",
+      "atomName": "The Headline Rewrite Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 13,
+      "seriesName": "The Semantic Translators",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 71,
+      "atomNumber": 192,
+      "atomId": "golden-spiral",
+      "atomName": "The Golden Spiral Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "seal",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 72,
+      "atomNumber": 233,
+      "atomId": "mycelium-network",
+      "atomName": "The Mycelium Network Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 24,
+      "seriesName": "The Net of Indra",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 73,
+      "atomNumber": 244,
+      "atomId": "complementary-color",
+      "atomName": "The Complementary Color Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 25,
+      "seriesName": "The Dialectical Engine",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "clear",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 74,
+      "atomNumber": 397,
+      "atomId": "arc-weld",
+      "atomName": "The Arc Weld Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 40,
+      "seriesName": "The Synthesis Forge",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 75,
+      "atomNumber": 417,
+      "atomId": "ouroboros-pry",
+      "atomName": "The Ouroboros Pry Engine",
+      "collectionNumber": 5,
+      "seriesNumber": 42,
+      "seriesName": "The Escher Loop",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 76,
+      "atomNumber": 526,
+      "atomId": "stratigraphy-compress",
+      "atomName": "The Stratigraphy Engine",
+      "collectionNumber": 6,
+      "seriesNumber": 53,
+      "seriesName": "The Tectonic Shift",
+      "structuralScore": 8,
+      "repetitionClusterSize": 6,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "reshape",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 77,
+      "atomNumber": 33,
+      "atomId": "figure-ground-reversal",
+      "atomName": "The Figure-Ground Reversal Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 4,
+      "seriesName": "The Via Negativa",
+      "structuralScore": 8,
+      "repetitionClusterSize": 7,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 78,
+      "atomNumber": 129,
+      "atomId": "silent-mirror",
+      "atomName": "The Silent Mirror Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 13,
+      "seriesName": "The Semantic Translators",
+      "structuralScore": 8,
+      "repetitionClusterSize": 7,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 79,
+      "atomNumber": 204,
+      "atomId": "traffic-observer",
+      "atomName": "The Traffic Observer Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 21,
+      "seriesName": "The Metacognitive Mirror",
+      "structuralScore": 8,
+      "repetitionClusterSize": 7,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "field-recompose",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    },
+    {
+      "reviewOrder": 80,
+      "atomNumber": 378,
+      "atomId": "evaporation-patience",
+      "atomName": "The Evaporation Patience Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 38,
+      "seriesName": "The Magnetic Sieve",
+      "structuralScore": 8,
+      "repetitionClusterSize": 7,
+      "refinementPriority": "low",
+      "dominantVerbSeed": "hold",
+      "resolutionClassSeed": "state-morph",
+      "sensoryProfile": [
+        "visual",
+        "touch",
+        "haptics"
+      ]
+    }
+  ],
+  "clusterPressure": [
+    {
+      "repetitionKey": "canvas|full|draggable|none|resolved|continuous|haptics",
+      "clusterSize": 87,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "draggable",
+      "dominantResolution": "state-morph",
+      "dominantInputs": [
+        "drag"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "fluid",
+        "optical"
+      ],
+      "examples": [
+        "87:shame-compass",
+        "98:narrative-override",
+        "105:blind-spot",
+        "121:subtext-scanner",
+        "145:regret-minimization",
+        "146:pre-hindsight",
+        "148:worst-case-simulator",
+        "178:abundance-scan"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Differentiate drag atoms by counterforce and destination law, not by object theme",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|draggable|none|resolved|discrete|haptics",
+      "clusterSize": 59,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "draggable",
+      "dominantResolution": "seal",
+      "dominantInputs": [
+        "drag"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "optical",
+        "structural"
+      ],
+      "examples": [
+        "93:belief-bridge",
+        "118:vector-pivot",
+        "123:yet-append",
+        "128:absurdity-filter",
+        "162:truce-table",
+        "163:perspective-swap",
+        "164:translation-ear",
+        "171:essentialism"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Differentiate drag atoms by counterforce and destination law, not by object theme",
+        "Avoid overusing seal endings; vary into field-recompose or state-morph where possible",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|tappable|none|resolved|discrete|haptics",
+      "clusterSize": 55,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "tappable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "tap"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "structural",
+        "fluid"
+      ],
+      "examples": [
+        "80:holographic-drop",
+        "107:absurdity-deflation",
+        "112:micro-step-shrink",
+        "114:friction-injection",
+        "124:conjunction-shift",
+        "159:gut-signal",
+        "161:mirror-shield",
+        "170:common-ground-seal"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Upgrade tap atoms with richer aftermath so the action does more than trigger",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|swipeable|none|resolved|discrete|haptics",
+      "clusterSize": 35,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "swipeable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "swipe"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "fluid",
+        "optical"
+      ],
+      "examples": [
+        "68:ancestral-cut",
+        "176:obstacle-flip",
+        "203:syntactic-severance",
+        "251:matryoshka",
+        "267:character-drop",
+        "273:autumn-leaf",
+        "286:tectonic-drop",
+        "296:karmic-severance"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Make swipe atoms directionally decisive instead of interchangeable",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|pinchable|none|resolved|continuous|haptics",
+      "clusterSize": 30,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "pinchable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "pinch"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "optical",
+        "fluid"
+      ],
+      "examples": [
+        "70:third-person-shift",
+        "77:vastness-expansion",
+        "201:theater-lens",
+        "257:space-container",
+        "285:focal-collapse",
+        "295:namaste-lens",
+        "312:dissonant-chord",
+        "339:knot-release"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Use scale change to alter ontology, not just size",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|holdable|none|resolved|continuous|haptics",
+      "clusterSize": 28,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "holdable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "hold"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "fluid",
+        "network",
+        "thermal"
+      ],
+      "examples": [
+        "133:status-seesaw",
+        "210:observer-seal",
+        "211:semantic-stripping",
+        "230:shifter-seal",
+        "245:pendulum-arrest",
+        "272:evaporation",
+        "290:anchor-seal",
+        "313:resonant-shatter"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Use hold duration, strain, and breath cadence to create consequence",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|observable|none|resolved|discrete|haptics",
+      "clusterSize": 17,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "observable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "observe"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "thermal",
+        "network",
+        "fluid"
+      ],
+      "examples": [
+        "50:silent-rest",
+        "426:archimedes-lift",
+        "439:false-bottom-net",
+        "485:bedrock-scatter",
+        "488:buoyancy-rebound",
+        "493:structural-load",
+        "550:apex-inversion-monument",
+        "623:slingshot-comeback"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|drawable|none|resolved|discrete|haptics",
+      "clusterSize": 13,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "drawable",
+      "dominantResolution": "seal",
+      "dominantInputs": [
+        "draw"
+      ],
+      "dominantPhysics": [
+        "network",
+        "gravitational",
+        "optical",
+        "fluid"
+      ],
+      "examples": [
+        "130:interpreter-seal",
+        "207:glass-wall",
+        "253:predicate-eraser",
+        "298:i-am",
+        "320:cymatic-link",
+        "322:constellation-link",
+        "366:fiber-optic",
+        "370:circuit-complete"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Avoid overusing seal endings; vary into field-recompose or state-morph where possible",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|pinchable|none|resolved|discrete|haptics",
+      "clusterSize": 12,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "pinchable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "pinch"
+      ],
+      "dominantPhysics": [
+        "network",
+        "gravitational",
+        "topological",
+        "acoustic"
+      ],
+      "examples": [
+        "95:luck-surface",
+        "333:fabric-tear",
+        "415:droste-recursion",
+        "419:tesseract-unfold",
+        "441:tesseract-unfolding",
+        "460:ego-strip",
+        "545:bottleneck-expand",
+        "564:vanishing-point-converge"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Use scale change to alter ontology, not just size",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|scrubable|none|resolved|continuous|haptics",
+      "clusterSize": 12,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "scrubable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "scrub"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "network",
+        "fluid",
+        "optical"
+      ],
+      "examples": [
+        "238:butterfly-effect",
+        "258:nobody",
+        "311:base-frequency",
+        "347:depth-pressure",
+        "422:buoyancy-shift",
+        "457:focal-length-shift",
+        "514:maze-wall-elevation",
+        "540:grand-canyon-carve"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|draggable+tappable|none|resolved|discrete|haptics",
+      "clusterSize": 11,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "tappable+draggable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "drag",
+        "tap"
+      ],
+      "dominantPhysics": [
+        "gravitational",
+        "structural",
+        "acoustic",
+        "network"
+      ],
+      "examples": [
+        "76:micro-step",
+        "109:echo-cancellation",
+        "134:empathy-bridge",
+        "135:aikido-redirect",
+        "174:leverage-engine",
+        "263:toy-box",
+        "386:lever-advantage",
+        "431:echolocation-ping"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Differentiate drag atoms by counterforce and destination law, not by object theme",
+        "Upgrade tap atoms with richer aftermath so the action does more than trigger",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    },
+    {
+      "repetitionKey": "canvas|full|drawable|none|resolved|continuous|haptics",
+      "clusterSize": 11,
+      "renderMode": "canvas",
+      "defaultScale": "full",
+      "dominantSurfaceSignature": "drawable",
+      "dominantResolution": "field-recompose",
+      "dominantInputs": [
+        "draw"
+      ],
+      "dominantPhysics": [
+        "fluid",
+        "gravitational",
+        "network",
+        "optical"
+      ],
+      "examples": [
+        "216:tabula-rasa",
+        "288:thermal-boundary",
+        "362:aqueduct-channel",
+        "469:asymmetric-reconciliation",
+        "532:riverbed-flow",
+        "539:oxbow-pivot",
+        "597:meander-curve",
+        "607:multiple-fronts-flow"
+      ],
+      "differentiationLevers": [
+        "Break canvas sameness with depth, glass, or device-coupled motion",
+        "Consider adding a secondary sensor channel where it deepens the law"
+      ]
+    }
+  ],
+  "collectionPriorities": [
+    {
+      "collectionNumber": 7,
+      "total": 100,
+      "signature": 0,
+      "hero": 3,
+      "rebuild": 0,
+      "highRefinement": 88,
+      "avgRepetition": 42.09,
+      "priorityScore": 103.75,
+      "recommendedFocus": "This collection needs differentiation pressure relief and stronger signature atoms."
+    },
+    {
+      "collectionNumber": 6,
+      "total": 100,
+      "signature": 2,
+      "hero": 13,
+      "rebuild": 0,
+      "highRefinement": 70,
+      "avgRepetition": 35.91,
+      "priorityScore": 77.55,
+      "recommendedFocus": "This collection needs differentiation pressure relief and stronger signature atoms."
+    },
+    {
+      "collectionNumber": 4,
+      "total": 100,
+      "signature": 1,
+      "hero": 12,
+      "rebuild": 0,
+      "highRefinement": 70,
+      "avgRepetition": 31.04,
+      "priorityScore": 74.62,
+      "recommendedFocus": "This collection needs differentiation pressure relief and stronger signature atoms."
+    },
+    {
+      "collectionNumber": 5,
+      "total": 100,
+      "signature": 0,
+      "hero": 18,
+      "rebuild": 0,
+      "highRefinement": 65,
+      "avgRepetition": 34.75,
+      "priorityScore": 72.85,
+      "recommendedFocus": "This collection needs differentiation pressure relief and stronger signature atoms."
+    },
+    {
+      "collectionNumber": 2,
+      "total": 100,
+      "signature": 3,
+      "hero": 14,
+      "rebuild": 2,
+      "highRefinement": 57,
+      "avgRepetition": 22,
+      "priorityScore": 64.8,
+      "recommendedFocus": "Redesign weak engines before promoting the collection as stable."
+    },
+    {
+      "collectionNumber": 3,
+      "total": 100,
+      "signature": 8,
+      "hero": 21,
+      "rebuild": 0,
+      "highRefinement": 54,
+      "avgRepetition": 17.72,
+      "priorityScore": 53.83,
+      "recommendedFocus": "Run a composition and payoff pass before broad ingest."
+    },
+    {
+      "collectionNumber": 1,
+      "total": 100,
+      "signature": 16,
+      "hero": 26,
+      "rebuild": 0,
+      "highRefinement": 36,
+      "avgRepetition": 6.01,
+      "priorityScore": 32.41,
+      "recommendedFocus": "Run a composition and payoff pass before broad ingest."
+    }
+  ],
+  "rebuildBriefs": [
+    {
+      "atomNumber": 190,
+      "atomId": "mystic-seal",
+      "atomName": "The Mystic Seal",
+      "seriesNumber": 19,
+      "seriesName": "The Mystic & Infinite Player",
+      "currentIssues": [
+        "Engine itself is structurally weak for hero use.",
+        "No explicit resolution path; wrapper must carry closure."
+      ],
+      "dominantVerbSeed": "trace",
+      "currentCounterforce": "distortion",
+      "upgradeBrief": "Increase hero occupancy so the atom can command the phone. Add a decisive resolution path with a real threshold morph. Add a second meaningful interaction dimension or counterforce. Rebuild around one dominant verb and one unforgettable memory trace."
+    },
+    {
+      "atomNumber": 200,
+      "atomId": "atlas-seal",
+      "atomName": "The Atlas Seal",
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "currentIssues": [
+        "Engine itself is structurally weak for hero use.",
+        "Small hero footprint needs stronger consequence design."
+      ],
+      "dominantVerbSeed": "trigger",
+      "currentCounterforce": "distortion",
+      "upgradeBrief": "Increase hero occupancy so the atom can command the phone. Add a second meaningful interaction dimension or counterforce. Rebuild around one dominant verb and one unforgettable memory trace."
+    }
+  ],
+  "operatingRule": "Review signature and hero atoms first, then attack sameness by repetition cluster, then redesign rebuild-pass atoms last."
+}

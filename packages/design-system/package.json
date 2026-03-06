@@ -1,0 +1,21 @@
+{
+  "name": "@recoverlution/design-system",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Universal design system token platform (code-first SSOT)",
+  "type": "module",
+  "scripts": {
+    "tokens:validate": "node ./tokens/build/validate.mjs",
+    "tokens:build": "node ./tokens/build/index.mjs",
+    "tokens:export": "node ./tokens/build/export.mjs",
+    "tokens:report": "node ./tokens/build/report.mjs",
+    "tokens:diff": "node ./tokens/build/diff.mjs",
+    "tokens:diff:strict": "node ./tokens/build/diff.mjs --strict",
+    "tokens:baseline:promote": "node ./tokens/build/promote-baseline.mjs",
+    "tokens:check": "npm run -s tokens:validate && npm run -s tokens:build && npm run -s tokens:report && npm run -s tokens:diff"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./runtime/design-tokens": "./src/runtime/design-tokens.ts"
+  }
+}

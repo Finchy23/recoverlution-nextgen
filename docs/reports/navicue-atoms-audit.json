@@ -1,0 +1,898 @@
+{
+  "generatedAt": "2026-03-06T21:41:53.515Z",
+  "totalAtoms": 700,
+  "completeAtoms": 700,
+  "countsByTier": {
+    "composition-sensitive": 561,
+    "hero-candidate": 137,
+    "likely-underpowered": 2
+  },
+  "countsByCollection": [
+    {
+      "collectionNumber": 1,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 42,
+      "compositionSensitive": 58,
+      "likelyUnderpowered": 0
+    },
+    {
+      "collectionNumber": 2,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 17,
+      "compositionSensitive": 81,
+      "likelyUnderpowered": 2
+    },
+    {
+      "collectionNumber": 3,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 29,
+      "compositionSensitive": 71,
+      "likelyUnderpowered": 0
+    },
+    {
+      "collectionNumber": 4,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 13,
+      "compositionSensitive": 87,
+      "likelyUnderpowered": 0
+    },
+    {
+      "collectionNumber": 5,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 18,
+      "compositionSensitive": 82,
+      "likelyUnderpowered": 0
+    },
+    {
+      "collectionNumber": 6,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 15,
+      "compositionSensitive": 85,
+      "likelyUnderpowered": 0
+    },
+    {
+      "collectionNumber": 7,
+      "total": 100,
+      "complete": 100,
+      "heroCandidates": 3,
+      "compositionSensitive": 97,
+      "likelyUnderpowered": 0
+    }
+  ],
+  "flagged": [
+    {
+      "number": 190,
+      "id": "mystic-seal",
+      "name": "The Mystic Seal",
+      "collectionNumber": 2,
+      "seriesNumber": 19,
+      "seriesName": "The Mystic & Infinite Player",
+      "defaultScale": "focus",
+      "surfaces": [
+        "drawable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 2,
+      "triageTier": "likely-underpowered",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Local focus + low interaction breadth + no resolution is a common “small atom” pattern."
+      ]
+    },
+    {
+      "number": 200,
+      "id": "atlas-seal",
+      "name": "The Atlas Seal",
+      "collectionNumber": 2,
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "defaultScale": "point",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 3,
+      "triageTier": "likely-underpowered",
+      "reasons": [
+        "Tiny default scale puts pressure on consequence design.",
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 13,
+      "id": "double-slit",
+      "name": "The Double Slit Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "defaultScale": "full",
+      "surfaces": [
+        "tappable",
+        "observable"
+      ],
+      "hasResolution": false,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "No explicit resolution means the player must carry the payoff.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 66,
+      "id": "metadata-rewrite",
+      "name": "The Metadata Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 7,
+      "seriesName": "The Retro-Causal Engine",
+      "defaultScale": "focus",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 88,
+      "id": "anger-forge",
+      "name": "The Forge Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "defaultScale": "focus",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 97,
+      "id": "architect-stone",
+      "name": "The Architect Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 10,
+      "seriesName": "The Reality Bender",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 110,
+      "id": "axiomatic-seal",
+      "name": "The Axiomatic Seal",
+      "collectionNumber": 2,
+      "seriesNumber": 11,
+      "seriesName": "The Epistemic Constructs",
+      "defaultScale": "focus",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 113,
+      "id": "ulysses-pact",
+      "name": "The Ulysses Pact Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 12,
+      "seriesName": "The Friction Mechanics",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 127,
+      "id": "meaning-mine",
+      "name": "The Meaning Mine Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 13,
+      "seriesName": "The Semantic Translators",
+      "defaultScale": "focus",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 150,
+      "id": "capsule-seal",
+      "name": "The Capsule Seal",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 179,
+      "id": "permissionless",
+      "name": "The Permissionless Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 18,
+      "seriesName": "The Visionary & Strategist",
+      "defaultScale": "focus",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 197,
+      "id": "circle-close",
+      "name": "The Circle Close Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "defaultScale": "focus",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 249,
+      "id": "weight-of-opposites",
+      "name": "The Weight of Opposites Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 25,
+      "seriesName": "The Dialectical Engine",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 325,
+      "id": "magnetic-snap",
+      "name": "The Magnetic Snap Engine",
+      "collectionNumber": 4,
+      "seriesNumber": 33,
+      "seriesName": "The Catalyst Web",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 4,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 17,
+      "id": "quantum-tunnel",
+      "name": "The Quantum Tunnel Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable",
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 20,
+      "id": "holographic",
+      "name": "The Holographic Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 2,
+      "seriesName": "The Quantum Mechanics",
+      "defaultScale": "full",
+      "surfaces": [
+        "pinchable",
+        "observable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 27,
+      "id": "dormancy",
+      "name": "The Dormancy Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 3,
+      "seriesName": "The Biomimetic Algorithms",
+      "defaultScale": "full",
+      "surfaces": [
+        "holdable",
+        "observable"
+      ],
+      "hasResolution": false,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "No explicit resolution means the player must carry the payoff.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 31,
+      "id": "sensory-deprivation",
+      "name": "The Sensory Deprivation Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 4,
+      "seriesName": "The Via Negativa",
+      "defaultScale": "full",
+      "surfaces": [
+        "observable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 63,
+      "id": "narrative-flip",
+      "name": "The Narrative Flip Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 7,
+      "seriesName": "The Retro-Causal Engine",
+      "defaultScale": "focus",
+      "surfaces": [
+        "swipeable",
+        "observable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 64,
+      "id": "splicing-timeline",
+      "name": "The Splicing Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 7,
+      "seriesName": "The Retro-Causal Engine",
+      "defaultScale": "field",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 72,
+      "id": "fractal-zoom",
+      "name": "The Fractal Zoom Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 8,
+      "seriesName": "The Kinematic Topology",
+      "defaultScale": "full",
+      "surfaces": [
+        "pinchable",
+        "tappable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 83,
+      "id": "projection-mirror",
+      "name": "The Projection Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 84,
+      "id": "solve-coagula",
+      "name": "The Coagula Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "defaultScale": "focus",
+      "surfaces": [
+        "tappable",
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 89,
+      "id": "inner-child",
+      "name": "The Inner Child Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 9,
+      "seriesName": "The Shadow & Crucible",
+      "defaultScale": "focus",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 96,
+      "id": "possibility-prism",
+      "name": "The Possibility Prism Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 10,
+      "seriesName": "The Reality Bender",
+      "defaultScale": "field",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 99,
+      "id": "pure-yes",
+      "name": "The Pure Yes Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 10,
+      "seriesName": "The Reality Bender",
+      "defaultScale": "full",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 100,
+      "id": "infinite-ouroboros",
+      "name": "The Infinite Engine",
+      "collectionNumber": 1,
+      "seriesNumber": 10,
+      "seriesName": "The Reality Bender",
+      "defaultScale": "focus",
+      "surfaces": [
+        "drawable",
+        "breathable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive."
+      ]
+    },
+    {
+      "number": 126,
+      "id": "label-inception",
+      "name": "The Label Inception Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 13,
+      "seriesName": "The Semantic Translators",
+      "defaultScale": "field",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 137,
+      "id": "gossip-firewall",
+      "name": "The Gossip Firewall Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 14,
+      "seriesName": "The Social Physics",
+      "defaultScale": "field",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 140,
+      "id": "diplomat-seal",
+      "name": "The Diplomat Seal",
+      "collectionNumber": 2,
+      "seriesNumber": 14,
+      "seriesName": "The Social Physics",
+      "defaultScale": "focus",
+      "surfaces": [
+        "drawable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 141,
+      "id": "open-when",
+      "name": "The Open When Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 15,
+      "seriesName": "The Time Capsule & Future Weaving",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable",
+        "typeable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 155,
+      "id": "micro-texture",
+      "name": "The Micro-Texture Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 16,
+      "seriesName": "The Soma & Perception",
+      "defaultScale": "full",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 188,
+      "id": "wonder-walk",
+      "name": "The Wonder Walk Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 19,
+      "seriesName": "The Mystic & Infinite Player",
+      "defaultScale": "full",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": false,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "No explicit resolution means the player must carry the payoff.",
+        "Continuous loop without resolution risks feeling ambient instead of decisive.",
+        "Spatial authority is structurally available."
+      ]
+    },
+    {
+      "number": 196,
+      "id": "alpha-omega",
+      "name": "The Alpha Omega Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 199,
+      "id": "tail-swallow",
+      "name": "The Tail Swallow Engine",
+      "collectionNumber": 2,
+      "seriesNumber": 20,
+      "seriesName": "The Omega & Integration",
+      "defaultScale": "focus",
+      "surfaces": [
+        "drawable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 206,
+      "id": "empty-boat",
+      "name": "The Empty Boat Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 21,
+      "seriesName": "The Metacognitive Mirror",
+      "defaultScale": "field",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 217,
+      "id": "wabi-sabi",
+      "name": "The Wabi-Sabi Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "defaultScale": "focus",
+      "surfaces": [
+        "tappable",
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 220,
+      "id": "perception-seal",
+      "name": "The Perception Seal",
+      "collectionNumber": 3,
+      "seriesNumber": 22,
+      "seriesName": "The Predictive Override",
+      "defaultScale": "focus",
+      "surfaces": [
+        "holdable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 231,
+      "id": "indra-node",
+      "name": "The Indra Node Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 24,
+      "seriesName": "The Net of Indra",
+      "defaultScale": "field",
+      "surfaces": [
+        "tappable"
+      ],
+      "hasResolution": true,
+      "continuous": false,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Spatial authority is structurally available.",
+        "Resolution path exists in the engine."
+      ]
+    },
+    {
+      "number": 241,
+      "id": "tensegrity",
+      "name": "The Tensegrity Engine",
+      "collectionNumber": 3,
+      "seriesNumber": 25,
+      "seriesName": "The Dialectical Engine",
+      "defaultScale": "focus",
+      "surfaces": [
+        "draggable"
+      ],
+      "hasResolution": true,
+      "continuous": true,
+      "structuralScore": 5,
+      "triageTier": "composition-sensitive",
+      "reasons": [
+        "Single-surface interaction increases risk of weak hero depth.",
+        "Resolution path exists in the engine."
+      ]
+    }
+  ],
+  "notes": [
+    "This is a structural triage pass, not a final artistic judgment.",
+    "It scores metadata-defined hero potential and risk, not the full rendered feel of each atom.",
+    "Use this to prioritize manual hero-grade review, not to replace it."
+  ]
+}

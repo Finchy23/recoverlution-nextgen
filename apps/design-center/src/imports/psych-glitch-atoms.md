@@ -1,0 +1,17 @@
+SERIES 6: THE META-SYSTEM & GLITCH (Atoms 57-60 only)
+Collection 1: The Somatic Architect
+(The Architecture of Disruption)
+Coverage: Partial — atoms 57-60 of 51-60
+
+ATOM 57: THE MUSCLE MEMORY ENGINE (The Wrong Button)
+The Intent: The user navigates their phone like a robot, relying on spatial muscle memory. This atom intentionally moves the interactive targets to force the user to wake up and look at what they are doing. The Physics: Hit-box evasion, spatial shifting, and bounding box constraints. Implementations from the Master File:
+The Wrong Button: "You are a robot right now. Clicking without feeling. I moved the cheese. Wake up". The Front-End Mandate: The "Next" button appears in its usual, predictable spot at the bottom of the screen. As the user's finger (detected via hover or initial touch trajectory) approaches, the button physically slides to the opposite side of the screen. They must pause, locate it, and intentionally press it.
+ATOM 58: THE PIXELATION ENGINE (Identity Resolution)
+The Intent: The ego suffers because its identity is too rigid, too sharp, and too highly defined. This atom lowers the "resolution" of the self, allowing for fluidity and reinvention. The Physics: Mosaic shaders, downscaling algorithms, and blocky rendering. Implementations from the Master File:
+The Pixelated Self: The resolution is low. The identity is blurry. The user interacts to embrace the un-rendered state. The Front-End Mandate: A sharp, high-fidelity avatar or rigid identity statement is run through a WebGL mosaic filter. As the user drags a slider, the "pixel size" increases from 1px to 50px, turning a sharp, painful judgment into a soft, abstract, blurry composition of mere color.
+ATOM 59: THE ATTENTION PAYWALL ENGINE (Rumination Cost)
+The Intent: Ruminating feels free, so the mind does it endlessly. This atom visualizes the hidden metabolic cost of overthinking, making the user "pay" for every anxious loop. The Physics: Depleting energy bars, friction drag, and transaction aesthetics. Implementations from the Master File:
+The Attention Paywall: Thoughts appear with energy costs. For each one the user engages with, they watch their central "battery" visually drain. The Front-End Mandate: A brilliant, glowing battery sits in the center. Anxious thoughts float by. If the user taps one to "read" it, the battery physically drains by 10%, accompanied by a heavy, draining, downward haptic slide. The user quickly learns to let the thoughts pass to preserve their voltage.
+ATOM 60: THE SEMANTIC CRASH ENGINE (Loop Breaking)
+The Intent: Semantic satiation is the psychological phenomenon where a word loses its meaning when repeated too many times. This atom uses this glitch to strip the power from a terrifying word. The Physics: Rapid typography looping, overlapping text rendering, and auditory/visual blurring. Implementations from the Master File:
+The Loop Crash: The words are losing meaning. The user watches a terrifying word loop until it becomes just shapes on a screen. The Front-End Mandate: The user's trigger word (e.g., "FAILURE") is rendered 100 times on the screen in rapid succession, stacking on top of itself in a massive block of overlapping text. As it repeats, the font morphs, stretches, and distorts until it is no longer readable English—it is just abstract, meaningless geometry. The haptic is a frantic buzzing that tires out and goes flat.

@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "headline": {
+      "$value": "{semantic.global.text.body.primary}",
+      "$type": "color"
+    },
+    "subhead": {
+      "$value": "{semantic.global.text.body.secondary}",
+      "$type": "color"
+    },
+    "cta": {
+      "bg": {
+        "$value": "{primitives.colors.indigo.500}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{primitives.colors.neutral.0}",
+        "$type": "color"
+      }
+    }
+  }
+}

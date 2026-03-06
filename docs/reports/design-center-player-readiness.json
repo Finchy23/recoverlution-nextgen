@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-03-06T21:41:54.401Z",
+  "status": "pass",
+  "summary": {
+    "totalAtoms": 700,
+    "totalCatalogCount": 700,
+    "completeAtoms": 700,
+    "builtAtoms": 700,
+    "baselineBuilds": 700,
+    "matrixBuilds": 99
+  },
+  "registry": {
+    "missingComponentsForComplete": [],
+    "builtWithoutCompleteStatus": [],
+    "missingContentProfiles": [],
+    "missingCopyProfiles": []
+  },
+  "contract": {
+    "invalidEntranceAffinity": [],
+    "invalidExitAffinity": [],
+    "invalidVocalFamilyAffinity": [],
+    "copyBudgetViolations": []
+  },
+  "deviceMirror": {
+    "required": [
+      {
+        "label": "design-center",
+        "wired": true
+      },
+      {
+        "label": "atoms",
+        "wired": true
+      },
+      {
+        "label": "surfaces",
+        "wired": true
+      },
+      {
+        "label": "motion",
+        "wired": true
+      },
+      {
+        "label": "voice",
+        "wired": true
+      }
+    ],
+    "optional": [
+      {
+        "label": "delivery",
+        "wired": false
+      },
+      {
+        "label": "showcase",
+        "wired": false
+      }
+    ]
+  },
+  "build": {
+    "baselineFailures": [],
+    "matrixFailures": []
+  },
+  "notes": [
+    "Player composition assembled successfully for 700/700 built atoms under baseline coverage.",
+    "Matrix assembly exercised 99 variable combinations across representative atoms.",
+    "Current app QA typecheck is still narrow and token-focused. This readiness harness closes the runtime gap until the wider app is typechecked.",
+    "Delivery and showcase are not mirror-wired today. That is acceptable if they remain inspection surfaces instead of live assembly labs."
+  ]
+}
