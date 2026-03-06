@@ -1,0 +1,31 @@
+review_order,atom_number,atom_id,atom_name,collection_number,series_number,series_name,structural_score,repetition_cluster_size,navicue_fit,dominant_verb_seed,counterforce_type_seed,resolution_class_seed,sensory_profile,physics_tags
+1,46,brown-noise,The Brown Noise Engine,1,5,The Chrono-Acoustic Drives,11,1,signature,guide,weight,field-recompose,visual | touch | breath | haptics | audio,acoustic | fluid | gravitational
+2,10,thermodynamic,The Thermodynamic Engine,1,1,The Physics Engines,10,1,signature,guide,pressure,state-morph,visual | touch | breath | haptics,thermal | fluid | temporal
+3,45,audio-zoom,The Audio Zoom Engine,1,5,The Chrono-Acoustic Drives,10,1,signature,guide,distortion,field-recompose,visual | touch | haptics | audio,acoustic | network | optical
+4,49,standing-wave,The Standing Wave Engine,1,5,The Chrono-Acoustic Drives,10,1,signature,guide,entanglement,field-recompose,visual | touch | breath | haptics | audio,acoustic | network | gravitational
+5,2,phase-shift,The Phase-Shift Engine,1,1,The Physics Engines,10,1,signature,guide,entanglement,state-morph,visual | touch | breath | haptics,fluid | thermal | network
+6,11,wave-collapse,The Wave Collapse Engine,1,2,The Quantum Mechanics,10,1,signature,hold,distortion,field-recompose,visual | touch | breath | haptics,optical | network
+7,44,cymatic-coherence,The Cymatic Coherence Engine,1,5,The Chrono-Acoustic Drives,10,1,signature,hold,paradox,field-recompose,visual | touch | breath | haptics,acoustic | network | topological
+8,282,respiration-pendulum,The Respiration Pendulum Engine,3,29,The Interoceptive Anchor,10,1,signature,speak,distortion,field-recompose,visual | breath | haptics | microphone,acoustic | optical | gravitational
+9,262,sand-mandala,The Sand Mandala Engine,3,27,The Cosmic Play,9,1,signature,speak,distortion,field-recompose,visual | touch | haptics | microphone,optical | acoustic | gravitational
+10,7,symbiotic,The Symbiotic Engine,1,1,The Physics Engines,9,1,signature,guide,entanglement,state-morph,visual | touch | breath | haptics,network | fluid | temporal
+11,28,ecosystem-balancer,The Ecosystem Balancer,1,3,The Biomimetic Algorithms,9,1,signature,guide,distortion,field-recompose,visual | touch | breath | haptics,fluid | network | optical
+12,40,singularity,The Singularity Engine,1,4,The Via Negativa,9,1,signature,reshape,distortion,seal,visual | touch | breath | haptics,subtractive | gravitational | optical
+13,55,algorithm-jammer,The Algorithm Jammer Engine,1,6,The Meta-System & Glitch,9,1,signature,hold,constraint,field-recompose,visual | touch | breath | haptics,gravitational | structural
+14,58,pixelation,The Pixelation Engine,1,6,The Meta-System & Glitch,9,1,signature,guide,constraint,field-recompose,visual | touch | breath | haptics,fluid | structural
+15,168,de-escalation,The De-Escalation Engine,2,17,The Diplomat & Social Physics II,9,1,signature,guide,constraint,state-morph,visual | touch | breath | haptics,thermal | gravitational | structural
+16,48,crescendo,The Crescendo Engine,1,5,The Chrono-Acoustic Drives,9,1,signature,hold,entanglement,field-recompose,visual | touch | haptics | audio,acoustic | network | subtractive
+17,59,attention-paywall,The Attention Paywall Engine,1,6,The Meta-System & Glitch,9,2,signature,trigger,constraint,field-recompose,visual | touch | breath | haptics,structural
+18,90,phoenix-ash,The Phoenix Engine,1,9,The Shadow & Crucible,9,1,signature,speak,pressure,state-morph,visual | touch | haptics | microphone,thermal | subtractive
+19,215,acoustic-unnaming,The Acoustic Un-Naming Engine,3,22,The Predictive Override,9,1,signature,speak,distortion,field-recompose,visual | touch | haptics | microphone,optical | temporal | acoustic
+20,222,water-mode,The Water Mode Engine,3,23,The Fluidity Mechanics,9,1,signature,tilt,entanglement,field-recompose,visual | touch | haptics | tilt,fluid | gravitational | network
+21,261,destination-override,The Destination Override Engine,3,27,The Cosmic Play,9,1,signature,clear,distortion,field-recompose,visual | touch | haptics | audio,acoustic | optical | gravitational
+22,506,pendulum-weight,The Pendulum Weight Engine,6,51,The Glacial Pacer,9,2,signature,trigger,pressure,seal,visual | touch | breath | haptics,gravitational | thermal | temporal
+23,81,crucible-fire,The Crucible Engine,1,9,The Shadow & Crucible,9,1,signature,hold,pressure,state-morph,visual | touch | breath | haptics,thermal | fluid | subtractive
+24,156,voice-box,The Voice Box Engine,2,16,The Soma & Perception,9,1,signature,speak,weight,field-recompose,visual | haptics | microphone,temporal | acoustic | gravitational
+25,390,perpetual-motion,The Perpetual Motion Engine,4,39,The Momentum Wheel,9,1,signature,regulate,weight,seal,visual | breath | haptics,gravitational | fluid | subtractive
+26,277,exhale-cycle,The Exhale Cycle Engine,3,28,The Impermanence Engine,9,2,signature,hold,entanglement,state-morph,visual | touch | breath | haptics,thermal | network
+27,297,infinite-heart,The Infinite Heart Engine,3,30,The Loving Awareness,9,2,signature,hold,distortion,field-recompose,visual | touch | breath | haptics,fluid | network | optical
+28,154,proprioception,The Proprioception Engine,2,16,The Soma & Perception,9,3,signature,tilt,weight,field-recompose,visual | haptics | tilt,temporal | fluid | gravitational
+29,287,micro-tremor,The Micro-Tremor Engine,3,29,The Interoceptive Anchor,9,3,signature,tilt,distortion,field-recompose,visual | haptics | tilt,optical | acoustic | fluid
+30,542,center-of-mass,The Center of Mass Engine,6,55,The Hourglass Inversion,9,3,signature,tilt,weight,field-recompose,visual | haptics | tilt,gravitational | fluid | temporal

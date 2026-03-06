@@ -1,0 +1,469 @@
+{
+  "primitives": {
+    "colors": {
+      "amber": {
+        "400": {
+          "$type": "color",
+          "$value": "#FFB547"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#CC7D0A"
+        }
+      },
+      "indigo": {
+        "300": {
+          "$type": "color",
+          "$value": "#8A9CFF"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#536DFE"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3148CC"
+        }
+      },
+      "neutral": {
+        "0": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F7F8FA"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ECEFF3"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#D5DCE5"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3C4654"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1A2330"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#0B0F14"
+        }
+      },
+      "red": {
+        "500": {
+          "$type": "color",
+          "$value": "#E24F5D"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#B73246"
+        }
+      },
+      "teal": {
+        "400": {
+          "$type": "color",
+          "$value": "#30C4BE"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#0A8F8B"
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "base": {
+          "$type": "duration",
+          "$value": "220ms"
+        },
+        "fast": {
+          "$type": "duration",
+          "$value": "140ms"
+        },
+        "instant": {
+          "$type": "duration",
+          "$value": "80ms"
+        },
+        "ritual": {
+          "$type": "duration",
+          "$value": "600ms"
+        },
+        "slow": {
+          "$type": "duration",
+          "$value": "380ms"
+        }
+      },
+      "easing": {
+        "enter": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.12,
+            0,
+            0.08,
+            1
+          ]
+        },
+        "exit": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.4,
+            0,
+            1,
+            1
+          ]
+        },
+        "standard": {
+          "$type": "cubicBezier",
+          "$value": [
+            0.22,
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0rem"
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "0.125rem"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "0.25rem"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "0.5rem"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "0.75rem"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "1rem"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "1.25rem"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "1.5rem"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "2rem"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "3rem"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "mono": {
+          "$type": "fontFamily",
+          "$value": "\"SF Mono\", ui-monospace, Menlo, Monaco, monospace"
+        },
+        "sans": {
+          "$type": "fontFamily",
+          "$value": "\"SF Pro Display\", \"SF Pro Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        }
+      },
+      "fontSize": {
+        "2xl": {
+          "$type": "dimension",
+          "$value": "2rem"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "1.125rem"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "1rem"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "0.875rem"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "1.5rem"
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "0.75rem"
+        }
+      },
+      "fontWeight": {
+        "bold": {
+          "$type": "fontWeight",
+          "$value": 700
+        },
+        "medium": {
+          "$type": "fontWeight",
+          "$value": 500
+        },
+        "regular": {
+          "$type": "fontWeight",
+          "$value": 400
+        },
+        "semibold": {
+          "$type": "fontWeight",
+          "$value": 600
+        }
+      },
+      "lineHeight": {
+        "base": {
+          "$type": "number",
+          "$value": 1.45
+        },
+        "relaxed": {
+          "$type": "number",
+          "$value": 1.65
+        },
+        "tight": {
+          "$type": "number",
+          "$value": 1.2
+        }
+      }
+    }
+  },
+  "runtime": {
+    "chrono": {
+      "morning": {
+        "navicue": {
+          "atmosphere": {
+            "highlight": {
+              "$type": "color",
+              "$value": "{primitives.colors.amber.400}"
+            },
+            "temperatureOffset": {
+              "$type": "dimension",
+              "$value": "0.25rem"
+            }
+          },
+          "motion": {
+            "entryDuration": {
+              "$type": "duration",
+              "$value": "420ms"
+            }
+          }
+        }
+      },
+      "night": {
+        "navicue": {
+          "atmosphere": {
+            "highlight": {
+              "$type": "color",
+              "$value": "{primitives.colors.indigo.300}"
+            },
+            "temperatureOffset": {
+              "$type": "dimension",
+              "$value": "-0.25rem"
+            }
+          },
+          "motion": {
+            "entryDuration": {
+              "$type": "duration",
+              "$value": "620ms"
+            }
+          }
+        }
+      }
+    },
+    "heat": {
+      "green": {
+        "navicue": {
+          "copyDensity": {
+            "maxLines": {
+              "$type": "number",
+              "$value": 3
+            }
+          },
+          "interaction": {
+            "cognitiveLoad": {
+              "$type": "string",
+              "$value": "low"
+            }
+          }
+        }
+      },
+      "red": {
+        "navicue": {
+          "copyDensity": {
+            "maxLines": {
+              "$type": "number",
+              "$value": 1
+            }
+          },
+          "interaction": {
+            "cognitiveLoad": {
+              "$type": "string",
+              "$value": "minimal"
+            }
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "domains": {
+      "marketing": {
+        "core": {
+          "hero": {
+            "cta": {
+              "bg": {
+                "$type": "color",
+                "$value": "{primitives.colors.indigo.500}"
+              },
+              "text": {
+                "$type": "color",
+                "$value": "{primitives.colors.neutral.0}"
+              }
+            },
+            "headline": {
+              "$type": "color",
+              "$value": "{semantic.global.text.body.primary}"
+            },
+            "subhead": {
+              "$type": "color",
+              "$value": "{semantic.global.text.body.secondary}"
+            }
+          }
+        }
+      },
+      "navicue": {
+        "core": {
+          "glass": {
+            "baseTint": {
+              "$type": "color",
+              "$value": "rgba(255, 255, 255, 0.14)"
+            },
+            "frostStrong": {
+              "$type": "color",
+              "$value": "rgba(11, 15, 20, 0.42)"
+            }
+          },
+          "hero": {
+            "accent": {
+              "$type": "color",
+              "$value": "{primitives.colors.indigo.500}"
+            },
+            "minTouchTarget": {
+              "$type": "dimension",
+              "$value": "44px"
+            },
+            "signalHot": {
+              "$type": "color",
+              "$value": "{primitives.colors.red.500}"
+            },
+            "signalSafe": {
+              "$type": "color",
+              "$value": "{primitives.colors.teal.400}"
+            }
+          },
+          "timing": {
+            "integrationPause": {
+              "$type": "duration",
+              "$value": "4200ms"
+            },
+            "invitationPause": {
+              "$type": "duration",
+              "$value": "2800ms"
+            },
+            "thresholdPause": {
+              "$type": "duration",
+              "$value": "2400ms"
+            }
+          }
+        }
+      }
+    },
+    "global": {
+      "surface": {
+        "background": {
+          "base": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.0}"
+          },
+          "elevated": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.50}"
+          },
+          "inverse": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.1000}"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.200}"
+          },
+          "soft": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.100}"
+          },
+          "strong": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.700}"
+          }
+        },
+        "spacing": {
+          "section": {
+            "$type": "dimension",
+            "$value": "{primitives.spacing.10}"
+          },
+          "stack": {
+            "$type": "dimension",
+            "$value": "{primitives.spacing.5}"
+          }
+        }
+      },
+      "text": {
+        "body": {
+          "inverse": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.0}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.900}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.700}"
+          }
+        },
+        "state": {
+          "critical": {
+            "$type": "color",
+            "$value": "{primitives.colors.red.700}"
+          },
+          "positive": {
+            "$type": "color",
+            "$value": "{primitives.colors.teal.600}"
+          },
+          "warning": {
+            "$type": "color",
+            "$value": "{primitives.colors.amber.600}"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "primitives": {
+    "colors": {
+      "amber": {
+        "400": "#FFB547",
+        "600": "#CC7D0A"
+      },
+      "indigo": {
+        "300": "#8A9CFF",
+        "500": "#536DFE",
+        "700": "#3148CC"
+      },
+      "neutral": {
+        "0": "#FFFFFF",
+        "50": "#F7F8FA",
+        "100": "#ECEFF3",
+        "200": "#D5DCE5",
+        "700": "#3C4654",
+        "900": "#1A2330",
+        "1000": "#0B0F14"
+      },
+      "red": {
+        "500": "#E24F5D",
+        "700": "#B73246"
+      },
+      "teal": {
+        "400": "#30C4BE",
+        "600": "#0A8F8B"
+      }
+    },
+    "motion": {
+      "duration": {
+        "base": "220ms",
+        "fast": "140ms",
+        "instant": "80ms",
+        "ritual": "600ms",
+        "slow": "380ms"
+      },
+      "easing": {
+        "enter": [
+          0.12,
+          0,
+          0.08,
+          1
+        ],
+        "exit": [
+          0.4,
+          0,
+          1,
+          1
+        ],
+        "standard": [
+          0.22,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "spacing": {
+      "0": "0rem",
+      "1": "0.125rem",
+      "2": "0.25rem",
+      "3": "0.5rem",
+      "4": "0.75rem",
+      "5": "1rem",
+      "6": "1.25rem",
+      "8": "1.5rem",
+      "10": "2rem",
+      "12": "3rem"
+    },
+    "typography": {
+      "fontFamily": {
+        "mono": "\"SF Mono\", ui-monospace, Menlo, Monaco, monospace",
+        "sans": "\"SF Pro Display\", \"SF Pro Text\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+      },
+      "fontSize": {
+        "2xl": "2rem",
+        "lg": "1.125rem",
+        "md": "1rem",
+        "sm": "0.875rem",
+        "xl": "1.5rem",
+        "xs": "0.75rem"
+      },
+      "fontWeight": {
+        "bold": 700,
+        "medium": 500,
+        "regular": 400,
+        "semibold": 600
+      },
+      "lineHeight": {
+        "base": 1.45,
+        "relaxed": 1.65,
+        "tight": 1.2
+      }
+    }
+  },
+  "runtime": {
+    "chrono": {
+      "morning": {
+        "navicue": {
+          "atmosphere": {
+            "highlight": {
+              "$type": "color",
+              "$value": "{primitives.colors.amber.400}"
+            },
+            "temperatureOffset": {
+              "$type": "dimension",
+              "$value": "0.25rem"
+            }
+          },
+          "motion": {
+            "entryDuration": {
+              "$type": "duration",
+              "$value": "420ms"
+            }
+          }
+        }
+      },
+      "night": {
+        "navicue": {
+          "atmosphere": {
+            "highlight": {
+              "$type": "color",
+              "$value": "{primitives.colors.indigo.300}"
+            },
+            "temperatureOffset": {
+              "$type": "dimension",
+              "$value": "-0.25rem"
+            }
+          },
+          "motion": {
+            "entryDuration": {
+              "$type": "duration",
+              "$value": "620ms"
+            }
+          }
+        }
+      }
+    },
+    "heat": {
+      "green": {
+        "navicue": {
+          "copyDensity": {
+            "maxLines": 3
+          },
+          "interaction": {
+            "cognitiveLoad": "low"
+          }
+        }
+      },
+      "red": {
+        "navicue": {
+          "copyDensity": {
+            "maxLines": 1
+          },
+          "interaction": {
+            "cognitiveLoad": "minimal"
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "domains": {
+      "marketing": {
+        "core": {
+          "hero": {
+            "cta": {
+              "bg": {
+                "$type": "color",
+                "$value": "{primitives.colors.indigo.500}"
+              },
+              "text": {
+                "$type": "color",
+                "$value": "{primitives.colors.neutral.0}"
+              }
+            },
+            "headline": {
+              "$type": "color",
+              "$value": "{semantic.global.text.body.primary}"
+            },
+            "subhead": {
+              "$type": "color",
+              "$value": "{semantic.global.text.body.secondary}"
+            }
+          }
+        }
+      },
+      "navicue": {
+        "core": {
+          "glass": {
+            "baseTint": {
+              "$type": "color",
+              "$value": "rgba(255, 255, 255, 0.14)"
+            },
+            "frostStrong": {
+              "$type": "color",
+              "$value": "rgba(11, 15, 20, 0.42)"
+            }
+          },
+          "hero": {
+            "accent": {
+              "$type": "color",
+              "$value": "{primitives.colors.indigo.500}"
+            },
+            "minTouchTarget": {
+              "$type": "dimension",
+              "$value": "44px"
+            },
+            "signalHot": {
+              "$type": "color",
+              "$value": "{primitives.colors.red.500}"
+            },
+            "signalSafe": {
+              "$type": "color",
+              "$value": "{primitives.colors.teal.400}"
+            }
+          },
+          "timing": {
+            "integrationPause": {
+              "$type": "duration",
+              "$value": "4200ms"
+            },
+            "invitationPause": {
+              "$type": "duration",
+              "$value": "2800ms"
+            },
+            "thresholdPause": {
+              "$type": "duration",
+              "$value": "2400ms"
+            }
+          }
+        }
+      }
+    },
+    "global": {
+      "surface": {
+        "background": {
+          "base": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.0}"
+          },
+          "elevated": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.50}"
+          },
+          "inverse": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.1000}"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.200}"
+          },
+          "soft": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.100}"
+          },
+          "strong": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.700}"
+          }
+        },
+        "spacing": {
+          "section": {
+            "$type": "dimension",
+            "$value": "{primitives.spacing.10}"
+          },
+          "stack": {
+            "$type": "dimension",
+            "$value": "{primitives.spacing.5}"
+          }
+        }
+      },
+      "text": {
+        "body": {
+          "inverse": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.0}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.900}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{primitives.colors.neutral.700}"
+          }
+        },
+        "state": {
+          "critical": {
+            "$type": "color",
+            "$value": "{primitives.colors.red.700}"
+          },
+          "positive": {
+            "$type": "color",
+            "$value": "{primitives.colors.teal.600}"
+          },
+          "warning": {
+            "$type": "color",
+            "$value": "{primitives.colors.amber.600}"
+          }
+        }
+      }
+    }
+  }
+}

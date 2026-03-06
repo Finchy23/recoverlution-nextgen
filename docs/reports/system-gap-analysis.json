@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-03-06T12:23:20.672Z",
+  "strict_mode": false,
+  "score": 76,
+  "totals": {
+    "checks": 17,
+    "passed": 13,
+    "failed": 4,
+    "by_severity": {
+      "critical": 0,
+      "major": 2,
+      "minor": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "observability_posthog_hook",
+      "area": "Observability",
+      "title": "PostHog integration module + startup wiring detected",
+      "ok": false,
+      "severity": "major",
+      "remediation": "Wire PostHog in app entrypoint and document core event taxonomy.",
+      "evidence": "apps/design-center/src/main.tsx + src/app/observability/posthog.ts"
+    },
+    {
+      "id": "observability_sentry_hook",
+      "area": "Observability",
+      "title": "Sentry integration module + startup wiring detected",
+      "ok": false,
+      "severity": "major",
+      "remediation": "Initialize Sentry in app entrypoint for frontend crash triage.",
+      "evidence": "apps/design-center/src/main.tsx + src/app/observability/sentry.ts"
+    },
+    {
+      "id": "observability_event_taxonomy",
+      "area": "Observability",
+      "title": "Event taxonomy module exists",
+      "ok": false,
+      "severity": "minor",
+      "remediation": "Create a centralized event taxonomy and shared event helpers.",
+      "evidence": "apps/design-center/src/app/observability/events.ts"
+    },
+    {
+      "id": "integration_modules_present",
+      "area": "Platform Integrations",
+      "title": "OneSignal + Stripe + JW Player integration modules exist",
+      "ok": false,
+      "severity": "minor",
+      "remediation": "Create shared integration modules so notifications and billing stay modular.",
+      "evidence": "apps/design-center/src/app/integrations/onesignal.ts + src/app/integrations/stripe.ts + src/app/integrations/jwplayer.ts"
+    },
+    {
+      "id": "design_center_quality_scripts",
+      "area": "Delivery QA",
+      "title": "Design Center has quality scripts",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Define explicit quality scripts for the live design-system review surface.",
+      "evidence": "apps/design-center/package.json scripts"
+    },
+    {
+      "id": "governance_ssot_manifest",
+      "area": "Governance",
+      "title": "SSOT manifest exists",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Create and maintain a canonical source-of-truth manifest for cross-domain ownership.",
+      "evidence": "system/source-of-truth.manifest.json"
+    },
+    {
+      "id": "governance_ssot_guard",
+      "area": "Governance",
+      "title": "SSOT guard script exists",
+      "ok": true,
+      "severity": "critical",
+      "remediation": "Add guard script to block derived-only edits and duplicate canonical ownership.",
+      "evidence": "scripts/ssot-guard.sh"
+    },
+    {
+      "id": "content_active_window",
+      "area": "Content Pipeline",
+      "title": "Active Lab window is structurally complete (4001-5000)",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Keep active lab in contiguous chunks and keep metadata in sync with served range.",
+      "evidence": "found 10 active files and 1000 cues"
+    },
+    {
+      "id": "delivery_pr_gate",
+      "area": "Delivery QA",
+      "title": "PR gate workflow exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add a PR workflow to run build + QA scripts before merge.",
+      "evidence": ".github/workflows/navicue-pr-gate.yml"
+    },
+    {
+      "id": "delivery_nightly",
+      "area": "Delivery QA",
+      "title": "Nightly QA workflow exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add nightly QA drift checks with artifact reports.",
+      "evidence": ".github/workflows/navicue-nightly-qa.yml"
+    },
+    {
+      "id": "design_token_export",
+      "area": "Design System Ops",
+      "title": "Design Center token export is present",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Generate and commit token exports used by downstream design tooling and review flows.",
+      "evidence": "apps/design-center/tokens/design-tokens.flat.json"
+    },
+    {
+      "id": "root_release_scripts",
+      "area": "Governance",
+      "title": "Root scripts include readiness + qa + hooks installer",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Expose standardized root scripts so release and QA are one-command actions.",
+      "evidence": "package.json scripts: readiness, qa, hooks:install"
+    },
+    {
+      "id": "account_readiness_script",
+      "area": "Governance",
+      "title": "Account readiness gate script exists",
+      "ok": true,
+      "severity": "major",
+      "remediation": "Add a single account-readiness script to validate integration keys before release.",
+      "evidence": "scripts/account-readiness.mjs"
+    },
+    {
+      "id": "design_prettier_config",
+      "area": "Design System Ops",
+      "title": "Prettier config in Design Center",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Add a local formatter baseline to keep token/system files consistent.",
+      "evidence": "apps/design-center/.prettierrc.json"
+    },
+    {
+      "id": "dev_precommit_hook",
+      "area": "Developer Experience",
+      "title": "Pre-commit hook exists",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Add a local pre-commit hook for staged formatting and contract checks.",
+      "evidence": ".githooks/pre-commit"
+    },
+    {
+      "id": "observability_env_contract",
+      "area": "Observability",
+      "title": "Observability env contract documented",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Document required VITE_* observability keys and onboarding steps.",
+      "evidence": "apps/design-center/.env.example + docs/runbooks/OBSERVABILITY_SETUP.md"
+    },
+    {
+      "id": "release_runbook",
+      "area": "Release Management",
+      "title": "Vercel release runbook exists",
+      "ok": true,
+      "severity": "minor",
+      "remediation": "Maintain one release runbook with gates and rollback procedure.",
+      "evidence": "docs/runbooks/VERCEL_RELEASE_RUNBOOK.md"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-03-06T12:23:38.424Z",
+  "strict_mode": false,
+  "branch_routing": {
+    "production": "main",
+    "previewPrefix": "codex/"
+  },
+  "score": 100,
+  "totals": {
+    "projects": 5,
+    "active_runtime_projects": 1,
+    "linked_projects": 5,
+    "missing_links": 0
+  },
+  "projects": [
+    {
+      "key": "command",
+      "name": "recoverlution-command",
+      "root": "Command Center Execution Plan",
+      "activeRuntime": false,
+      "envSync": false,
+      "rootExists": true,
+      "linked": true,
+      "domains": [
+        "command.recoverlution.com"
+      ],
+      "notes": "Legacy runtime source only. Do not treat as an active deploy surface.",
+      "recommendedLinkCmd": "cd \"Command Center Execution Plan\" && npx vercel link --project recoverlution-command"
+    },
+    {
+      "key": "design-center",
+      "name": "recoverlution-design-center",
+      "root": "apps/design-center",
+      "activeRuntime": true,
+      "envSync": false,
+      "rootExists": true,
+      "linked": true,
+      "domains": [
+        "design.recoverlution.com"
+      ],
+      "notes": "Canonical live design-system and frontend review surface.",
+      "recommendedLinkCmd": "cd \"apps/design-center\" && npx vercel link --project recoverlution-design-center"
+    },
+    {
+      "key": "marketing",
+      "name": "recoverlution-marketing",
+      "root": "apps/marketing",
+      "activeRuntime": false,
+      "envSync": false,
+      "rootExists": true,
+      "linked": true,
+      "domains": [
+        "recoverlution.com",
+        "www.recoverlution.com"
+      ],
+      "notes": "Reserved for marketing rebuild on shared design system.",
+      "recommendedLinkCmd": "cd \"apps/marketing\" && npx vercel link --project recoverlution-marketing"
+    },
+    {
+      "key": "app",
+      "name": "recoverlution-app",
+      "root": "apps/web",
+      "activeRuntime": false,
+      "envSync": false,
+      "rootExists": true,
+      "linked": true,
+      "domains": [
+        "app.recoverlution.com"
+      ],
+      "notes": "Reserved for authenticated platform shell.",
+      "recommendedLinkCmd": "cd \"apps/web\" && npx vercel link --project recoverlution-app"
+    },
+    {
+      "key": "analytics",
+      "name": "recoverlution-analytics",
+      "root": "apps/analytics",
+      "activeRuntime": false,
+      "envSync": false,
+      "rootExists": true,
+      "linked": true,
+      "domains": [
+        "analytics.recoverlution.com"
+      ],
+      "notes": "Reserved for internal analytics/reporting surface.",
+      "recommendedLinkCmd": "cd \"apps/analytics\" && npx vercel link --project recoverlution-analytics"
+    }
+  ],
+  "failures": []
+}

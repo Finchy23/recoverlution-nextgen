@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-03-06T20:08:11.653Z",
+  "totals": {
+    "source_files": 12,
+    "tokens": 86
+  },
+  "groupings": {
+    "by_type": {
+      "color": 39,
+      "cubicBezier": 3,
+      "dimension": 21,
+      "duration": 10,
+      "fontFamily": 2,
+      "fontWeight": 4,
+      "number": 5,
+      "string": 2
+    },
+    "by_layer": {
+      "primitives": 49,
+      "runtime": 10,
+      "semantic": 27
+    },
+    "by_domain": {
+      "marketing": 4,
+      "n/a": 73,
+      "navicue": 9
+    }
+  },
+  "preview": [
+    {
+      "path": "primitives.colors.amber.400",
+      "type": "color",
+      "value": "#FFB547"
+    },
+    {
+      "path": "primitives.colors.amber.600",
+      "type": "color",
+      "value": "#CC7D0A"
+    },
+    {
+      "path": "primitives.colors.indigo.300",
+      "type": "color",
+      "value": "#8A9CFF"
+    },
+    {
+      "path": "primitives.colors.indigo.500",
+      "type": "color",
+      "value": "#536DFE"
+    },
+    {
+      "path": "primitives.colors.indigo.700",
+      "type": "color",
+      "value": "#3148CC"
+    },
+    {
+      "path": "primitives.colors.neutral.0",
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    {
+      "path": "primitives.colors.neutral.100",
+      "type": "color",
+      "value": "#ECEFF3"
+    },
+    {
+      "path": "primitives.colors.neutral.1000",
+      "type": "color",
+      "value": "#0B0F14"
+    },
+    {
+      "path": "primitives.colors.neutral.200",
+      "type": "color",
+      "value": "#D5DCE5"
+    },
+    {
+      "path": "primitives.colors.neutral.50",
+      "type": "color",
+      "value": "#F7F8FA"
+    },
+    {
+      "path": "primitives.colors.neutral.700",
+      "type": "color",
+      "value": "#3C4654"
+    },
+    {
+      "path": "primitives.colors.neutral.900",
+      "type": "color",
+      "value": "#1A2330"
+    },
+    {
+      "path": "primitives.colors.red.500",
+      "type": "color",
+      "value": "#E24F5D"
+    },
+    {
+      "path": "primitives.colors.red.700",
+      "type": "color",
+      "value": "#B73246"
+    },
+    {
+      "path": "primitives.colors.teal.400",
+      "type": "color",
+      "value": "#30C4BE"
+    },
+    {
+      "path": "primitives.colors.teal.600",
+      "type": "color",
+      "value": "#0A8F8B"
+    },
+    {
+      "path": "primitives.motion.duration.base",
+      "type": "duration",
+      "value": "220ms"
+    },
+    {
+      "path": "primitives.motion.duration.fast",
+      "type": "duration",
+      "value": "140ms"
+    },
+    {
+      "path": "primitives.motion.duration.instant",
+      "type": "duration",
+      "value": "80ms"
+    },
+    {
+      "path": "primitives.motion.duration.ritual",
+      "type": "duration",
+      "value": "600ms"
+    },
+    {
+      "path": "primitives.motion.duration.slow",
+      "type": "duration",
+      "value": "380ms"
+    },
+    {
+      "path": "primitives.motion.easing.enter",
+      "type": "cubicBezier",
+      "value": [
+        0.12,
+        0,
+        0.08,
+        1
+      ]
+    },
+    {
+      "path": "primitives.motion.easing.exit",
+      "type": "cubicBezier",
+      "value": [
+        0.4,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "primitives.motion.easing.standard",
+      "type": "cubicBezier",
+      "value": [
+        0.22,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "path": "primitives.spacing.0",
+      "type": "dimension",
+      "value": "0rem"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "glass": {
+    "baseTint": {
+      "$value": "rgba(255, 255, 255, 0.14)",
+      "$type": "color"
+    },
+    "frostStrong": {
+      "$value": "rgba(11, 15, 20, 0.42)",
+      "$type": "color"
+    }
+  },
+  "hero": {
+    "accent": {
+      "$value": "{primitives.colors.indigo.500}",
+      "$type": "color"
+    },
+    "signalSafe": {
+      "$value": "{primitives.colors.teal.400}",
+      "$type": "color"
+    },
+    "signalHot": {
+      "$value": "{primitives.colors.red.500}",
+      "$type": "color"
+    },
+    "minTouchTarget": {
+      "$value": "44px",
+      "$type": "dimension"
+    }
+  },
+  "timing": {
+    "thresholdPause": {
+      "$value": "2400ms",
+      "$type": "duration"
+    },
+    "invitationPause": {
+      "$value": "2800ms",
+      "$type": "duration"
+    },
+    "integrationPause": {
+      "$value": "4200ms",
+      "$type": "duration"
+    }
+  }
+}
