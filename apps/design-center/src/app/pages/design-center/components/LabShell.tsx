@@ -25,6 +25,8 @@ interface LabShellProps {
   headline: string;
   /** Optional subline */
   subline?: string;
+  /** Show the default lab header (default true) */
+  showHeader?: boolean;
   /** Show device mirror (default true) */
   showDevice?: boolean;
   /** Lab workspace content */
@@ -35,6 +37,7 @@ export function LabShell({
   eyebrow,
   headline,
   subline,
+  showHeader = true,
   showDevice = true,
   children,
 }: LabShellProps) {
@@ -70,55 +73,56 @@ export function LabShell({
           overflowY: 'auto',
         }}
       >
-        {/* Lab header */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          style={{ marginBottom: 56 }}
-        >
-          <div
-            style={{
-              fontFamily: fonts.mono,
-              fontSize: 10,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase' as const,
-              color: colors.neutral.white,
-              opacity: 0.25,
-              marginBottom: 12,
-            }}
+        {showHeader ? (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            style={{ marginBottom: 56 }}
           >
-            {eyebrow}
-          </div>
-          <div
-            style={{
-              fontFamily: fonts.secondary,
-              fontSize: 'clamp(24px, 4vw, 36px)',
-              color: colors.neutral.white,
-              opacity: 0.8,
-              letterSpacing: '-0.015em',
-              lineHeight: 1.2,
-              maxWidth: 480,
-            }}
-          >
-            {headline}
-          </div>
-          {subline && (
             <div
               style={{
-                fontFamily: fonts.primary,
-                fontSize: 14,
+                fontFamily: fonts.mono,
+                fontSize: 10,
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase' as const,
                 color: colors.neutral.white,
-                opacity: 0.3,
-                marginTop: 12,
-                maxWidth: 400,
-                lineHeight: 1.6,
+                opacity: 0.25,
+                marginBottom: 12,
               }}
             >
-              {subline}
+              {eyebrow}
             </div>
-          )}
-        </motion.div>
+            <div
+              style={{
+                fontFamily: fonts.secondary,
+                fontSize: 'clamp(24px, 4vw, 36px)',
+                color: colors.neutral.white,
+                opacity: 0.8,
+                letterSpacing: '-0.015em',
+                lineHeight: 1.2,
+                maxWidth: 480,
+              }}
+            >
+              {headline}
+            </div>
+            {subline && (
+              <div
+                style={{
+                  fontFamily: fonts.primary,
+                  fontSize: 14,
+                  color: colors.neutral.white,
+                  opacity: 0.3,
+                  marginTop: 12,
+                  maxWidth: 400,
+                  lineHeight: 1.6,
+                }}
+              >
+                {subline}
+              </div>
+            )}
+          </motion.div>
+        ) : null}
 
         {/* Lab content */}
         <motion.div

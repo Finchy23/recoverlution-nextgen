@@ -6,6 +6,7 @@
  * Route structure:
  *   /                       → Design Center (redirect)
  *   /design-center          → Overview (cinematic river)
+ *   /design-center/sanctuary → Essence-first brand environment
  *   /design-center/palette  → Color workbench
  *   /design-center/type     → Typography lab
  *   /design-center/glass    → Surface physics
@@ -30,6 +31,7 @@ import { colors, surfaces, fonts, withAlpha, TRANSPARENT } from '@/design-tokens
 // ── Lazy-load route components ─────────────────────────────────
 const DesignCenter = React.lazy(() => import('./pages/DesignCenter'));
 const Overview = React.lazy(() => import('./pages/design-center/Overview'));
+const SanctuaryLab = React.lazy(() => import('./pages/design-center/SanctuaryLab'));
 const PaletteLab = React.lazy(() => import('./pages/design-center/PaletteLab'));
 const TypeLab = React.lazy(() => import('./pages/design-center/TypeLab'));
 const GlassLab = React.lazy(() => import('./pages/design-center/GlassLab'));
@@ -141,6 +143,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <LabRoute name="Overview"><Overview /></LabRoute>,
+      },
+      {
+        path: 'sanctuary',
+        element: <LabRoute name="SanctuaryLab"><SanctuaryLab /></LabRoute>,
       },
       {
         path: 'palette',

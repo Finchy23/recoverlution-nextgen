@@ -18,6 +18,7 @@ import { useNavigate, useLocation } from 'react-router';
 import { layout, glass, sectionAccents } from '../dc-tokens';
 import {
   Palette,
+  CircleDot,
   Type,
   Layers,
   Wind,
@@ -38,6 +39,7 @@ export interface NavSection {
 
 export const NAV_SECTIONS: NavSection[] = [
   { id: 'overview',    label: 'overview',    path: '/design-center',             icon: LayoutDashboard, accent: sectionAccents.overview },
+  { id: 'sanctuary',   label: 'sanctuary',   path: '/design-center/sanctuary',   icon: CircleDot,       accent: sectionAccents.sanctuary },
   { id: 'palette',     label: 'palette',     path: '/design-center/palette',     icon: Palette,         accent: sectionAccents.palette },
   { id: 'type',        label: 'typography',  path: '/design-center/type',        icon: Type,            accent: sectionAccents.type },
   { id: 'glass',       label: 'surfaces',    path: '/design-center/glass',       icon: Layers,          accent: sectionAccents.glass },
@@ -183,10 +185,11 @@ function MobileNav({ currentPath }: { currentPath: string }) {
   /** Show a curated subset on mobile — room for all icons */
   const mobileItems = [
     NAV_SECTIONS[0], // overview
-    NAV_SECTIONS[1], // palette
-    NAV_SECTIONS[4], // motion
-    NAV_SECTIONS[5], // gates
-    NAV_SECTIONS[6], // atoms
+    NAV_SECTIONS[1], // sanctuary
+    NAV_SECTIONS[4], // glass
+    NAV_SECTIONS[5], // motion
+    NAV_SECTIONS[6], // gates
+    NAV_SECTIONS[7], // atoms
   ];
 
   return (

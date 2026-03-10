@@ -295,6 +295,7 @@ export function getSpecimenCopy(signatureId: string): SpecimenCopy {
 
 export const sectionAccents = {
   overview: colors.brand.purple.primary,
+  sanctuary: colors.signature.sacredOrdinary,
   palette: colors.brand.purple.light,
   type: colors.neutral.white,
   glass: colors.accent.cyan.primary,
