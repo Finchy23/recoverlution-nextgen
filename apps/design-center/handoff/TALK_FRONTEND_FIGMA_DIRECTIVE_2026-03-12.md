@@ -223,6 +223,14 @@ Before frontend considers TALK visually closed, all must be true:
 - accessibility basics are sane
 - the implementation path back into `packages/ui/src/talk/` is obvious
 
+## Return package requirement
+
+Every frontend or Figma AI return for TALK must include the checklist in:
+
+- `handoff/TALK_FRONTEND_RETURN_CHECKLIST_2026-03-12.md`
+
+Do not return TALK shell work as "done" without that package.
+
 ## Handoff back to shared authority
 
 Once the shell is visually ready:
