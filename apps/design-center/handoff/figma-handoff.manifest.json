@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T21:41:53.843Z",
+  "generatedAt": "2026-03-12T15:10:43.018Z",
   "project": {
     "name": "Recoverlution Design Center",
     "packageName": "@recoverlution/design-center",
@@ -39,6 +39,7 @@
     "Treat this workspace as the clean frontend handoff surface for Figma AI.",
     "Do not edit generated token artifacts directly; edit src/design-tokens.ts and regenerate.",
     "Do not treat the old figma-drop Vercel project as canonical.",
-    "The live review surface is recoverlution-design-center.vercel.app."
+    "The live review surface is recoverlution-design-center.vercel.app.",
+    "See handoff/TALK_FRONTEND_FIGMA_DIRECTIVE_2026-03-12.md for the current TALK shell directive."
   ]
 }
