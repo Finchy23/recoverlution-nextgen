@@ -41,3 +41,5 @@
 - Do not treat the old figma-drop Vercel project as canonical.
 - The live review surface is recoverlution-design-center.vercel.app.
 
+## Supplemental briefs
+- TALK frontend directive: `handoff/TALK_FRONTEND_FIGMA_DIRECTIVE_2026-03-12.md`
