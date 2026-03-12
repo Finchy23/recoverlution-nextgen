@@ -5,11 +5,26 @@ The original imported Figma source is available at [Build Design System](https:/
 
 ## Start here
 
+Read these in order before meaningful PLAY work:
+
+1. `PLAY_FRONTEND_DELIVERY_PACK.md`
+2. `guidelines/Guidelines.md`
+3. `PLAY_FRONTEND_AGENT_BRIEF.md`
+4. `PLAY_FRONTEND_AGENT_DIRECTIVE.md`
+
+Legacy general frontend docs still exist:
+
 - `FRONTEND_AGENT_BRIEF.md`
 - `FRONTEND_AGENT_DIRECTIVE.md`
-- `guidelines/Guidelines.md`
-- `PLAY_FRONTEND_AGENT_BRIEF.md`
-- `PLAY_FRONTEND_AGENT_DIRECTIVE.md`
+
+## Operating rule
+
+Use this workspace to build the sensory shell.
+
+Do not turn this workspace into a second backend.
+
+- frontend owns the room
+- runtime owns the station truth
 
 ## Running the code
 
