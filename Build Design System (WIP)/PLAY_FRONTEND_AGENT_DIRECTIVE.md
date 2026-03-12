@@ -34,6 +34,12 @@ Canonical references:
 - `../../docs/runbooks/PLAY_PRODUCTION_PATH_2026-03-12.md`
 - `./PLAY_FRONTEND_AGENT_BRIEF.md`
 
+Contract rule:
+
+- use the current live repo types as working truth
+- do not block waiting for backend confirmation
+- if a contract gap appears, flag it and continue in `mock` mode
+
 Success looks like:
 
 - the shell feels magical on its own

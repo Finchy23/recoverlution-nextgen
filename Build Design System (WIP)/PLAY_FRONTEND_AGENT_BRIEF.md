@@ -155,6 +155,18 @@ But keep all of that subtle and non-primary.
 - `../../docs/runbooks/PLAY_PRODUCTION_PATH_2026-03-12.md`
 - `../../docs/runbooks/PLAY_FRONTEND_MAGIC_SHELL_BRIEF_2026-03-12.md`
 
+## Backend Confirmation Rule
+
+Use the current live repo types as the working contract.
+
+Do not stop this design lane waiting for backend confirmation.
+
+If you need a new field, new behavior, or a clarified contract:
+
+- call out the gap clearly
+- keep building in `mock` mode
+- assume the main repo path will resolve the contract
+
 ## Feedback loop
 
 If you hit one of these, stop and surface it:

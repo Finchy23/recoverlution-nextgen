@@ -112,6 +112,21 @@ Use these files as authority:
 - [`../../docs/runbooks/PLAY_PRODUCTION_PATH_2026-03-12.md`](../../docs/runbooks/PLAY_PRODUCTION_PATH_2026-03-12.md)
 - [`../../docs/runbooks/PLAY_FRONTEND_MAGIC_SHELL_BRIEF_2026-03-12.md`](../../docs/runbooks/PLAY_FRONTEND_MAGIC_SHELL_BRIEF_2026-03-12.md)
 
+## Contract Confirmation Rule
+
+Use the current live repo contract as the working truth:
+
+- `../../packages/types/src/play-station.ts`
+- `../../DesignCenter/src/utils/playRuntimeClient.ts`
+
+Do not block this design lane waiting for backend confirmation.
+
+If a field or behavior is missing:
+
+- flag the contract gap clearly
+- continue in `mock` mode
+- let the main repo/backend path resolve the contract
+
 ## Explicit Directive
 
 Build PLAY as a premium sensory station shell in `mock` and `live-contract` modes.
