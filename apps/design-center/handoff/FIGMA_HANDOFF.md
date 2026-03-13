@@ -44,3 +44,4 @@
 ## Supplemental briefs
 - TALK frontend directive: `handoff/TALK_FRONTEND_FIGMA_DIRECTIVE_2026-03-12.md`
 - TALK return checklist: `handoff/TALK_FRONTEND_RETURN_CHECKLIST_2026-03-12.md`
+- TALK review feedback: `handoff/TALK_FRONTEND_REVIEW_FEEDBACK_2026-03-13.md`
