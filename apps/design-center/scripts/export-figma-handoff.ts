@@ -81,6 +81,7 @@ async function main(): Promise<void> {
     ],
     talkHandoffFiles: [
       'handoff/TALK_FRONTEND_FIGMA_DIRECTIVE_2026-03-12.md',
+      'handoff/TALK_FIGMA_MAKE_PROMPT_2026-03-14.md',
       'handoff/TALK_FRONTEND_RETURN_CHECKLIST_2026-03-12.md',
       'handoff/TALK_FRONTEND_REVIEW_FEEDBACK_2026-03-13.md',
       'handoff/TALK_FRONTEND_PROMPT_WIP4_2026-03-14.md',
