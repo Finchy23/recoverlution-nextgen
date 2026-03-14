@@ -298,6 +298,7 @@ create table if not exists public.integration_consent (
   granted boolean not null default true,
   granted_at timestamptz not null default now(),
   revoked_at timestamptz,
+  source text not null default 'in_app',
   source_surface text,
   metadata jsonb not null default '{}'::jsonb,
   created_at timestamptz not null default now(),
@@ -323,6 +324,7 @@ create table if not exists public.integration_consent (
   )
 );
 
+alter table public.integration_consent add column if not exists source text default 'in_app';
 alter table public.integration_consent add column if not exists source_surface text;
 alter table public.integration_consent add column if not exists metadata jsonb default '{}'::jsonb;
 
@@ -384,6 +386,59 @@ end $$;
 
 create index if not exists idx_integration_consent_individual_provider
   on public.integration_consent (individual_id, provider_key, granted);
+
+create or replace function public.upsert_integration_consent(
+  p_individual_id uuid,
+  p_provider_key text,
+  p_scope_id text,
+  p_granted boolean,
+  p_granted_at timestamptz,
+  p_revoked_at timestamptz,
+  p_source text,
+  p_source_surface text,
+  p_metadata jsonb
+)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  insert into public.integration_consent (
+    individual_id,
+    provider_key,
+    scope_id,
+    granted,
+    granted_at,
+    revoked_at,
+    source,
+    source_surface,
+    metadata,
+    updated_at
+  )
+  values (
+    p_individual_id,
+    p_provider_key,
+    p_scope_id,
+    p_granted,
+    p_granted_at,
+    p_revoked_at,
+    coalesce(p_source, 'in_app'),
+    p_source_surface,
+    coalesce(p_metadata, '{}'::jsonb),
+    now()
+  )
+  on conflict (individual_id, provider_key, scope_id)
+  do update set
+    granted = excluded.granted,
+    granted_at = excluded.granted_at,
+    revoked_at = excluded.revoked_at,
+    source = excluded.source,
+    source_surface = excluded.source_surface,
+    metadata = excluded.metadata,
+    updated_at = now();
+end;
+$$;
 
 create table if not exists public.external_signal_contracts (
   external_signal_contract_id uuid primary key default gen_random_uuid(),

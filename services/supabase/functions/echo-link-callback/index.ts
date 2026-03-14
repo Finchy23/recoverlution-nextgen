@@ -201,25 +201,23 @@ Deno.serve(async (req) => {
     }
 
     if (grantedScopes.length > 0) {
-      const consentRows = grantedScopes.map((scope) => ({
-        individual_id: transaction.individual_id,
-        provider_key: transaction.provider_key,
-        scope_id: scope,
-        granted: true,
-        granted_at: now.toISOString(),
-        revoked_at: null,
-        source_surface: transaction.source_surface ?? 'link',
-        metadata: {
-          transaction_id: transaction.integration_connection_transaction_id,
-          callback_state: callbackState,
-        },
-        updated_at: now.toISOString(),
-      }));
-
-      const { error: consentUpsertError } = await supabase.from('integration_consent').upsert(consentRows, {
-        onConflict: 'individual_id,provider_key,scope_id',
-      });
-      if (consentUpsertError) throw consentUpsertError;
+      for (const scope of grantedScopes) {
+        const { error: consentRpcError } = await supabase.rpc('upsert_integration_consent', {
+          p_individual_id: transaction.individual_id,
+          p_provider_key: transaction.provider_key,
+          p_scope_id: scope,
+          p_granted: true,
+          p_granted_at: now.toISOString(),
+          p_revoked_at: null,
+          p_source: 'in_app',
+          p_source_surface: transaction.source_surface ?? 'link',
+          p_metadata: {
+            transaction_id: transaction.integration_connection_transaction_id,
+            callback_state: callbackState,
+          },
+        });
+        if (consentRpcError) throw consentRpcError;
+      }
     }
 
     const response = {
@@ -254,7 +252,16 @@ Deno.serve(async (req) => {
 
     return json(response);
   } catch (error) {
-    const message = error instanceof Error ? error.message : 'Unknown echo-link callback error';
+    const message =
+      error instanceof Error
+        ? error.message
+        : (() => {
+            try {
+              return JSON.stringify(error);
+            } catch {
+              return 'Unknown echo-link callback error';
+            }
+          })();
     return json({ error: message }, 500);
   }
 });
