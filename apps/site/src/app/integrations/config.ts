@@ -21,6 +21,7 @@ export interface SiteIntegrationConfig {
   companionAuthPreviewOrigin: string;
   echoLinkEnabled: boolean;
   echoLinkStartEndpoint: string;
+  echoLinkCallbackEndpoint: string;
   echoLinkProviderStartUrls: Partial<Record<
     | 'apple'
     | 'google'
@@ -127,6 +128,10 @@ export const siteIntegrationConfig: SiteIntegrationConfig = {
   echoLinkStartEndpoint: env(
     'VITE_ECHO_LINK_START_ENDPOINT',
     supabaseFunctionBase ? `${supabaseFunctionBase}/echo-link-start` : '',
+  ),
+  echoLinkCallbackEndpoint: env(
+    'VITE_ECHO_LINK_CALLBACK_ENDPOINT',
+    supabaseFunctionBase ? `${supabaseFunctionBase}/echo-link-callback` : '',
   ),
   echoLinkProviderStartUrls: {
     apple: env('VITE_ECHO_LINK_APPLE_URL'),

@@ -255,6 +255,96 @@ export interface EchoLinkProviderLaunch {
   href: string;
 }
 
+export type EchoLinkLaunchMode =
+  | 'redirect'
+  | 'native_bridge'
+  | 'device_bridge'
+  | 'manual'
+  | 'unconfigured';
+
+export type EchoLinkTransactionStatus =
+  | 'created'
+  | 'launched'
+  | 'provider_returned'
+  | 'completed'
+  | 'attention'
+  | 'expired'
+  | 'blocked'
+  | 'cancelled';
+
+export type EchoLinkStartState =
+  | 'redirect_ready'
+  | 'native_bridge_required'
+  | 'device_bridge_required'
+  | 'manual_required'
+  | 'provider_unconfigured';
+
+export type EchoLinkStartNextAction =
+  | 'redirect_to_provider'
+  | 'open_native_bridge'
+  | 'open_device_bridge'
+  | 'await_manual_link'
+  | 'configure_provider';
+
+export interface EchoLinkStartRequest {
+  providerKey: EchoLinkProviderKey;
+  individualId?: string;
+  returnPath?: string;
+  sourceSurface?: string;
+}
+
+export interface EchoLinkStartResponse {
+  ok: true;
+  providerKey: EchoLinkProviderKey;
+  authMode: EchoLinkAuthMode;
+  launchMode: EchoLinkLaunchMode;
+  transactionStatus: EchoLinkTransactionStatus;
+  startState: EchoLinkStartState;
+  nextAction: EchoLinkStartNextAction;
+  transactionId: string;
+  stateToken: string;
+  returnPath: string;
+  callbackHref: string;
+  providerHref?: string;
+  detail?: string;
+}
+
+export type EchoLinkCallbackState =
+  | 'provider_returned'
+  | 'provider_error'
+  | 'missing_transaction'
+  | 'expired_transaction'
+  | 'provider_mismatch'
+  | 'manual_return';
+
+export type EchoLinkCallbackNextAction =
+  | 'return_to_link'
+  | 'review_provider_setup'
+  | 'retry_provider_connect';
+
+export interface EchoLinkCallbackRequest {
+  providerKey?: EchoLinkProviderKey;
+  stateToken?: string;
+  transactionId?: string;
+  code?: string;
+  error?: string;
+  errorDescription?: string;
+  scope?: string;
+}
+
+export interface EchoLinkCallbackResponse {
+  ok: true;
+  providerKey?: EchoLinkProviderKey;
+  callbackState: EchoLinkCallbackState;
+  nextAction: EchoLinkCallbackNextAction;
+  transactionId?: string;
+  transactionStatus?: EchoLinkTransactionStatus;
+  accountStatus?: EchoLinkAccountStatus;
+  returnPath: string;
+  redirectHref: string;
+  detail?: string;
+}
+
 export interface EchoLinkContextResponse {
   ok: true;
   surface: 'navigate';
