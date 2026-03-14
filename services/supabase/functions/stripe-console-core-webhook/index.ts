@@ -70,7 +70,7 @@ Deno.serve(async (req) => {
         return json({ error: 'Missing STRIPE_SECRET_KEY for webhook verification' }, 500);
       }
       const stripe = new Stripe(stripeSecretKey);
-      event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
+      event = await stripe.webhooks.constructEventAsync(rawBody, signature, webhookSecret);
       verified = true;
     } else {
       const parsed = safeJsonParse<Stripe.Event>(rawBody);

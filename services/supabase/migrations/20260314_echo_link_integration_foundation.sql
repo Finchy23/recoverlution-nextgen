@@ -75,7 +75,7 @@ create table if not exists public.integration_providers (
   connector_mode text,
   source_key text,
   status text,
-  scope_defaults jsonb,
+  scope_defaults text[],
   docs_url text,
   notes text,
   config jsonb,
@@ -100,14 +100,14 @@ select
   ipc.provider_key,
   ipc.display_name,
   case ipc.auth_mode
-    when 'native_aggregate' then 'native_aggregate'
-    when 'device_bridge' then 'device_bridge'
-    when 'manual' then 'manual'
-    else 'oauth'
+    when 'native_aggregate' then 'app_native'
+    when 'device_bridge' then 'hybrid'
+    when 'manual' then 'hybrid'
+    else 'oauth2_cloud'
   end as connector_mode,
   ipc.provider_domain as source_key,
-  case when ipc.is_echo_link_provider then 'active' else 'legacy' end as status,
-  to_jsonb(ipc.supported_scopes) as scope_defaults,
+  case when ipc.is_echo_link_provider then 'active' else 'deprecated' end as status,
+  ipc.supported_scopes as scope_defaults,
   null::text as docs_url,
   case when ipc.is_echo_link_provider then 'Seeded from integration_provider_catalog for upgraded LINK compatibility.' else 'Legacy compatibility provider mirrored from integration_provider_catalog.' end as notes,
   jsonb_build_object(
