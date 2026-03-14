@@ -54,6 +54,7 @@ const runtimeSources = {
   compiler: path.join(root, 'packages/navicue-engine/src/runtime/compile-intervention-demo.ts'),
   entryRuntimeAdapter: path.join(root, 'packages/navicue-engine/src/runtime/entry-runtime-adapters.ts'),
   echoLinkRuntime: path.join(root, 'packages/navicue-engine/src/runtime/echo-link-runtime.ts'),
+  echoLinkRoutes: path.join(root, 'packages/navicue-engine/src/runtime/echo-link-routes.ts'),
   companionAuthTransaction: path.join(root, 'packages/navicue-engine/src/runtime/companion-auth-transaction.ts'),
   companionAuthProvider: path.join(root, 'packages/navicue-engine/src/runtime/companion-auth-provider.ts'),
   companionAuthRoutes: path.join(root, 'packages/navicue-engine/src/runtime/companion-auth-routes.ts'),
@@ -66,6 +67,7 @@ const runtimeTargets = {
   compiler: path.join(root, 'apps/design-center/src/app/data/compile-intervention-demo.ts'),
   entryRuntimeAdapter: path.join(root, 'apps/site/src/entry-runtime-adapters.ts'),
   echoLinkRuntime: path.join(root, 'apps/site/src/echo-link-runtime.ts'),
+  echoLinkRoutes: path.join(root, 'apps/site/src/echo-link-routes.ts'),
   companionAuthTransaction: path.join(root, 'apps/site/src/companion-auth-transaction-runtime.ts'),
   companionAuthProvider: path.join(root, 'apps/site/src/companion-auth-provider-runtime.ts'),
   companionAuthRoutes: path.join(root, 'apps/site/src/companion-auth-routes-runtime.ts'),
@@ -182,6 +184,13 @@ function normalizeEchoLinkRuntimeSource(source) {
   return source.replace(
     "import type {\n  EchoLinkConnectedProvider,\n  EchoLinkDomain,\n  EchoLinkDomainGroup,\n  EchoLinkManifest,\n  EchoLinkProviderContract,\n  EchoLinkProviderKey,\n} from '@recoverlution/types';",
     "import type {\n  EchoLinkConnectedProvider,\n  EchoLinkDomain,\n  EchoLinkDomainGroup,\n  EchoLinkManifest,\n  EchoLinkProviderContract,\n  EchoLinkProviderKey,\n} from '@/runtime-services';",
+  );
+}
+
+function normalizeEchoLinkRoutesSource(source) {
+  return source.replace(
+    "import type {\n  EchoLinkConnectHrefInput,\n  EchoLinkProviderKey,\n  EchoLinkProviderLaunch,\n} from '@recoverlution/types';",
+    "import type {\n  EchoLinkConnectHrefInput,\n  EchoLinkProviderKey,\n  EchoLinkProviderLaunch,\n} from '@/runtime-services';",
   );
 }
 
@@ -335,3 +344,10 @@ const runtimeEchoLinkContent = normalizeEchoLinkRuntimeSource(
 await fs.mkdir(path.dirname(runtimeTargets.echoLinkRuntime), { recursive: true });
 await fs.writeFile(runtimeTargets.echoLinkRuntime, `${runtimeBanner}${runtimeEchoLinkContent}`);
 console.log(`synced ${path.relative(root, runtimeTargets.echoLinkRuntime)}`);
+
+const runtimeEchoLinkRoutesContent = normalizeEchoLinkRoutesSource(
+  await fs.readFile(runtimeSources.echoLinkRoutes, 'utf8'),
+);
+await fs.mkdir(path.dirname(runtimeTargets.echoLinkRoutes), { recursive: true });
+await fs.writeFile(runtimeTargets.echoLinkRoutes, `${runtimeBanner}${runtimeEchoLinkRoutesContent}`);
+console.log(`synced ${path.relative(root, runtimeTargets.echoLinkRoutes)}`);

@@ -243,6 +243,18 @@ export interface EchoLinkManifest {
   };
 }
 
+export interface EchoLinkConnectHrefInput {
+  individualId?: string;
+  providerKey: EchoLinkProviderKey;
+  returnPath?: string;
+  sourceSurface?: string;
+}
+
+export interface EchoLinkProviderLaunch {
+  providerKey: EchoLinkProviderKey;
+  href: string;
+}
+
 export interface EchoLinkContextResponse {
   ok: true;
   surface: 'navigate';

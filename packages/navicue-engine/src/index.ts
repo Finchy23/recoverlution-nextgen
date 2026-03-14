@@ -4,6 +4,7 @@ export * from './runtime/compile-intervention-demo';
 export * from './runtime/altitude-payload-adapters';
 export * from './runtime/entry-runtime-adapters';
 export * from './runtime/echo-link-runtime';
+export * from './runtime/echo-link-routes';
 export * from './runtime/companion-auth-provider';
 export * from './runtime/companion-auth-transaction';
 export * from './runtime/companion-commerce';
