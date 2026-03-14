@@ -25,6 +25,7 @@ type HandoffManifest = {
   };
   routes: string[];
   notes: string[];
+  talkHandoffFiles: string[];
 };
 
 async function main(): Promise<void> {
@@ -78,6 +79,12 @@ async function main(): Promise<void> {
       'Do not treat the old figma-drop Vercel project as canonical.',
       'The live review surface is recoverlution-design-center.vercel.app.',
     ],
+    talkHandoffFiles: [
+      'handoff/TALK_FRONTEND_FIGMA_DIRECTIVE_2026-03-12.md',
+      'handoff/TALK_FRONTEND_RETURN_CHECKLIST_2026-03-12.md',
+      'handoff/TALK_FRONTEND_REVIEW_FEEDBACK_2026-03-13.md',
+      'handoff/TALK_FRONTEND_PROMPT_WIP4_2026-03-14.md',
+    ],
   };
 
   const md = [
@@ -107,6 +114,9 @@ async function main(): Promise<void> {
     '',
     '## Notes',
     ...manifest.notes.map((note) => `- ${note}`),
+    '',
+    '## TALK Handoff Files',
+    ...manifest.talkHandoffFiles.map((file) => `- \`${file}\``),
     '',
   ].join('\n');
 
