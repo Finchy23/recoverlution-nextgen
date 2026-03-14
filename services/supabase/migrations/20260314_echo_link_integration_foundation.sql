@@ -65,6 +65,74 @@ set
   is_echo_link_provider = excluded.is_echo_link_provider,
   updated_at = now();
 
+-- Mirror provider rows into the legacy integration_providers table while
+-- integration_accounts still carries a historical FK there in upgraded dev
+-- environments. This keeps LINK-compatible provider keys insertable without
+-- forcing a risky FK rewrite mid-flight.
+create table if not exists public.integration_providers (
+  provider_key text primary key,
+  display_name text,
+  connector_mode text,
+  source_key text,
+  status text,
+  scope_defaults jsonb,
+  docs_url text,
+  notes text,
+  config jsonb,
+  created_at timestamptz,
+  updated_at timestamptz
+);
+
+insert into public.integration_providers (
+  provider_key,
+  display_name,
+  connector_mode,
+  source_key,
+  status,
+  scope_defaults,
+  docs_url,
+  notes,
+  config,
+  created_at,
+  updated_at
+)
+select
+  ipc.provider_key,
+  ipc.display_name,
+  case ipc.auth_mode
+    when 'native_aggregate' then 'native_aggregate'
+    when 'device_bridge' then 'device_bridge'
+    when 'manual' then 'manual'
+    else 'oauth'
+  end as connector_mode,
+  ipc.provider_domain as source_key,
+  case when ipc.is_echo_link_provider then 'active' else 'legacy' end as status,
+  to_jsonb(ipc.supported_scopes) as scope_defaults,
+  null::text as docs_url,
+  case when ipc.is_echo_link_provider then 'Seeded from integration_provider_catalog for upgraded LINK compatibility.' else 'Legacy compatibility provider mirrored from integration_provider_catalog.' end as notes,
+  jsonb_build_object(
+    'mirrored_from_catalog', true,
+    'provider_domain', ipc.provider_domain,
+    'auth_mode', ipc.auth_mode,
+    'signal_types', ipc.signal_types,
+    'supported_scopes', ipc.supported_scopes,
+    'is_identity_provider', ipc.is_identity_provider,
+    'is_echo_link_provider', ipc.is_echo_link_provider
+  ) as config,
+  now(),
+  now()
+from public.integration_provider_catalog ipc
+on conflict (provider_key) do update
+set
+  display_name = excluded.display_name,
+  connector_mode = excluded.connector_mode,
+  source_key = excluded.source_key,
+  status = excluded.status,
+  scope_defaults = excluded.scope_defaults,
+  notes = excluded.notes,
+  config = coalesce(public.integration_providers.config, '{}'::jsonb) || excluded.config,
+  updated_at = now();
+
 create table if not exists public.integration_accounts (
   integration_account_id uuid primary key default gen_random_uuid(),
   individual_id uuid not null references public.profiles(id) on delete cascade,
