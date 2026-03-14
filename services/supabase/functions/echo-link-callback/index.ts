@@ -114,7 +114,7 @@ Deno.serve(async (req) => {
     const grantedScopes = splitScopes(input.scope).filter((scope) => (providerRow?.supported_scopes ?? []).includes(scope));
     const signalTypes = providerRow?.signal_types ?? [];
 
-    await supabase
+    const { error: transactionUpdateError } = await supabase
       .from('integration_connection_transactions')
       .update({
         transaction_status: transactionStatus,
@@ -136,8 +136,9 @@ Deno.serve(async (req) => {
         },
       })
       .eq('integration_connection_transaction_id', transaction.integration_connection_transaction_id);
+    if (transactionUpdateError) throw transactionUpdateError;
 
-    await supabase
+    const { error: accountUpsertError } = await supabase
       .from('integration_accounts')
       .upsert(
         {
@@ -173,6 +174,7 @@ Deno.serve(async (req) => {
         },
         { onConflict: 'individual_id,provider_key' },
       );
+    if (accountUpsertError) throw accountUpsertError;
 
     if ((callbackState === 'provider_returned' || callbackState === 'manual_return') && signalTypes.length > 0) {
       const contractRows = signalTypes.map((signalType) => ({
@@ -192,9 +194,10 @@ Deno.serve(async (req) => {
         updated_at: now.toISOString(),
       }));
 
-      await supabase.from('external_signal_contracts').upsert(contractRows, {
+      const { error: contractUpsertError } = await supabase.from('external_signal_contracts').upsert(contractRows, {
         onConflict: 'individual_id,provider_key,signal_type',
       });
+      if (contractUpsertError) throw contractUpsertError;
     }
 
     if (grantedScopes.length > 0) {
@@ -213,9 +216,10 @@ Deno.serve(async (req) => {
         updated_at: now.toISOString(),
       }));
 
-      await supabase.from('integration_consent').upsert(consentRows, {
+      const { error: consentUpsertError } = await supabase.from('integration_consent').upsert(consentRows, {
         onConflict: 'individual_id,provider_key,scope_id',
       });
+      if (consentUpsertError) throw consentUpsertError;
     }
 
     const response = {

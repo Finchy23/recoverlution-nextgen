@@ -323,6 +323,65 @@ create table if not exists public.integration_consent (
   )
 );
 
+alter table public.integration_consent add column if not exists source_surface text;
+alter table public.integration_consent add column if not exists metadata jsonb default '{}'::jsonb;
+
+create table if not exists public.consent_scopes (
+  scope_id text primary key,
+  name text not null,
+  description_md text,
+  allowed_purposes text[] not null default '{}'::text[],
+  default_tier text,
+  created_at timestamptz not null default now()
+);
+
+insert into public.consent_scopes (
+  scope_id,
+  name,
+  description_md,
+  allowed_purposes,
+  default_tier
+)
+values
+  ('identity_basic', 'Identity Basics', 'Basic identity handoff used for account binding and low-friction sign-in.', array['identity', 'account_access'], 'essential'),
+  ('sleep', 'Sleep', 'Sleep duration and recovery-related sleep data used for support and insight.', array['support', 'insight'], 'sensitive'),
+  ('recovery', 'Recovery', 'Recovery signals used to understand nervous-system load and returnability.', array['support', 'insight'], 'sensitive'),
+  ('activity', 'Activity', 'General activity and movement signals used for continuity and progress.', array['support', 'insight'], 'standard'),
+  ('steps', 'Steps', 'Step count and related activity summaries.', array['support', 'insight'], 'standard'),
+  ('workout', 'Workouts', 'Workout sessions and exertion markers.', array['support', 'insight'], 'standard'),
+  ('heart_rate', 'Heart Rate', 'Heart-rate signals used for state and recovery interpretation.', array['support', 'insight'], 'sensitive'),
+  ('hrv', 'Heart Rate Variability', 'HRV signals used for recovery and nervous-system interpretation.', array['support', 'insight'], 'sensitive'),
+  ('strain', 'Strain', 'Strain and exertion scores from connected recovery providers.', array['support', 'insight'], 'sensitive'),
+  ('readiness', 'Readiness', 'Readiness scores indicating current recovery capacity.', array['support', 'insight'], 'sensitive'),
+  ('screen_time', 'Screen Time', 'Device pickup and digital load signals.', array['support', 'insight'], 'standard'),
+  ('focus_state', 'Focus State', 'Focus-mode posture and interruption state.', array['support', 'insight'], 'standard'),
+  ('music_activity', 'Music Activity', 'Listening activity used for frequency and regulation context.', array['support', 'insight'], 'standard'),
+  ('playback_state', 'Playback State', 'Playback-state and listening posture from connected music providers.', array['support', 'insight'], 'standard')
+on conflict (scope_id) do update
+set
+  name = excluded.name,
+  description_md = excluded.description_md,
+  allowed_purposes = excluded.allowed_purposes,
+  default_tier = excluded.default_tier;
+
+do $$
+begin
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'integration_consent'
+      and column_name = 'source'
+  ) then
+    execute $sql$
+      update public.integration_consent
+      set source_surface = coalesce(source_surface, source)
+      where source_surface is null
+        and source is not null
+    $sql$;
+  end if;
+end $$;
+
 create index if not exists idx_integration_consent_individual_provider
   on public.integration_consent (individual_id, provider_key, granted);
 
