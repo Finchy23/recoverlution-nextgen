@@ -37,7 +37,8 @@ export function buildEchoLinkConnectHref(
     }
   }
 
-  const startEndpoint = config.startEndpoint ?? '/link/start';
+  const startEndpoint = config.startEndpoint ?? '';
+  if (!startEndpoint) return '';
   return `${startEndpoint}${buildQuery([
     ['provider', input.providerKey],
     ['individual_id', input.individualId],
