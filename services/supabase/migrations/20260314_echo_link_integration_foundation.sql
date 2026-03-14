@@ -2,6 +2,10 @@
 -- Date: 2026-03-14
 -- Purpose: make the external integration spine real so Navigate / LINK and
 -- Signal can read from governed integration state instead of implied tables.
+--
+-- Important: the dev project already contains older integration tables from
+-- an earlier pass. This migration upgrades those tables in place instead of
+-- assuming a clean slate.
 
 create table if not exists public.integration_provider_catalog (
   provider_key text primary key,
@@ -28,22 +32,27 @@ insert into public.integration_provider_catalog (
   auth_mode,
   signal_types,
   supported_scopes,
-  is_identity_provider
+  is_identity_provider,
+  is_echo_link_provider
 )
 values
-  ('apple', 'identity_gate', 'Sign in with Apple', 'Private, low-friction identity binding for companion entry.', 'oauth', array['identity'], array['identity_basic'], true),
-  ('google', 'identity_gate', 'Sign in with Google', 'Low-friction identity binding for web and Android entry.', 'oauth', array['identity'], array['identity_basic'], true),
-  ('healthkit', 'biology', 'Apple Health', 'Apple health aggregate for sleep, workouts, steps, heart rate, and HRV.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false),
-  ('health_connect', 'biology', 'Health Connect', 'Android health aggregate for sleep, workouts, steps, heart rate, and HRV.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false),
-  ('oura', 'recovery', 'Oura', 'Recovery, readiness, sleep architecture, heart rate, and HRV.', 'oauth', array['sleep', 'recovery', 'readiness', 'activity', 'heart_rate', 'hrv'], array['sleep', 'recovery', 'readiness', 'activity', 'heart_rate', 'hrv'], false),
-  ('whoop', 'recovery', 'Whoop', 'Strain, recovery, sleep, heart rate, and HRV.', 'oauth', array['sleep', 'recovery', 'strain', 'activity', 'heart_rate', 'hrv'], array['sleep', 'recovery', 'strain', 'activity', 'heart_rate', 'hrv'], false),
-  ('strava', 'movement', 'Strava', 'Outdoor movement and exertion signals.', 'oauth', array['workout', 'activity', 'heart_rate'], array['workout', 'activity', 'heart_rate'], false),
-  ('garmin', 'movement', 'Garmin', 'Endurance movement, sleep, heart rate, and HRV signals.', 'oauth', array['workout', 'activity', 'sleep', 'heart_rate', 'hrv'], array['workout', 'activity', 'sleep', 'heart_rate', 'hrv'], false),
-  ('coros', 'movement', 'Coros', 'Endurance movement and heart-rate effort signals.', 'oauth', array['workout', 'activity', 'heart_rate'], array['workout', 'activity', 'heart_rate'], false),
-  ('screen_time', 'attention', 'Screen Time', 'Digital load and pickup frequency from the device.', 'device_bridge', array['screen_time'], array['screen_time'], false),
-  ('focus_modes', 'attention', 'Focus Modes', 'Attention posture and interruption state from device focus configuration.', 'device_bridge', array['focus_state'], array['focus_state'], false),
-  ('spotify', 'frequency', 'Spotify', 'Listening posture and musical frequency signals.', 'oauth', array['music_activity', 'playback_state'], array['music_activity', 'playback_state'], false),
-  ('apple_music', 'frequency', 'Apple Music', 'Playback posture and listening-state signals.', 'oauth', array['music_activity', 'playback_state'], array['music_activity', 'playback_state'], false)
+  ('apple', 'identity_gate', 'Sign in with Apple', 'Private, low-friction identity binding for companion entry.', 'oauth', array['identity'], array['identity_basic'], true, true),
+  ('google', 'identity_gate', 'Sign in with Google', 'Low-friction identity binding for web and Android entry.', 'oauth', array['identity'], array['identity_basic'], true, true),
+  ('healthkit', 'biology', 'Apple Health', 'Apple health aggregate for sleep, workouts, steps, heart rate, and HRV.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false, true),
+  ('health_connect', 'biology', 'Health Connect', 'Android health aggregate for sleep, workouts, steps, heart rate, and HRV.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false, true),
+  ('oura', 'recovery', 'Oura', 'Recovery, readiness, sleep architecture, heart rate, and HRV.', 'oauth', array['sleep', 'recovery', 'readiness', 'activity', 'heart_rate', 'hrv'], array['sleep', 'recovery', 'readiness', 'activity', 'heart_rate', 'hrv'], false, true),
+  ('whoop', 'recovery', 'Whoop', 'Strain, recovery, sleep, heart rate, and HRV.', 'oauth', array['sleep', 'recovery', 'strain', 'activity', 'heart_rate', 'hrv'], array['sleep', 'recovery', 'strain', 'activity', 'heart_rate', 'hrv'], false, true),
+  ('strava', 'movement', 'Strava', 'Outdoor movement and exertion signals.', 'oauth', array['workout', 'activity', 'heart_rate'], array['workout', 'activity', 'heart_rate'], false, true),
+  ('garmin', 'movement', 'Garmin', 'Endurance movement, sleep, heart rate, and HRV signals.', 'oauth', array['workout', 'activity', 'sleep', 'heart_rate', 'hrv'], array['workout', 'activity', 'sleep', 'heart_rate', 'hrv'], false, true),
+  ('coros', 'movement', 'Coros', 'Endurance movement and heart-rate effort signals.', 'oauth', array['workout', 'activity', 'heart_rate'], array['workout', 'activity', 'heart_rate'], false, true),
+  ('screen_time', 'attention', 'Screen Time', 'Digital load and pickup frequency from the device.', 'device_bridge', array['screen_time'], array['screen_time'], false, true),
+  ('focus_modes', 'attention', 'Focus Modes', 'Attention posture and interruption state from device focus configuration.', 'device_bridge', array['focus_state'], array['focus_state'], false, true),
+  ('spotify', 'frequency', 'Spotify', 'Listening posture and musical frequency signals.', 'oauth', array['music_activity', 'playback_state'], array['music_activity', 'playback_state'], false, true),
+  ('apple_music', 'frequency', 'Apple Music', 'Playback posture and listening-state signals.', 'oauth', array['music_activity', 'playback_state'], array['music_activity', 'playback_state'], false, true),
+  ('apple_healthkit', 'biology', 'Apple HealthKit (Legacy)', 'Legacy HealthKit bridge retained for dev compatibility.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false, false),
+  ('apple_health', 'biology', 'Apple Health (Legacy)', 'Legacy Apple Health contract seed retained for migration compatibility.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false, false),
+  ('google_health', 'biology', 'Google Health (Legacy)', 'Legacy Google health aggregate retained for migration compatibility.', 'native_aggregate', array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], array['sleep', 'steps', 'workout', 'heart_rate', 'hrv'], false, false),
+  ('fitbit', 'recovery', 'Fitbit (Legacy)', 'Legacy Fitbit recovery/activity integration retained for migration compatibility.', 'oauth', array['sleep', 'recovery', 'activity', 'heart_rate'], array['sleep', 'recovery', 'activity', 'heart_rate'], false, false)
 on conflict (provider_key) do update
 set
   provider_domain = excluded.provider_domain,
@@ -53,12 +62,13 @@ set
   signal_types = excluded.signal_types,
   supported_scopes = excluded.supported_scopes,
   is_identity_provider = excluded.is_identity_provider,
+  is_echo_link_provider = excluded.is_echo_link_provider,
   updated_at = now();
 
 create table if not exists public.integration_accounts (
   integration_account_id uuid primary key default gen_random_uuid(),
   individual_id uuid not null references public.profiles(id) on delete cascade,
-  provider_key text not null references public.integration_provider_catalog(provider_key) on delete restrict,
+  provider_key text not null,
   account_status text not null default 'pending',
   auth_mode text,
   external_account_ref text,
@@ -74,14 +84,143 @@ create table if not exists public.integration_accounts (
   meta jsonb not null default '{}'::jsonb,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  unique (individual_id, provider_key),
-  check (account_status in ('available', 'pending', 'active', 'paused', 'attention', 'error', 'revoked')),
-  check (coalesce(auth_mode, 'oauth') in ('oauth', 'native_aggregate', 'device_bridge', 'manual')),
-  check (latest_sync_status in ('idle', 'queued', 'syncing', 'success', 'attention', 'failed', 'stale'))
+  unique (individual_id, provider_key)
 );
 
+-- Upgrade legacy integration_accounts columns in place when they already exist.
+do $$
+begin
+  if exists (
+    select 1
+    from pg_constraint
+    where conrelid = 'public.integration_accounts'::regclass
+      and conname = 'integration_accounts_status_check'
+  ) then
+    alter table public.integration_accounts drop constraint integration_accounts_status_check;
+  end if;
+
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'integration_accounts'
+      and column_name = 'account_id'
+  ) then
+    alter table public.integration_accounts rename column account_id to integration_account_id;
+  end if;
+
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'integration_accounts'
+      and column_name = 'external_account_id'
+  ) then
+    alter table public.integration_accounts rename column external_account_id to external_account_ref;
+  end if;
+
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'integration_accounts'
+      and column_name = 'status'
+  ) then
+    alter table public.integration_accounts rename column status to account_status;
+  end if;
+end $$;
+
+alter table public.integration_accounts add column if not exists auth_mode text;
+alter table public.integration_accounts add column if not exists disconnected_at timestamptz;
+alter table public.integration_accounts add column if not exists latest_sync_status text default 'idle';
+alter table public.integration_accounts add column if not exists latest_sync_finished_at timestamptz;
+alter table public.integration_accounts add column if not exists last_error_code text;
+alter table public.integration_accounts add column if not exists last_error_message text;
+alter table public.integration_accounts add column if not exists provider_profile jsonb default '{}'::jsonb;
+alter table public.integration_accounts add column if not exists meta jsonb default '{}'::jsonb;
+
+update public.integration_accounts
+set account_status = case
+  when account_status in ('connected', 'active') then 'active'
+  when account_status in ('needs_reauth', 'attention') then 'attention'
+  when account_status in ('error', 'failed') then 'error'
+  when account_status in ('revoked', 'disconnected') then 'revoked'
+  when account_status = 'paused' then 'paused'
+  when account_status = 'available' then 'available'
+  else 'pending'
+end
+where account_status is null
+   or account_status not in ('available', 'pending', 'active', 'paused', 'attention', 'error', 'revoked');
+
+update public.integration_accounts
+set auth_mode = case
+  when provider_key in ('healthkit', 'health_connect', 'apple_healthkit', 'apple_health', 'google_health') then 'native_aggregate'
+  when provider_key in ('screen_time', 'focus_modes') then 'device_bridge'
+  else 'oauth'
+end
+where auth_mode is null;
+
+update public.integration_accounts
+set latest_sync_status = case
+  when account_status in ('attention', 'error') then 'attention'
+  when last_sync_at is not null then 'success'
+  else 'idle'
+end
+where latest_sync_status is null
+   or latest_sync_status not in ('idle', 'queued', 'syncing', 'success', 'attention', 'failed', 'stale');
+
+update public.integration_accounts
+set latest_sync_finished_at = coalesce(latest_sync_finished_at, last_sync_at)
+where last_sync_at is not null;
+
+do $$
+begin
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'integration_accounts'
+      and column_name = 'metadata'
+  ) then
+    execute $sql$
+      update public.integration_accounts
+      set meta = coalesce(meta, metadata, '{}'::jsonb)
+      where meta is null or meta = '{}'::jsonb
+    $sql$;
+  end if;
+end $$;
+
+drop index if exists public.idx_integration_accounts_individual_status;
 create index if not exists idx_integration_accounts_individual_status
   on public.integration_accounts (individual_id, account_status, provider_key);
+
+-- Legacy external_signal_contracts was previously a provider signal registry.
+-- Preserve it under a new name, then create the per-individual runtime contract table.
+do $$
+begin
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'external_signal_contracts'
+      and column_name = 'source'
+  ) and not exists (
+    select 1
+    from information_schema.columns
+    where table_schema = 'public'
+      and table_name = 'external_signal_contracts'
+      and column_name = 'individual_id'
+  ) then
+    if not exists (
+      select 1
+      from information_schema.tables
+      where table_schema = 'public'
+        and table_name = 'external_signal_contract_definitions'
+    ) then
+      alter table public.external_signal_contracts rename to external_signal_contract_definitions;
+    end if;
+  end if;
+end $$;
 
 create table if not exists public.integration_consent (
   integration_consent_id uuid primary key default gen_random_uuid(),
@@ -166,6 +305,49 @@ create table if not exists public.external_signal_contracts (
 create index if not exists idx_external_signal_contracts_individual_provider
   on public.external_signal_contracts (individual_id, provider_key, contract_status);
 
+insert into public.external_signal_contracts (
+  individual_id,
+  provider_key,
+  signal_type,
+  contract_status,
+  freshness_tier,
+  last_sync_at,
+  last_webhook_at,
+  latest_sync_status,
+  latest_sync_finished_at,
+  payload_contract,
+  source_meta
+)
+select
+  ia.individual_id,
+  ia.provider_key,
+  signal_type,
+  case
+    when ia.account_status = 'active' then 'active'
+    when ia.account_status = 'attention' then 'attention'
+    when ia.account_status = 'error' then 'error'
+    when ia.account_status = 'revoked' then 'revoked'
+    when ia.account_status = 'paused' then 'paused'
+    else 'stale'
+  end,
+  case
+    when ia.last_sync_at >= now() - interval '7 days' then 'fresh'
+    when ia.last_sync_at >= now() - interval '30 days' then 'steady'
+    when ia.last_sync_at is not null then 'aging'
+    else 'unknown'
+  end,
+  ia.last_sync_at,
+  ia.last_webhook_at,
+  ia.latest_sync_status,
+  ia.latest_sync_finished_at,
+  jsonb_build_object('seed_source', 'integration_accounts_upgrade'),
+  coalesce(ia.meta, '{}'::jsonb)
+from public.integration_accounts ia
+join public.integration_provider_catalog ipc
+  on ipc.provider_key = ia.provider_key
+cross join lateral unnest(ipc.signal_types) as signal_type
+on conflict (individual_id, provider_key, signal_type) do nothing;
+
 drop view if exists public.v_external_signal_integration_health;
 create view public.v_external_signal_integration_health as
 select
@@ -178,6 +360,7 @@ select
   c.signal_types,
   c.supported_scopes,
   c.is_identity_provider,
+  c.is_echo_link_provider,
   a.account_status,
   a.connected_at,
   a.last_sync_at,
@@ -216,6 +399,7 @@ group by
   c.signal_types,
   c.supported_scopes,
   c.is_identity_provider,
+  c.is_echo_link_provider,
   a.account_status,
   a.connected_at,
   a.last_sync_at,
