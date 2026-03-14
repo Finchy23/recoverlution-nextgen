@@ -24,6 +24,12 @@ coverage/
 .env
 .env.*
 !.env.example
+!.env.local.example
+!.env.staging.example
+!.env.production.example
+!.env.functions.local.example
+!.env.functions.staging.example
+!.env.functions.production.example
 
 # Logs
 npm-debug.log*

@@ -17,6 +17,14 @@ This matrix covers the current integration layers for:
 - `Stripe` checkout + billing webhook posture
 - `Cronofy` scheduling / conferencing webhook posture
 
+Template pack:
+- `/Users/daniel/Documents/New project/apps/site/.env.local.example`
+- `/Users/daniel/Documents/New project/apps/site/.env.staging.example`
+- `/Users/daniel/Documents/New project/apps/site/.env.production.example`
+- `/Users/daniel/Documents/New project/services/supabase/.env.functions.local.example`
+- `/Users/daniel/Documents/New project/services/supabase/.env.functions.staging.example`
+- `/Users/daniel/Documents/New project/services/supabase/.env.functions.production.example`
+
 ## Storage Rules
 
 ### Public frontend envs
