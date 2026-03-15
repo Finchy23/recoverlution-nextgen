@@ -27,11 +27,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import type { SurfaceMode } from '../universal-player/surface-modes';
 import { useSurfaceArrival, SURFACE_EASE, SURFACE_DURATION } from './useSurfaceArrival';
 import { hapticSeal } from './haptics';
-import { projectId, publicAnonKey } from '../../../../utils/supabase/info';
-import { useIndividualId } from '../runtime/session-seam';
 import { useResilience } from '../runtime/resilience-seam';
+import { getPlotWhisper, recommendPlotNudge, type Battery } from '../runtime/plot-model';
+import { usePlotCheckIn } from '../runtime/usePlotCheckIn';
 import { ResilienceWhisper } from './ResilienceWhisper';
-import { FORM_PRACTICES } from '../form/form-practices';
 import {
   room, font, layout, tracking, typeSize, leading, weight,
   opacity, timing, void_, layer, signal,
@@ -40,66 +39,6 @@ import {
 const SERIF = font.serif;
 const SANS = font.sans;
 const ORB_CLEARANCE = layout.orbClearance;
-
-const BASE = `https://${projectId}.supabase.co/functions/v1/make-server-99d14421`;
-const headers = () => ({
-  'Content-Type': 'application/json',
-  'Authorization': `Bearer ${publicAnonKey}`,
-});
-
-// ─── Whisper System ───
-// Observations at charge thresholds. No moral language.
-// No em dashes. No hyphens. Architecture of Resonance.
-
-const WHISPERS: Record<string, { at: number; text: string }[]> = {
-  energy: [
-    { at: 0,    text: 'The tank is empty' },
-    { at: 0.08, text: 'Running on reserves' },
-    { at: 0.22, text: 'Some fuel remaining' },
-    { at: 0.38, text: 'A steady supply' },
-    { at: 0.55, text: 'Well fueled' },
-    { at: 0.75, text: 'Fully charged' },
-  ],
-  clarity: [
-    { at: 0,    text: 'Deep in the fog' },
-    { at: 0.08, text: 'Signal is faint' },
-    { at: 0.22, text: 'Shapes beginning to form' },
-    { at: 0.38, text: 'The view is clearing' },
-    { at: 0.55, text: 'Sharp signal' },
-    { at: 0.75, text: 'Crystal clear' },
-  ],
-  balance: [
-    { at: 0,    text: 'The ground is shifting' },
-    { at: 0.08, text: 'Searching for footing' },
-    { at: 0.22, text: 'Some steadiness returning' },
-    { at: 0.38, text: 'Finding center' },
-    { at: 0.55, text: 'Well anchored' },
-    { at: 0.75, text: 'Deeply rooted' },
-  ],
-};
-
-function getWhisper(id: string, value: number): string {
-  const ws = WHISPERS[id];
-  if (!ws) return '';
-  let r = ws[0].text;
-  for (const w of ws) { if (value >= w.at) r = w.text; }
-  return r;
-}
-
-// ─── Battery Definition ───
-
-interface Battery {
-  id: string;
-  label: string;
-  color: string;
-  value: number; // 0–1
-}
-
-const DEFAULT_BATTERIES: Battery[] = [
-  { id: 'energy',  label: 'ENERGY',  color: signal.energy, value: 0.5 },
-  { id: 'clarity', label: 'CLARITY', color: signal.clarity, value: 0.5 },
-  { id: 'balance', label: 'BALANCE', color: signal.anchor,  value: 0.5 },
-];
 
 // ─── Column dimensions ───
 const COL_W = 36;
@@ -295,12 +234,10 @@ function Capillary({ bat, idx, active, anyActive, height, breath, onDown, onMove
 // ═══════════════════════════════════════════════════
 
 export function PlotSurface({ mode, breath, onResolve, onNavigate }: PlotSurfaceProps) {
-  const userId = useIndividualId();
   const resilience = useResilience();
-  const [batteries, setBatteries] = useState<Battery[]>(DEFAULT_BATTERIES);
+  const [{ batteries, lastCheckIn }, { setBatteryValue, sealCheckIn }] = usePlotCheckIn();
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [checkInPhase, setCheckInPhase] = useState<'idle' | 'adjusting' | 'sealed'>('idle');
-  const [lastCheckIn, setLastCheckIn] = useState<number | null>(null);
   const [viewport, setViewport] = useState({ width: 375, height: 667 });
   const [formNudge, setFormNudge] = useState<{ practice: string; reason: string; id: string } | null>(null);
   const [sealPulse, setSealPulse] = useState<{ color: string; idx: number } | null>(null);
@@ -316,7 +253,7 @@ export function PlotSurface({ mode, breath, onResolve, onNavigate }: PlotSurface
 
   // ── Active whisper ──
   const activeWhisper = useMemo(() =>
-    activeIdx !== null ? getWhisper(batteries[activeIdx].id, batteries[activeIdx].value) : null,
+    activeIdx !== null ? getPlotWhisper(batteries[activeIdx].id, batteries[activeIdx].value) : null,
   [activeIdx, batteries]);
 
   // ── Viewport ──
@@ -330,29 +267,6 @@ export function PlotSurface({ mode, breath, onResolve, onNavigate }: PlotSurface
     ro.observe(el);
     setViewport({ width: el.offsetWidth, height: el.offsetHeight });
     return () => ro.disconnect();
-  }, []);
-
-  // ── Load ──
-  useEffect(() => {
-    fetch(`${BASE}/plot/coordinates/${userId}`, { headers: headers() })
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (data?.found && data.coordinates) {
-          const mapped = data.coordinates.map((c: any) => {
-            const id = c.id === 'anchorage' ? 'balance' : c.id;
-            const def = DEFAULT_BATTERIES.find(b => b.id === id);
-            return {
-              id,
-              label: def?.label || id.toUpperCase(),
-              color: def?.color || signal.anchor,
-              value: c.value ?? 0.5,
-            };
-          });
-          if (mapped.length === 3) setBatteries(mapped);
-          setLastCheckIn(data.timestamp);
-        }
-      })
-      .catch(err => console.error('[PLOT load]', err));
   }, []);
 
   // ── Geometry ──
@@ -371,8 +285,8 @@ export function PlotSurface({ mode, breath, onResolve, onNavigate }: PlotSurface
     const colTop = rect.top + COL_TOP;
     const relY = (clientY - colTop) / colH;
     const value = Math.max(0, Math.min(1, 1 - relY));
-    setBatteries(prev => prev.map((b, i) => i === idx ? { ...b, value } : b));
-  }, [colH, COL_TOP]);
+    setBatteryValue(idx, value);
+  }, [colH, COL_TOP, setBatteryValue]);
 
   const handleDown = useCallback((idx: number, clientY: number) => {
     setActiveIdx(idx);
@@ -395,43 +309,19 @@ export function PlotSurface({ mode, breath, onResolve, onNavigate }: PlotSurface
       setTimeout(() => setSealPulse(null), 800);
 
       setCheckInPhase('sealed');
-
-      // Save
-      const coordinates = batteries.map(b => ({
-        id: b.id === 'balance' ? 'anchorage' : b.id,
-        label: b.label, color: b.color, value: b.value,
-        whisper: getWhisper(b.id, b.value),
-      }));
-
-      fetch(`${BASE}/plot/coordinates`, {
-        method: 'POST',
-        headers: headers(),
-        body: JSON.stringify({ userId, coordinates }),
-      })
-        .then(r => r.json())
-        .then(d => { if (d?.stored) { setLastCheckIn(d.timestamp); console.log('[PLOT] Telemetry sealed'); } })
-        .catch(err => console.error('[PLOT save]', err));
+      void sealCheckIn();
 
       // PLOT → HONE
-      const critical = batteries.find(b => b.value < 0.2);
-      if (critical && onNavigate) {
-        const map: Record<string, { pillar: string; reason: string }> = {
-          clarity:  { pillar: 'rewire',   reason: 'The fog is heavy. Defusion may create some clearing.' },
-          energy:   { pillar: 'bridge',   reason: 'The reserves are low. Rhythm can carry what effort cannot.' },
-          balance:  { pillar: 'baseline', reason: 'The ground feels distant. The body can become the anchor.' },
-        };
-        const m = map[critical.id];
-        if (m) {
-          const matched = FORM_PRACTICES.find(p => p.pillar === m.pillar);
-          if (matched) setTimeout(() => setFormNudge({ practice: matched.name, reason: m.reason, id: matched.id }), 2200);
-        }
+      const nudge = recommendPlotNudge(batteries);
+      if (nudge && onNavigate) {
+        setTimeout(() => setFormNudge(nudge), 2200);
       }
 
       setTimeout(() => setCheckInPhase('idle'), 2000);
     }
     setActiveIdx(null);
     activeRef.current = null;
-  }, [batteries, onNavigate, userId]);
+  }, [batteries, onNavigate, sealCheckIn]);
 
   const timeSince = lastCheckIn ? formatTimeSince(lastCheckIn) : null;
 

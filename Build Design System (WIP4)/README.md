@@ -1,11 +1,21 @@
+# Build Design System (WIP4)
 
-  # Build Design System
+This workspace is the current Companion organism reference for the next Figma/UI return.
 
-  This is a code bundle for Build Design System. The original project is available at https://www.figma.com/design/gGBD8OhTfSpNcRjUcCvvSL/Build-Design-System.
+## Start here
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_FINAL_BRIEF.md`
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_FINAL_DIRECTIVE.md`
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_COMPANION_SYSTEM_MAP.md`
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_DESKTOP_CONSOLE_CORE_BRIEF.md`
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_COPY_AND_RESONANCE_LAW.md`
+- `/Users/daniel/Documents/New project/Build Design System (WIP4)/FIGMA_UI_RETURN_CHECKLIST.md`
 
-  ## Running the code
+## What this repo is for
+- Companion shell and room direction
+- UI architecture calibration before production hardening
+- Figma return handoff
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+## Running locally
+- `npm install`
+- `npm run dev`
+- `npm run build`
