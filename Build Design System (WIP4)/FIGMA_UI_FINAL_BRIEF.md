@@ -6,16 +6,13 @@ Use this workspace as the live organism reference. It is not fully wired to cano
 
 ## What This Pass Is
 
-This is a design-signoff and refinement pass for:
-- the `Companion` as the personal, app-first organism
-- the `Professional Console` as a desktop-first practitioner workbench
-- the `Organisational Core` as a desktop-first operating/admin layer
+This is a design-signoff and refinement pass for the `Companion` as the personal, app-first organism.
 
 This is not a backend pass.
 This is not a taxonomy reinvention pass.
 This is not a dashboard-overload pass.
 
-## Core Product Split
+## Companion Stance
 
 ### Companion
 The Companion stays app-first and intimate.
@@ -33,41 +30,6 @@ It must not feel like:
 - a dashboard product
 - a content library
 - a therapy CRM
-
-### Professional Console
-The Professional Console is desktop-first.
-It is the practitioner workbench.
-It should hold:
-- client roster
-- upcoming sessions
-- booking and availability
-- conference/join flows
-- payment exceptions
-- prep and follow-up posture
-- light dashboards
-
-It should feel:
-- efficient
-- trustworthy
-- operational
-- clear under load
-
-### Organisational Core
-The Organisational Core is also desktop-first.
-It is the operating/admin layer.
-It should hold:
-- team members and roles
-- org scheduling policy
-- provider health
-- billing posture
-- utilisation and revenue views
-- audit/compliance posture
-- org-wide controls
-
-It should feel:
-- denser than Companion
-- more analytical than Console
-- still elegant, but not room-like
 
 ## Companion Authority
 
@@ -109,7 +71,6 @@ The player should continue to own:
 These truths are stable enough for Figma to push hard on:
 - the Universal Player is the shell
 - Companion is app-first only
-- Console and Core are desktop-first
 - `READ` is not a library; it is a calibration chamber
 - `ECHO` is not settings; it is the listening and tethering layer
 - `LINK` should feel infrastructural but still intimate
@@ -143,11 +104,6 @@ Those are still architecture/runtime questions.
 - `PLAY`
 - top-level `KNOW`
 - top-level `TUNE`
-
-### Desktop priority
-- Professional Console top-level IA
-- Organisational Core top-level IA
-- their relationship back to Companion
 
 ## READ Law
 
@@ -211,30 +167,12 @@ The UI should assume these seams exist, but it should not try to solve them visu
 As of this pass, `LINK`, `PLOT`, and `MAP` have clean runtime seams in code.
 Treat that as permission to design them confidently without inventing more transport logic into the UI.
 
-## Desktop Guidance
-
-Do not make Console/Core look like enlarged versions of Companion.
-
-They should share:
-- brand language
-- type system discipline
-- color restraint
-- trust posture
-
-They should not share:
-- pacing
-- density
-- room choreography
-- emotional softness at all times
-
 ## Deliverables Expected Back From Figma
 
 1. Companion shell refinement
 2. Final pass on `READ`
 3. Final pass on `ECHO > PLOT / MAP / LINK`
-4. Desktop-first top-level IA for `Professional Console`
-5. Desktop-first top-level IA for `Organisational Core`
-6. Copy and motion guardrails where design intent matters to code
+4. Copy and motion guardrails where design intent matters to code
 
 ## Final Rule
 
